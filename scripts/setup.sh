@@ -14,4 +14,17 @@ docker compose build --pull
 docker compose up -d mysql
 docker compose run --rm app php artisan migrate --force
 docker compose up -d
+ready=false
+for attempt in $(seq 1 30); do
+  if docker compose exec -T web wget -q -O /dev/null http://127.0.0.1/up; then
+    ready=true
+    break
+  fi
+  sleep 2
+done
+if [[ "$ready" != true ]]; then
+  echo 'The web application did not become ready. Container logs follow:' >&2
+  docker compose logs --tail=60 app web
+  exit 1
+fi
 printf '\nWebsite: http://localhost:8080\nAdmin: http://localhost:8080/admin\nCreate an admin: docker compose exec app php artisan admin:create your-email@example.com\n'

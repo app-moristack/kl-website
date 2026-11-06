@@ -54,8 +54,8 @@ jobs:
       - name: Smoke test complete Docker Compose stack
         run: |
           bash scripts/setup.sh
-          curl --fail --retry 12 --retry-delay 3 --retry-connrefused http://localhost:8080/up
-          curl --fail --retry 12 --retry-delay 3 --retry-connrefused http://localhost:8080/en
+          curl --fail --retry 12 --retry-delay 3 --retry-all-errors http://localhost:8080/up
+          curl --fail --retry 12 --retry-delay 3 --retry-all-errors http://localhost:8080/en
           curl --fail http://localhost:8080/api/content/en
       - name: Remove disposable Docker test data
         if: always()
