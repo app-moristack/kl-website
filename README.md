@@ -6,7 +6,7 @@ Laravel 12 + React 19 editorial website for Khushal Lobine. Docker Engine and Co
 
 - Responsive navy/red public website based on the supplied references, with original supplied portraits.
 - Home, About, Parliament, Constituency No. 15, Perspectives, Media, Contact, article detail, interim privacy and terms pages.
-- English and French interface; Kreol interface is explicitly marked as a draft and excluded from indexing pending human review.
+- English and French interface; Kreol uses `mfe` in HTML language/SEO metadata (with `/km` as its internal URL key). The Kreol interface is explicitly marked as a draft and excluded from indexing pending human review.
 - Content studio: articles, parliamentary records, media links, community updates and page records; categories, source/video URL, event date, feature priority and scheduled publication.
 - Independent EN/FR/KM title, summary, plain text body, SEO description and editorial status. No automatic translation or external AI API is used.
 - Unreviewed Kreol records cannot be published through the API. Missing translations do not silently fall back to English.
@@ -136,7 +136,7 @@ This creates a consistent SQL dump and uploaded-files archive; it does not yet e
 ## Verification of initial development
 
 - React production build passed.
-- PHP feature tests passed (16 tests / 70 assertions).
+- PHP feature tests passed (17 tests / 77 assertions).
 - Composer and production npm dependency audits reported no advisories.
 - Browser verified public pages, French navigation, admin login screen and successful enquiry submission.
 - Cloud tests used a temporary isolated PHP 8.4.23 CLI runtime and SQLite because Docker was unavailable. That runtime is **not** the production image and fails the production security-floor check. No Docker build, MySQL integration, HTTPS or production deployment is claimed as verified here. GitHub CI and the WSL Docker run must confirm those before release.

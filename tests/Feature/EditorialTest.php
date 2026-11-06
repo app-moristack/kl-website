@@ -70,4 +70,8 @@ class EditorialTest extends TestCase {
   $e=\App\Models\Enquiry::create(['name'=>'Test','email'=>'test@example.com','kind'=>'concern','subject'=>'Local issue','message'=>'A local test issue','locale'=>'en']);
   $this->patchJson('/api/admin/enquiries/'.$e->id,['status'=>'closed'])->assertOk();$this->assertDatabaseHas('enquiries',['id'=>$e->id,'status'=>'closed']);$this->assertDatabaseHas('activity_logs',['action'=>'enquiry.updated']);
  }
+ public function test_kreol_metadata_uses_mauritian_creole_language_tag(): void {
+  $this->get('/km')->assertOk()->assertSee('lang="mfe"',false)->assertSee('hreflang="mfe"',false)->assertHeader('X-Robots-Tag','noindex, nofollow');
+  $this->get('/robots.txt')->assertSee('Disallow: /admin')->assertSee('sitemap.xml');
+ }
 }
