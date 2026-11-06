@@ -1,0 +1,21 @@
+{
+  "name": "kl-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "hot": "vite --host 0.0.0.0"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "laravel-vite-plugin": "^2.0.0",
+    "concurrently": "^9.0.1"
+  }
+}

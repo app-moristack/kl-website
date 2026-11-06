@@ -1,0 +1,65 @@
+name: kl-website
+services:
+  app:
+    build:
+      context: .
+      target: app
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - uploads:/var/www/html/storage
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks: [internal]
+    security_opt: [no-new-privileges:true]
+  web:
+    build:
+      context: .
+      target: web
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN:-:80}
+    ports: ["127.0.0.1:8080:80"]
+    volumes:
+      - uploads:/var/www/html/storage:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [app]
+    restart: unless-stopped
+    networks: [internal, edge]
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-kl_website}
+      MYSQL_USER: ${DB_USERNAME:-kl_app}
+      MYSQL_PASSWORD: ${DB_PASSWORD:?Run scripts/setup.sh first}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Run scripts/setup.sh first}
+    volumes: ["mysql_data:/var/lib/mysql"]
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysqladmin ping -h localhost -u root --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+    networks: [internal]
+  scheduler:
+    build:
+      context: .
+      target: app
+    command: ["php", "artisan", "schedule:work"]
+    env_file: .env
+    volumes: ["uploads:/var/www/html/storage"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+    restart: unless-stopped
+    networks: [internal]
+volumes:
+  mysql_data:
+  uploads:
+  caddy_data:
+  caddy_config:
+networks:
+  internal:
+    internal: true
+  edge:

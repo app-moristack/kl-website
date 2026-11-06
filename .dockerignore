@@ -1,0 +1,15 @@
+.git
+.env
+.env.*
+!.env.example
+node_modules
+vendor
+storage/logs/*
+storage/framework/*
+storage/app/*
+public/build
+public/hot
+tests
+*.zip
+
+bootstrap/cache/*.php

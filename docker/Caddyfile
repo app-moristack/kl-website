@@ -1,0 +1,11 @@
+{$APP_DOMAIN:localhost} {
+ root * /var/www/html/public
+ encode zstd gzip
+ @blocked path /.env /.git/* /storage/*.php /storage/*.phtml
+ respond @blocked 404
+ request_body {
+  max_size 6MB
+ }
+ php_fastcgi app:9000
+ file_server
+}

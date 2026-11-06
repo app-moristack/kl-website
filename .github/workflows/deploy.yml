@@ -1,0 +1,40 @@
+name: Deploy production
+# Enable only after server bootstrap, secrets and environment protections are configured.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Verify application]
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: kl-production
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: vars.PRODUCTION_ENABLED == 'true' && (github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success')
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: Configure SSH
+        env:
+          SSH_KEY: ${{ secrets.PROD_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.PROD_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+      - name: Deploy verified revision
+        env:
+          DEPLOY_HOST: ${{ secrets.PROD_HOST }}
+          DEPLOY_USER: ${{ secrets.PROD_USER }}
+          DEPLOY_PORT: ${{ secrets.PROD_PORT }}
+          REVISION: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          [[ "$REVISION" =~ ^[0-9a-f]{40}$ ]]
+          ssh -p "${DEPLOY_PORT:-22}" "$DEPLOY_USER@$DEPLOY_HOST" "/opt/kl-website-ops/deploy '$REVISION'"

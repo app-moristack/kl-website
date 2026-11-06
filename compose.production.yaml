@@ -1,0 +1,17 @@
+# Docker Compose >= 2.24.4 required for !override.
+services:
+  web:
+    ports: !override
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+  app:
+    environment:
+      APP_ENV: production
+      APP_DEBUG: "false"
+      SESSION_SECURE_COOKIE: "true"
+  scheduler:
+    environment:
+      APP_ENV: production
+      APP_DEBUG: "false"
+      SESSION_SECURE_COOKIE: "true"
