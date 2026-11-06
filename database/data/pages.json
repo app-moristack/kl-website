@@ -7,18 +7,18 @@
         "eyebrow": "A life in law and public service",
         "hero_title": "Khushal",
         "hero_accent": "Lobine",
-        "hero_body": "Member of Parliament for Constituency No. 15 — La Caverne and Phoenix. Barrister-at-law.",
+        "hero_body": "Drawing on more than two decades in legal practice and institutional governance, Khushal Lobine serves his constituency while contributing to legislative and national affairs.",
         "hero_image": "/images/hero.jpg",
         "primary_label": "Discover Khushal",
         "primary_url": "/en/about",
-        "secondary_label": "Parliamentary work",
+        "secondary_label": "Explore parliamentary work",
         "secondary_url": "/en/parliament",
         "intro_title": "Law, Leadership and Public Service",
         "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
         "intro_image": "/images/portrait.jpg",
-        "quote": "",
-        "signature": "",
-        "section_title": "Working with people",
+        "quote": "My responsibility as a Member of Parliament begins with the people who elected me.",
+        "signature": "KHUSHAL LOBINE",
+        "section_title": "Parliament. People. Perspectives.",
         "cards": [
           {
             "title": "In Parliament",
@@ -45,13 +45,23 @@
         "milestones": [
           {
             "year": "2019",
-            "title": "Elected to Parliament",
-            "body": "Elected for La Caverne and Phoenix."
+            "title": "First elected to Parliament",
+            "body": ""
           },
           {
             "year": "2024",
-            "title": "Re-elected to Parliament",
-            "body": "Re-elected in Constituency No. 15."
+            "title": "Re-elected for a second term",
+            "body": ""
+          },
+          {
+            "year": "22+",
+            "title": "Years of legal experience",
+            "body": ""
+          },
+          {
+            "year": "2024",
+            "title": "Nouveaux Démocrates founded",
+            "body": ""
           }
         ],
         "focus": [
@@ -283,9 +293,9 @@
       "en": {
         "design": "classic",
         "eyebrow": "About Khushal Lobine",
-        "hero_title": "Law, leadership",
-        "hero_accent": "and public service",
-        "hero_body": "Discover his background in law, parliamentary work and public engagement.",
+        "hero_title": "About",
+        "hero_accent": "Khushal Lobine",
+        "hero_body": "A commitment to a fairer, more inclusive and prosperous Mauritius. Khushal Lobine is a barrister-at-law, Member of Parliament and Leader of Nouveaux Démocrates.",
         "hero_image": "/images/hero.jpg",
         "primary_label": "Discover Khushal",
         "primary_url": "/en/about",
@@ -294,8 +304,8 @@
         "intro_title": "Law, Leadership and Public Service",
         "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
         "intro_image": "/images/portrait.jpg",
-        "quote": "",
-        "signature": "",
+        "quote": "My commitment is simple: serve with integrity, act with courage, and put people first. I believe in a Mauritius where everyone has the opportunity to thrive — a fairer, more inclusive and prosperous nation.",
+        "signature": "KHUSHAL LOBINE",
         "section_title": "Working with people",
         "cards": [
           {
@@ -329,14 +339,44 @@
         ],
         "milestones": [
           {
+            "year": "",
+            "title": "Legal Studies in the UK",
+            "body": "Completed legal studies in the United Kingdom."
+          },
+          {
+            "year": "",
+            "title": "Called to the Bar",
+            "body": "Called to the Bar as a barrister-at-law."
+          },
+          {
+            "year": "",
+            "title": "Legal Career",
+            "body": "Practised as a barrister, building a strong legal career."
+          },
+          {
+            "year": "",
+            "title": "Chairman, SICOM Group",
+            "body": "Chaired the board of the State Investment Corporation of Mauritius."
+          },
+          {
+            "year": "",
+            "title": "Chairman, Wastewater Management Authority",
+            "body": "Chaired the board of the Wastewater Management Authority."
+          },
+          {
             "year": "2019",
-            "title": "Elected to Parliament",
-            "body": "Elected for La Caverne and Phoenix."
+            "title": "Elected as MP",
+            "body": "Elected Member of Parliament in 2019."
           },
           {
             "year": "2024",
-            "title": "Re-elected to Parliament",
-            "body": "Re-elected in Constituency No. 15."
+            "title": "Founded Nouveaux Démocrates",
+            "body": "Founded and now leads Nouveaux Démocrates."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected",
+            "body": "Re-elected as Member of Parliament in 2024."
           }
         ],
         "focus": [
@@ -582,8 +622,8 @@
       "en": {
         "design": "classic",
         "eyebrow": "Parliamentary work",
-        "hero_title": "Parliamentary",
-        "hero_accent": "work",
+        "hero_title": "PARLIAMENTARY",
+        "hero_accent": "WORK",
         "hero_body": "Questions, speeches, debates and legislative contributions.",
         "hero_image": "/images/hero.jpg",
         "primary_label": "",
@@ -595,7 +635,7 @@
         "intro_image": "/images/portrait.jpg",
         "quote": "",
         "signature": "",
-        "section_title": "Working with people",
+        "section_title": "Advancing a Fairer and Stronger Mauritius",
         "cards": [
           {
             "title": "Parliamentary Questions",
@@ -889,11 +929,11 @@
         "primary_url": "/en/constituency#archive",
         "secondary_label": "",
         "secondary_url": "",
-        "intro_title": "Law, Leadership and Public Service",
+        "intro_title": "Representing La Caverne & Phoenix",
         "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
         "intro_image": "/images/portrait.jpg",
-        "quote": "",
-        "signature": "",
+        "quote": "I remain committed to being accessible, listening to your concerns, and working together for a stronger, safer and more inclusive La Caverne and Phoenix. Your voice matters, and I will continue to be present, on the ground and in Parliament.",
+        "signature": "KHUSHAL LOBINE",
         "section_title": "Working with people",
         "cards": [
           {
@@ -1130,7 +1170,7 @@
         "design": "classic",
         "eyebrow": "Ideas & perspectives",
         "hero_title": "Ideas for a",
-        "hero_accent": "stronger Mauritius",
+        "hero_accent": "Stronger Mauritius",
         "hero_body": "Reflections on law, governance, democracy and national development.",
         "hero_image": "/images/hero.jpg",
         "primary_label": "Explore articles",
@@ -1142,7 +1182,7 @@
         "intro_image": "/images/portrait.jpg",
         "quote": "",
         "signature": "",
-        "section_title": "Working with people",
+        "section_title": "Building a better Mauritius through ideas and dialogue.",
         "cards": [
           {
             "title": "Constitutional Reform",
@@ -1471,7 +1511,7 @@
         "design": "classic",
         "eyebrow": "Media",
         "hero_title": "Khushal Lobine",
-        "hero_accent": "in the media",
+        "hero_accent": "in the Media",
         "hero_body": "Interviews, press statements and public engagements.",
         "hero_image": "/images/hero.jpg",
         "primary_label": "",
@@ -1748,8 +1788,8 @@
       "en": {
         "design": "classic",
         "eyebrow": "Get in touch",
-        "hero_title": "Your voice",
-        "hero_accent": "matters",
+        "hero_title": "GET IN TOUCH",
+        "hero_accent": "WITH KHUSHAL",
         "hero_body": "Share a concern, contact the team or request an appointment.",
         "hero_image": "/images/hero.jpg",
         "primary_label": "",

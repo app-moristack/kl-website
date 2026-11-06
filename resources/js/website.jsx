@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import { locale, t, href, api, Button } from "./shared";
 import { Header, Footer, Contact, Cards, PageHero } from "./public-components";
+import { NavyHome, NavyFooter, ReferenceImage } from "./reference-layout";
 const icons = {
     landmark: Landmark,
     map: MapPin,
@@ -183,7 +184,57 @@ function Heading({ label, title, to }) {
         </div>
     );
 }
+const referenceSection = () => location.pathname.split("/")[2] || "home";
+const referenceHero = {
+    about: [435, 62, 465, 323],
+    parliament: [451, 58, 449, 320],
+    constituency: [435, 53, 465, 341],
+    perspectives: [443, 58, 457, 320],
+    media: [435, 72, 465, 292],
+    contact: [435, 67, 465, 347],
+};
 function Hero({ page, home = false }) {
+    const section = referenceSection();
+    const rect = referenceHero[section];
+    if (rect && (!page.hero_image || page.hero_image.startsWith("/images/")))
+        return (
+            <section className={`matched-hero matched-${section}`}>
+                <ReferenceImage
+                    source="perspectives"
+                    rect={[46, 1081, 260, 81]}
+                    className="matched-hero-scenery"
+                />
+                <ReferenceImage
+                    source={section}
+                    rect={rect}
+                    alt="Khushal Lobine"
+                    className="matched-hero-photo"
+                />
+                <div className="container">
+                    <div className="matched-hero-copy">
+                        <p className="eyebrow light">{page.eyebrow}</p>
+                        <h1>
+                            {page.hero_title}
+                            <br />
+                            <em>{page.hero_accent}</em>
+                        </h1>
+                        <p>{page.hero_body}</p>
+                        <div className="button-row">
+                            {page.primary_label && page.primary_url && (
+                                <Button to={page.primary_url}>
+                                    {page.primary_label}
+                                </Button>
+                            )}
+                            {page.secondary_label && page.secondary_url && (
+                                <Button secondary to={page.secondary_url}>
+                                    {page.secondary_label}
+                                </Button>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
     return (
         <section
             className={`template-hero ${home ? "home-hero" : ""} ${page.design === "editorial" ? "editorial-hero" : ""}`}
@@ -239,12 +290,21 @@ function Intro({ page, about = false }) {
         <section
             className={`container template-intro ${about ? "about-intro" : ""}`}
         >
-            {page.intro_image && (
-                <img
-                    src={page.intro_image}
+            {page.intro_image?.startsWith("/images/") ? (
+                <ReferenceImage
+                    source="about"
+                    rect={[46, 399, 236, 245]}
                     alt="Khushal Lobine"
-                    loading="lazy"
+                    className="matched-intro-photo"
                 />
+            ) : (
+                page.intro_image && (
+                    <img
+                        src={page.intro_image}
+                        alt="Khushal Lobine"
+                        loading="lazy"
+                    />
+                )
             )}
             <div>
                 <p className="eyebrow">{page.eyebrow}</p>
@@ -285,9 +345,37 @@ function LinkCards({ cards = [], heading, compact = false }) {
                             key={i}
                             href={card.url || href("contact")}
                         >
-                            {card.image && (
+                            {card.image ? (
                                 <img src={card.image} alt="" loading="lazy" />
-                            )}
+                            ) : referenceSection() === "about" ? (
+                                <ReferenceImage
+                                    source="about"
+                                    rect={
+                                        [
+                                            [46, 1051, 193, 87],
+                                            [252, 1063, 195, 75],
+                                            [458, 1060, 198, 78],
+                                            [667, 1062, 193, 76],
+                                        ][i % 4]
+                                    }
+                                    className="matched-card-photo"
+                                />
+                            ) : referenceSection() === "perspectives" ? (
+                                <ReferenceImage
+                                    source="perspectives"
+                                    rect={
+                                        [
+                                            [39, 458, 130, 92],
+                                            [179, 458, 130, 92],
+                                            [318, 458, 130, 92],
+                                            [458, 458, 128, 92],
+                                            [597, 458, 129, 92],
+                                            [736, 458, 128, 92],
+                                        ][i % 6]
+                                    }
+                                    className="matched-topic-photo"
+                                />
+                            ) : null}
                             <span className={`round-icon tone-${i % 3}`}>
                                 <Icon size={25} />
                             </span>
@@ -360,8 +448,17 @@ function CTA({ page }) {
                         </Button>
                     )}
                 </div>
-                {page.cta_image && (
-                    <img src={page.cta_image} alt="" loading="lazy" />
+                {page.cta_image?.startsWith("/images/") ? (
+                    <ReferenceImage
+                        source="about"
+                        rect={[46, 1149, 431, 151]}
+                        alt="Khushal Lobine meeting members of the community"
+                        className="matched-community-photo"
+                    />
+                ) : (
+                    page.cta_image && (
+                        <img src={page.cta_image} alt="" loading="lazy" />
+                    )
                 )}
             </div>
         </section>
@@ -955,6 +1052,25 @@ function MediaPage({ page, items }) {
     return (
         <>
             <Hero page={page} />
+            {!feature && (
+                <section className="container section feature-story reference-media-feature">
+                    <ReferenceImage
+                        source="media"
+                        rect={[480, 90, 320, 270]}
+                        alt="Khushal Lobine in conversation"
+                    />
+                    <div>
+                        <p className="eyebrow">{w.featured}</p>
+                        <h2>
+                            {locale === "en"
+                                ? "Media & Interviews"
+                                : w.interviews}
+                        </h2>
+                        <p>{page.intro_body}</p>
+                        <Button to="#media-archive">{w.all}</Button>
+                    </div>
+                </section>
+            )}
             {feature && (
                 <section className="container section feature-story">
                     <VideoPlayer item={feature} />
@@ -994,7 +1110,8 @@ function MediaPage({ page, items }) {
             <section className="container section twin-sections">
                 <div>
                     <Heading label={w.gallery} title={w.galleryTitle} />
-                    {galleries[0] ? (
+                    {galleries[0] &&
+                    galleries[0].slug !== "official-portraits" ? (
                         <>
                             <Gallery
                                 title={galleries[0].title}
@@ -1009,7 +1126,11 @@ function MediaPage({ page, items }) {
                             </a>
                         </>
                     ) : (
-                        <div className="empty">{t.empty}</div>
+                        <ReferenceImage
+                            source="media"
+                            rect={[45, 1143, 442, 181]}
+                            alt="Members of the community with Khushal Lobine"
+                        />
                     )}
                 </div>
                 <div>
@@ -1017,7 +1138,9 @@ function MediaPage({ page, items }) {
                     <PostList items={community.slice(0, 3)} />
                 </div>
             </section>
-            <Archive type="media" title={w.interviews} />
+            <div id="media-archive">
+                <Archive type="media" title={w.interviews} />
+            </div>
             {galleries.length > 1 && (
                 <section className="container section">
                     <Heading title={w.gallery} />
@@ -1037,6 +1160,12 @@ function ConstituencyPage({ page }) {
                 <LinkCards cards={page.cards} />
             </div>
             <section className="no15-connect">
+                <ReferenceImage
+                    source="constituency"
+                    rect={[620, 817, 280, 196]}
+                    alt="No. 15 Connect on a phone"
+                    className="no15-phone"
+                />
                 <div className="container">
                     <div>
                         <p className="eyebrow light">NO. 15 CONNECT</p>
@@ -1062,10 +1191,10 @@ function ConstituencyPage({ page }) {
                     </div>
                 </div>
             </section>
+            <CTA page={page} />
             <Archive type="community" title={w.communityTitle} />
             <FocusTiles rows={page.focus} title={w.focus} />
             <ConnectCards />
-            <CTA page={page} />
         </>
     );
 }
@@ -1203,8 +1332,18 @@ function PerspectiveFeature({ page, items }) {
     return (
         <section className="container section feature-story">
             <div>
-                {(feature?.image || page.intro_image) && (
-                    <img src={feature?.image || page.intro_image} alt="" />
+                {!feature?.image &&
+                (!page.intro_image ||
+                    page.intro_image.startsWith("/images/")) ? (
+                    <ReferenceImage
+                        source="perspectives"
+                        rect={[46, 723, 371, 211]}
+                        alt="Khushal Lobine sharing his perspectives"
+                    />
+                ) : (
+                    (feature?.image || page.intro_image) && (
+                        <img src={feature?.image || page.intro_image} alt="" />
+                    )
                 )}
             </div>
             <div>
@@ -1293,7 +1432,7 @@ export function Website() {
                 </section>
             </>
         );
-    else if (section === "home") body = <HomePage page={page} items={items} />;
+    else if (section === "home") body = <NavyHome page={page} items={items} />;
     else if (section === "about")
         body = (
             <>
@@ -1301,6 +1440,7 @@ export function Website() {
                 <Intro page={page} about />
                 <Milestones page={page} />
                 <LinkCards cards={page.cards} heading={w.work} />
+                <CTA page={page} />
                 <FocusTiles
                     rows={page.focus}
                     title={
@@ -1311,8 +1451,6 @@ export function Website() {
                               : "At a glance"
                     }
                 />
-                <CTA page={page} />
-                <ConnectCards />
             </>
         );
     else if (section === "parliament")
@@ -1345,8 +1483,12 @@ export function Website() {
                     {error}
                 </p>
             )}
-            <main>{body}</main>
-            <Footer settings={settings} />
+            <main className={`public-page page-${section}`}>{body}</main>
+            {section === "home" ? (
+                <NavyFooter settings={settings} />
+            ) : (
+                <Footer settings={settings} />
+            )}
         </>
     );
 }

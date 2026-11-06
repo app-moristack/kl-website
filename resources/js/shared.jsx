@@ -297,17 +297,22 @@ async function api(path, options = {}) {
 function Brand() {
     return (
         <a className="brand" href={href()} aria-label="Khushal Lobine home">
-            <span className="monogram">
-                K<span>L</span>
-            </span>
-            <span>
-                KHUSHAL
-                <br />
-                <b>
-                    LOBINE
-                    <span className="brand-line" />
-                </b>
-            </span>
+            {location.pathname.split("/")[2] &&
+            !location.pathname.startsWith("/admin") ? (
+                <span className="reference-wordmark classic-wordmark">
+                    <img
+                        src="/reference-assets/about.jpg"
+                        alt="Khushal Lobine"
+                    />
+                </span>
+            ) : (
+                <span className="reference-wordmark">
+                    <img
+                        src="/reference-assets/home.jpg"
+                        alt="Khushal Lobine"
+                    />
+                </span>
+            )}
         </a>
     );
 }

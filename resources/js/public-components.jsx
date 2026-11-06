@@ -8,8 +8,11 @@ import {
     MapPin,
     FileText,
     Landmark,
+    Calendar,
+    MessageCircle,
 } from "lucide-react";
 import { locale, t, paths, href, api, Brand, Button } from "./shared";
+import { ReferenceImage } from "./reference-layout";
 function Header({ settings = {} }) {
     const [open, setOpen] = useState(false);
     const current = location.pathname.split("/")[2] || "";
@@ -97,7 +100,7 @@ function Footer({ settings }) {
                                   ? "DEKOUVER"
                                   : "EXPLORE"}
                         </h4>
-                        {paths.slice(1, 5).map((p, i) => (
+                        {paths.slice(1).map((p, i) => (
                             <a key={p} href={href(p)}>
                                 {t.nav[i + 1]}
                             </a>
@@ -243,45 +246,136 @@ function Contact({ settings, hideHero = false }) {
                         </p>
                     )}
                 </form>
-                <aside>
-                    <div className="contact-note">
-                        <Mail />
-                        <h3>{t.contact}</h3>
-                        <p>{t.contactSub}</p>
-                        {settings.email && (
-                            <a href={`mailto:${settings.email}`}>
-                                {settings.email}
+                <aside className="contact-options">
+                    <p className="eyebrow">
+                        {locale === "en"
+                            ? "OTHER WAYS TO REACH OUT"
+                            : t.contact}
+                    </p>
+                    <h2>
+                        {locale === "en" ? "How can we help?" : t.contactSub}
+                    </h2>
+                    <div className="contact-options-grid">
+                        {[
+                            [
+                                FileText,
+                                locale === "fr"
+                                    ? "Signaler une préoccupation"
+                                    : "Submit a Concern",
+                                "concern",
+                                locale === "fr"
+                                    ? "Partagez un problème ou une suggestion."
+                                    : "Share an issue, suggestion or concern about your community.",
+                            ],
+                            [
+                                Calendar,
+                                locale === "fr"
+                                    ? "Demander un rendez-vous"
+                                    : "Request an Appointment",
+                                "appointment",
+                                locale === "fr"
+                                    ? "Rencontrez Khushal Lobine ou son équipe."
+                                    : "Request a meeting with Khushal Lobine or his team.",
+                            ],
+                            [
+                                MessageCircle,
+                                "No. 15 Connect",
+                                "general",
+                                locale === "fr"
+                                    ? "Restez en contact avec votre communauté."
+                                    : "Stay connected for community news and updates.",
+                            ],
+                            [
+                                Mail,
+                                locale === "fr"
+                                    ? "Demandes des médias"
+                                    : "Media Enquiries",
+                                "media",
+                                locale === "fr"
+                                    ? "Interviews et demandes de presse."
+                                    : "For media requests, interviews or press-related enquiries.",
+                            ],
+                        ].map(([Icon, title, kind, body], i) => (
+                            <a
+                                className="contact-option"
+                                key={kind}
+                                href={
+                                    kind === "general" && settings.whatsapp
+                                        ? settings.whatsapp
+                                        : href("contact") + "?kind=" + kind
+                                }
+                            >
+                                <span className={"round-icon tone-" + i}>
+                                    <Icon />
+                                </span>
+                                <h3>{title}</h3>
+                                <p>{body}</p>
+                                <span className="text-link">{t.contact} →</span>
                             </a>
-                        )}
+                        ))}
                     </div>
-                    <div className="contact-note">
-                        <MapPin />
-                        <h3>La Caverne & Phoenix</h3>
-                        <p>
-                            {settings.address ||
-                                (locale === "fr"
-                                    ? "Circonscription n° 15 · Maurice"
-                                    : locale === "km"
-                                      ? "Sirkonskripsion No. 15 · Moris"
-                                      : "Constituency No. 15 · Mauritius")}
-                        </p>
-                        {settings.phone && (
-                            <a href={`tel:${settings.phone}`}>
-                                {settings.phone}
-                            </a>
-                        )}
-                    </div>
-                    {settings.whatsapp && (
-                        <a
-                            className="button whatsapp"
-                            href={settings.whatsapp}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            WhatsApp <ArrowUpRight size={18} />
-                        </a>
-                    )}
                 </aside>
+            </section>
+            <section className="contact-office">
+                <div className="container">
+                    <div>
+                        <p className="eyebrow">
+                            {locale === "en"
+                                ? "CONSTITUENCY OFFICE"
+                                : t.contact}
+                        </p>
+                        <h2>
+                            {locale === "fr"
+                                ? "Bureau de circonscription"
+                                : "Constituency Office"}{" "}
+                            — No. 15
+                        </h2>
+                        <p>{t.contactSub}</p>
+                        {[
+                            [Mail, t.contact, settings.email],
+                            [
+                                Calendar,
+                                locale === "fr"
+                                    ? "Rendez-vous"
+                                    : "Constituency Appointments",
+                                settings.phone,
+                            ],
+                            [MapPin, "La Caverne & Phoenix", settings.address],
+                        ].map(([Icon, title, detail]) => (
+                            <div className="office-row" key={title}>
+                                <span className="round-icon">
+                                    <Icon />
+                                </span>
+                                <div>
+                                    <h3>{title}</h3>
+                                    {detail && <p>{detail}</p>}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div>
+                        <ReferenceImage
+                            source="contact"
+                            rect={[448, 875, 413, 165]}
+                            alt="Illustrative constituency office map"
+                        />
+                        <div className="office-map-caption">
+                            <MapPin />
+                            <div>
+                                <strong>Constituency Office No. 15</strong>
+                                <p>
+                                    {settings.address ||
+                                        "La Caverne & Phoenix, Mauritius"}
+                                </p>
+                                <small>
+                                    {locale === "fr"
+                                        ? "Contactez le bureau pour obtenir les détails du lieu."
+                                        : "Contact the office for exact location details."}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     );
