@@ -1,29 +1,925 @@
-import React, {useState,useEffect} from 'react';
-import {createRoot} from 'react-dom/client';
-import {ArrowRight,ArrowUpRight,Landmark,MapPin,Lightbulb,Menu,X,Mail,Calendar,MessageSquare,Shield,Search,Plus,LogOut,LayoutDashboard,FileText,Inbox,Settings,Upload,Users,Eye,Check,Globe,ChevronRight} from 'lucide-react';
-const locale=document.documentElement.dataset.locale || document.documentElement.lang || 'en';
-const copy={en:{nav:['Home','About','Parliament','No. 15','Perspectives','Media','Contact'],eyebrow:'A LIFE IN LAW AND PUBLIC SERVICE',hero:<>A commitment<br/>to <em>people.</em><br/>A vision for<br/>Mauritius.</>,intro:'Law. Leadership. Public service.',desc:'Discover the work, ideas and public engagement of Khushal Lobine.',discover:'Discover Khushal',explore:'Explore parliamentary work',work:'Parliament. People. Perspectives.',workSub:'Three connected areas of public service, with people at the centre.',latest:'The latest from the journey',latestSub:'Parliamentary work, ideas and community updates.',all:'View all',read:'Read more',contact:'Connect with Khushal',contactSub:'Your ideas, concerns and suggestions matter. Get in touch with the team.',empty:'Updates will appear here once published by the editorial team.',send:'Send message',privacy:'Privacy',terms:'Terms',footer:'A stronger Mauritius. For all.',about:'Law, leadership and public service',aboutText:'This website brings together Khushal Lobine’s parliamentary work, engagement with Constituency No. 15 and perspectives on national issues.',paragraph:'Listening to people, engaging with ideas and working towards practical solutions are at the heart of public service.',message:'Representation starts with listening.',formTitle:'We would like to hear from you',name:'Full name',email:'Email address',subject:'Subject',body:'Your message',consent:'I agree that the team may use these details to respond to my enquiry.',received:'Thank you. Your message has been received.',search:'Search published content',types:['All','Articles','Parliament','Media','Community'],sections:{parliament:['PARLIAMENTARY WORK','Scrutiny. Accountability. Action.','Questions, speeches, debates and legislative contributions.'],constituency:['CONSTITUENCY NO. 15','La Caverne & Phoenix','Community priorities, local engagement and the people at the heart of our work.'],perspectives:['IDEAS & PERSPECTIVES','Ideas for a stronger Mauritius','Reflections on law, governance, democracy and opportunity.'],media:['MEDIA & INTERVIEWS','In conversation','Interviews, statements and public engagements.'],contact:['GET IN TOUCH','Your voice matters.','Speak to the team, share a concern or request an appointment.']}},fr:{nav:['Accueil','À propos','Parlement','N° 15','Perspectives','Médias','Contact'],eyebrow:'LE DROIT ET LE SERVICE PUBLIC',hero:<>Un engagement<br/>pour les <em>citoyens.</em><br/>Une vision pour<br/>Maurice.</>,intro:'Droit. Leadership. Service public.',desc:'Découvrez le travail, les idées et l’engagement public de Khushal Lobine.',discover:'Découvrir Khushal',explore:'Le travail parlementaire',work:'Parlement. Citoyens. Perspectives.',workSub:'Trois dimensions du service public, avec les citoyens au centre.',latest:'Les dernières actualités',latestSub:'Travail parlementaire, idées et actualités de la communauté.',all:'Tout voir',read:'Lire la suite',contact:'Contacter Khushal',contactSub:'Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.',empty:'Les actualités seront affichées après leur publication par l’équipe éditoriale.',send:'Envoyer le message',privacy:'Confidentialité',terms:'Conditions',footer:'Une île Maurice plus forte. Pour tous.',about:'Droit, leadership et service public',aboutText:'Ce site rassemble le travail parlementaire de Khushal Lobine, son engagement dans la circonscription n° 15 et ses perspectives sur les enjeux nationaux.',paragraph:'Écouter les citoyens, échanger des idées et rechercher des solutions concrètes sont au cœur du service public.',message:'La représentation commence par l’écoute.',formTitle:'Nous sommes à votre écoute',name:'Nom complet',email:'Adresse e-mail',subject:'Objet',body:'Votre message',consent:'J’accepte que l’équipe utilise ces informations pour répondre à ma demande.',received:'Merci. Votre message a bien été reçu.',search:'Rechercher dans les publications',types:['Tout','Articles','Parlement','Médias','Communauté'],sections:{parliament:['TRAVAIL PARLEMENTAIRE','Examen. Responsabilité. Action.','Questions, discours, débats et contributions législatives.'],constituency:['CIRCONSCRIPTION N° 15','La Caverne et Phoenix','Les priorités locales et les citoyens au cœur de notre travail.'],perspectives:['IDÉES ET PERSPECTIVES','Des idées pour une île Maurice plus forte','Réflexions sur le droit, la gouvernance et la démocratie.'],media:['MÉDIAS ET ENTRETIENS','En conversation','Entretiens, communiqués et rencontres publiques.'],contact:['CONTACT','Votre voix compte.','Contactez l’équipe ou demandez un rendez-vous.']}},km:{nav:['Akèy','Lor Khushal','Parlman','No. 15','Lide','Media','Kontak'],eyebrow:'KREOL MORISIEN',hero:<>Enn lang.<br/>Enn <em>kominote.</em><br/>Enn lavenir<br/>ansam.</>,intro:'Tradiksion pe atann revizion.',desc:'Bann tradiksion Kreol Morisien pou pibliye apre enn revizion imin.',discover:'Lor Khushal',explore:'Travay dan Parlman',work:'Parlman. Dimoun. Lide.',workSub:'Servis piblik avek dimoun dan sant nou travay.',latest:'Bann dernie piblikasion',latestSub:'Travay dan Parlman ek dan kominote.',all:'Get tou',read:'Lir plis',contact:'Kontak Khushal',contactSub:'Partaz ou bann lide ek ou bann konsern avek lekip.',empty:'Bann piblikasion pou disponib apre revizion ek piblikasion.',send:'Avoy mesaz',privacy:'Konfidansialite',terms:'Kondision',footer:'Enn Moris pli for. Pou tou dimoun.',about:'Lalwa ek servis piblik',aboutText:'Tradiksion sa paz-la pe atann revizion.',paragraph:'Tradiksion pe atann revizion.',message:'Ekout dimoun.',formTitle:'Kontak nou lekip',name:'Nom konple',email:'Adres email',subject:'Sizet',body:'Ou mesaz',consent:'Mo dakor ki lekip servi sa bann linformasion-la pou reponn mwa.',received:'Mersi. Nou finn resevwar ou mesaz.',search:'Rod enn piblikasion',types:['Tou','Lartik','Parlman','Media','Kominote'],sections:{parliament:['TRAVAY DAN PARLMAN','Parlman','Bann piblikasion ki finn revize.'],constituency:['SIRKONSKRIPSION NO. 15','La Caverne ek Phoenix','Bann piblikasion ki finn revize.'],perspectives:['LIDE','Lide pou Moris','Bann piblikasion ki finn revize.'],media:['MEDIA','Media ek interview','Bann piblikasion ki finn revize.'],contact:['KONTAK','Ou lavwa konte.','Kontak nou lekip.']}}};
-const t=copy[locale]||copy.en;
-const paths=['','about','parliament','constituency','perspectives','media','contact'];
-const href=(p='')=>`/${locale}${p?'/'+p:''}`;
-async function api(path,options={}){const headers={'Accept':'application/json','X-CSRF-TOKEN':document.querySelector('meta[name="csrf-token"]').content,...(options.body instanceof FormData?{}:{'Content-Type':'application/json'}),...options.headers};const res=await fetch(path,{credentials:'same-origin',...options,headers});const data=await res.json().catch(()=>({message:'Unexpected server response.'}));if(data.csrf)document.querySelector('meta[name="csrf-token"]').content=data.csrf;if(!res.ok)throw new Error(Object.values(data.errors||{}).flat().join(' ')||data.message||'Request failed.');return data;}
-function Brand(){return <a className="brand" href={href()} aria-label="Khushal Lobine home"><span className="monogram">K<span>L</span></span><span>KHUSHAL<br/><b>LOBINE<span className="brand-line"/></b></span></a>}
-function Button({children,to,secondary=false,...rest}){return to?<a className={`button ${secondary?'secondary':''}`} href={to} {...rest}>{children}<ArrowUpRight size={17}/></a>:<button className={`button ${secondary?'secondary':''}`} {...rest}>{children}<ArrowRight size={17}/></button>}
-function Header(){const[open,setOpen]=useState(false);const current=location.pathname.split('/')[2]||'';return <header className="header"><div className="nav-wrap"><Brand/><button className="menu-toggle" onClick={()=>setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>{open?<X/>:<Menu/>}</button><nav className={open?'open':''} aria-label="Main navigation">{paths.map((p,i)=><a key={p} className={current===p?'active':''} href={href(p)}>{t.nav[i]}</a>)}</nav><div className="languages" aria-label="Language">{['en','fr','km'].map(l=><a key={l} lang={l==='km'?'mfe':l} className={locale===l?'selected':''} href={`/${l}/${location.pathname.split('/').slice(2).join('/')}`.replace(/\/$/,'')}>{l==='km'?'KR':l.toUpperCase()}</a>)}</div></div></header>}
-function Footer({settings}){return <><section className="connect"><div className="container connect-inner"><div><p className="eyebrow light">{t.contact}</p><h2>{t.message}</h2><p>{t.contactSub}</p></div><Button to={href('contact')} secondary>{t.contact}</Button></div></section><footer><div className="container footer-grid"><div><Brand/><p>{t.footer}</p></div><div><h4>{locale==='fr'?'EXPLORER':'EXPLORE'}</h4>{paths.slice(1,5).map((p,i)=><a key={p} href={href(p)}>{t.nav[i+1]}</a>)}</div><div><h4>CONTACT</h4><a href={href('contact')}>{t.contact}</a>{settings.email&&<a href={`mailto:${settings.email}`}>{settings.email}</a>}{settings.address&&<p>{settings.address}</p>}</div><div className="flag-block"><span className="flag" aria-label="Mauritius flag"/><p>{t.footer}</p></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} Khushal Lobine</span><div><a href={href('privacy')}>{t.privacy}</a><a href={href('terms')}>{t.terms}</a></div></div></footer></>}
-function Cards({items}){return items.length?<div className="article-grid">{items.map(item=><a className="article-card" href={href('articles/'+item.slug)} key={item.id}><div className="article-image">{item.image?<img src={item.image} alt="" loading="lazy"/>:<div className="abstract-image"><Landmark size={55}/></div>}<span className="category">{item.category||item.type}</span></div><div className="article-copy"><small>{item.published_at&&new Intl.DateTimeFormat(locale==='km'?'en':locale,{dateStyle:'medium'}).format(new Date(item.published_at))}</small><h3>{item.title}</h3><p>{item.excerpt}</p><span className="text-link">{t.read}<ArrowRight size={16}/></span></div></a>)}</div>:<div className="empty"><FileText size={25}/><p>{t.empty}</p></div>}
-function Home({items}){return <><section className="hero"><div className="hero-pattern"/><div className="container hero-inner"><div className="hero-copy"><p className="eyebrow light"><span/> {t.eyebrow}</p><h1>{t.hero}</h1><p className="hero-intro">{t.intro}</p><p className="hero-description">{t.desc}</p><div className="button-row"><Button to={href('about')}>{t.discover}</Button><a className="quiet-link" href={href('parliament')}>{t.explore}<ArrowUpRight size={17}/></a></div></div><div className="hero-portrait"><div className="portrait-ring"/><img src="/images/hero.jpg" alt="Khushal Lobine" fetchPriority="high"/><div className="portrait-caption"><span className="red-dot"/> KHUSHAL LOBINE <span>MAURITIUS</span></div></div></div><div className="hero-index">01 <span>/ PUBLIC SERVICE</span></div></section><section className="about-strip container"><div><p className="eyebrow">{t.nav[1]} KHUSHAL LOBINE</p><h2>{t.about}</h2></div><div><p>{t.aboutText}</p><a className="text-link" href={href('about')}>{t.discover}<ArrowRight size={16}/></a></div><blockquote><span>“</span>{t.message}<cite>KHUSHAL LOBINE</cite></blockquote></section><section className="work-section"><div className="container"><p className="eyebrow">{locale==='fr'?'DÉCOUVRIR SON TRAVAIL':'EXPLORE THE WORK'}</p><div className="section-heading"><h2>{t.work}</h2><p>{t.workSub}</p></div><div className="work-grid">{[Landmark,MapPin,Lightbulb].map((Icon,i)=><a className={`work-card work-${i}`} key={i} href={href(paths[i===0?2:i===1?3:4])}><div><Icon size={28}/><span className="work-number">0{i+1}</span></div><h3>{t.nav[i===0?2:i===1?3:4]}</h3><p>{[t.sections.parliament[2],t.sections.constituency[2],t.sections.perspectives[2]][i]}</p><span>{t.all}<ArrowUpRight size={19}/></span></a>)}</div></div></section><section className="container section"><p className="eyebrow">{locale==='fr'?'ACTUALITÉS':'LATEST UPDATES'}</p><div className="section-heading"><div><h2>{t.latest}</h2><p>{t.latestSub}</p></div><a className="text-link" href={href('perspectives')}>{t.all}<ArrowRight size={16}/></a></div><Cards items={items.filter(x=>x.type!=='page').slice(0,3)}/></section><section className="container feature-panel"><img src="/images/portrait.jpg" alt="Portrait of Khushal Lobine" loading="lazy"/><div><p className="eyebrow">{t.nav[4]}</p><h2>{t.sections.perspectives[1]}</h2><p>{t.paragraph}</p><Button to={href('perspectives')}>{t.nav[4]}</Button></div><span className="feature-mark">“</span></section></>}
-function Listing({section,items}){const[q,setQ]=useState('');const[category,setCategory]=useState('');const map={parliament:'parliament',constituency:'community',media:'media',perspectives:'article'};const content=items.filter(i=>i.type===map[section]||section==='perspectives'&&['article','parliament'].includes(i.type));const filtered=content.filter(i=>(!category||i.category===category)&&`${i.title} ${i.excerpt||''}`.toLowerCase().includes(q.toLowerCase()));const c=t.sections[section];return <><PageHero eyebrow={c[0]} title={c[1]} description={c[2]}/><section className="container section"><div className="filter-bar"><label className="search-box"><Search size={19}/><input aria-label={t.search} placeholder={t.search} value={q} onChange={e=>setQ(e.target.value)}/></label><select aria-label="Category" value={category} onChange={e=>setCategory(e.target.value)}><option value="">{t.types[0]}</option>{[...new Set(content.map(i=>i.category).filter(Boolean))].map(c=><option key={c}>{c}</option>)}</select><span>{filtered.length} {locale==='fr'?'publications':'publications'}</span></div><Cards items={filtered}/></section></>}
-function PageHero({eyebrow,title,description}){return <section className="page-hero"><div className="container"><p className="eyebrow light">{eyebrow}</p><h1>{title}</h1><p>{description}</p></div></section>}
-function About({items}){const pages=items.filter(i=>i.type==='page');return <><PageHero eyebrow={t.nav[1]} title={t.about} description={t.desc}/><section className="container biography"><img src="/images/standing.jpg" alt="Khushal Lobine"/><div><p className="eyebrow">KHUSHAL LOBINE</p><h2>{t.intro}</h2><p>{t.aboutText}</p><p>{t.paragraph}</p><blockquote>{t.message}</blockquote><Button to={href('contact')}>{t.contact}</Button></div></section>{pages.length>0&&<section className="container section"><Cards items={pages}/></section>}</>}
-function Contact({settings}){const[state,setState]=useState('');const[busy,setBusy]=useState(false);async function submit(e){e.preventDefault();setBusy(true);setState('');const form=new FormData(e.currentTarget);try{await api('/api/enquiries',{method:'POST',body:JSON.stringify({...Object.fromEntries(form),locale,consent:form.get('consent')==='on'})});setState(t.received);e.target.reset();}catch(err){setState(err.message)}finally{setBusy(false)}}return <><PageHero eyebrow={t.sections.contact[0]} title={t.sections.contact[1]} description={t.sections.contact[2]}/><section className="container contact-grid section"><form className="contact-form" onSubmit={submit}><p className="eyebrow">CONTACT</p><h2>{t.formTitle}</h2><div className="form-two"><label>{t.name}<input name="name" required maxLength={120} autoComplete="name"/></label><label>{t.email}<input type="email" name="email" required autoComplete="email"/></label></div><label>{t.subject}<input name="subject" required maxLength={180}/></label><label>{locale==='fr'?'Type de demande':'Enquiry type'}<select name="kind" defaultValue={new URLSearchParams(location.search).get('kind')||'general'}><option value="general">{t.subject}</option><option value="concern">{locale==='fr'?'Signaler une préoccupation':'Submit a concern'}</option><option value="appointment">{locale==='fr'?'Rendez-vous':'Appointment request'}</option><option value="media">{t.nav[5]}</option></select></label><label>{t.body}<textarea name="message" rows={6} minLength={10} maxLength={5000} required/></label><input className="honeypot" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true"/><label className="check-label"><input type="checkbox" name="consent" required/>{t.consent}</label><Button disabled={busy}>{busy?'…':t.send}</Button>{state&&<p role="status" className="notice">{state}</p>}</form><aside><div className="contact-note"><Mail/><h3>{t.contact}</h3><p>{t.contactSub}</p>{settings.email&&<a href={`mailto:${settings.email}`}>{settings.email}</a>}</div><div className="contact-note"><MapPin/><h3>La Caverne & Phoenix</h3><p>{settings.address||'Constituency No. 15 · Mauritius'}</p>{settings.phone&&<a href={`tel:${settings.phone}`}>{settings.phone}</a>}</div>{settings.whatsapp&&<a className="button whatsapp" href={settings.whatsapp} rel="noopener noreferrer" target="_blank">WhatsApp <ArrowUpRight size={18}/></a>}</aside></section></>}
-function Article({items}){const slug=location.pathname.split('/')[3];const item=items.find(i=>i.slug===slug);return item?<><PageHero eyebrow={item.category||item.type} title={item.title} description={item.excerpt}/><article className="container article-detail">{item.image&&<img className="detail-cover" src={item.image} alt=""/>}<p className="article-body">{item.body}</p>{item.source_url&&<a className="text-link" href={item.source_url} rel="noopener noreferrer" target="_blank">{locale==='fr'?'Source officielle':'Original source'}<ArrowUpRight size={17}/></a>}<a className="text-link" href={href('perspectives')}>{t.all}<ArrowRight size={17}/></a></article></>:<div className="container section"><h1>{t.empty}</h1></div>}
-function Legal({terms=false}){return <><PageHero eyebrow="KL WEBSITE" title={terms?t.terms:t.privacy}/><article className="container article-detail"><h2>{locale==='fr'?'Information provisoire':'Interim information'}</h2><p>{terms?'Editorial material is provided for general information. External sources remain the responsibility of their publishers. Final terms will be reviewed before public launch.':'We collect contact details and messages only when you submit a form. Basic browsing statistics use a daily pseudonymous session identifier, without storing your IP address. Analytics respect the Do Not Track browser setting, exclude signed-in staff and are retained for 90 days. Session cookies support security and administration. Final controller contact details, lawful basis, retention periods for enquiries and rights information must be completed before public launch.'}</p></article></>}
-function PublicApp(){const[items,setItems]=useState([]);const[settings,setSettings]=useState({});const[error,setError]=useState('');const[loading,setLoading]=useState(true);useEffect(()=>{Promise.all([api('/api/content/'+locale),api('/api/settings')]).then(([c,s])=>{setItems(c.data);setSettings(s)}).catch(e=>setError(e.message)).finally(()=>setLoading(false))},[]);const section=location.pathname.split('/')[2]||'';return <><Header/>{locale==='km'&&<div className="review-banner">Kreol Morisien: interface draft awaiting human review. Only reviewed, published editorial content is listed.</div>}{error&&<div className="container notice" role="alert">{error}</div>}<main>{loading&&section==='articles'?<div className="container section">Loading…</div>:section==='articles'?<Article items={items}/>:section==='about'?<About items={items}/>:section==='contact'?<Contact settings={settings}/>:section==='privacy'||section==='terms'?<Legal terms={section==='terms'}/>:t.sections[section]?<Listing section={section} items={items}/>:<Home items={items}/>}</main><Footer settings={settings}/></>}
-const blankTranslation=()=>({title:'',excerpt:'',body:'',meta_description:'',status:'draft',reviewed:false});
-const blankContent=()=>({slug:'',type:'article',category:'',image:'',source_url:'',event_date:'',featured:false,position:0,published_at:'',translations:{en:blankTranslation(),fr:blankTranslation(),km:blankTranslation()}});
-function Login({onLogin}){const[error,setError]=useState('');const[busy,setBusy]=useState(false);return <main className="login-page"><div className="login-card"><Brand/><p className="eyebrow">EDITORIAL WORKSPACE</p><h1>Welcome back.</h1><p>Manage the stories, ideas and work that connect us.</p><form onSubmit={async e=>{e.preventDefault();setBusy(true);try{const d=await api('/api/login',{method:'POST',body:JSON.stringify(Object.fromEntries(new FormData(e.target)))});onLogin(d.user)}catch(e){setError(e.message)}finally{setBusy(false)}}}><label>Email<input name="email" type="email" required autoComplete="username"/></label><label>Password<input name="password" type="password" required autoComplete="current-password"/></label><label>Authenticator code<input name="code" inputMode="numeric" pattern="[0-9]{6}" maxLength={6} autoComplete="one-time-code"/></label>{error&&<p role="alert" className="notice">{error}</p>}<Button disabled={busy}>{busy?'Signing in…':'Sign in securely'}</Button></form><small><Shield size={14}/> Protected editorial access · No public registration</small><a className="text-link" href="/en">Back to website<ArrowRight size={16}/></a></div></main>}
-function Editor({value,onSave,onCancel}){const[form,setForm]=useState({...value,translations:{en:blankTranslation(),fr:blankTranslation(),km:blankTranslation(),...value.translations},published_at:value.published_at?new Date(value.published_at).toLocaleString('sv-SE',{timeZone:'Indian/Mauritius'}).slice(0,16).replace(' ','T'):''});const[lang,setLang]=useState('en');const[msg,setMsg]=useState('');const[busy,setBusy]=useState(false);const tr=form.translations[lang];const set=(key,v)=>setForm({...form,[key]:v});const setT=(key,v)=>setForm({...form,translations:{...form.translations,[lang]:{...tr,[key]:v,...(['title','excerpt','body'].includes(key)?{reviewed:false,status:tr.status==='published'?'draft':tr.status}:{})}}});async function save(e){e.preventDefault();setBusy(true);try{const data={...form,published_at:form.published_at||null,event_date:form.event_date||null,image:form.image||null,source_url:form.source_url||null,translations:Object.fromEntries(Object.entries(form.translations).filter(([,v])=>v.title.trim()))};await api('/api/admin/contents'+(form.id?'/'+form.id:''),{method:form.id?'PUT':'POST',body:JSON.stringify(data)});onSave()}catch(e){setMsg(e.message)}finally{setBusy(false)}}return <form className="editor" onSubmit={save}><div className="admin-heading"><div><p className="eyebrow">CONTENT STUDIO</p><h1>{form.id?'Edit publication':'New publication'}</h1></div><button type="button" className="icon-button" onClick={onCancel} aria-label="Close editor"><X/></button></div><div className="editor-grid"><section className="panel"><div className="tabs">{['en','fr','km'].map(l=><button type="button" key={l} className={lang===l?'selected':''} onClick={()=>setLang(l)}>{({en:'English',fr:'Français',km:'Kreol Morisien'})[l]}</button>)}</div><label>Title<input value={tr.title} onChange={e=>setT('title',e.target.value)} maxLength={180}/></label><label>Summary<textarea rows={3} value={tr.excerpt||''} onChange={e=>setT('excerpt',e.target.value)} maxLength={500}/></label><label>Article text <small>Plain text; line breaks are preserved.</small><textarea className="body-editor" value={tr.body||''} onChange={e=>setT('body',e.target.value)}/></label><label>SEO description<textarea rows={2} value={tr.meta_description||''} maxLength={170} onChange={e=>setT('meta_description',e.target.value)}/></label><label>Translation status<select value={tr.status} onChange={e=>setT('status',e.target.value)}>{['draft','review','approved','published'].map(s=><option key={s}>{s}</option>)}</select></label>{lang==='km'&&<label className="check-label"><input type="checkbox" checked={tr.reviewed} onChange={e=>setT('reviewed',e.target.checked)}/>A human reviewer has checked this Kreol translation.</label>}</section><aside className="panel"><label>URL slug<input required value={form.slug} onChange={e=>set('slug',e.target.value)} pattern="[A-Za-z0-9_-]+"/></label><label>Content type<select value={form.type} onChange={e=>set('type',e.target.value)}>{['article','parliament','media','community','page'].map(s=><option key={s}>{s}</option>)}</select></label><label>Topic / category<input value={form.category||''} onChange={e=>set('category',e.target.value)}/></label><label>Publication date/time (Mauritius)<input type="datetime-local" value={form.published_at} onChange={e=>set('published_at',e.target.value)}/></label><small>Required to publish. A future date schedules publication.</small><label>Parliament / event date<input type="date" value={form.event_date?.slice(0,10)||''} onChange={e=>set('event_date',e.target.value)}/></label><label>Official source / video URL<input type="url" value={form.source_url||''} onChange={e=>set('source_url',e.target.value)}/></label><label>Cover image<input value={form.image||''} onChange={e=>set('image',e.target.value)} placeholder="/images/portrait.jpg"/></label><label className="upload-control"><Upload size={17}/> Upload photo<input type="file" accept="image/jpeg,image/png,image/webp" onChange={async e=>{if(!e.target.files[0])return;try{const data=new FormData;data.append('file',e.target.files[0]);const r=await api('/api/admin/media',{method:'POST',body:data});set('image',r.url)}catch(e){setMsg(e.message)}}}/></label>{form.image&&<img className="cover-preview" src={form.image} alt="Cover preview"/>}<label className="check-label"><input type="checkbox" checked={form.featured} onChange={e=>set('featured',e.target.checked)}/>Featured placement</label><label>Display order<input type="number" min="0" max="9999" value={form.position} onChange={e=>set('position',Number(e.target.value))}/></label>{msg&&<p className="notice" role="alert">{msg}</p>}<Button disabled={busy}>{busy?'Saving…':'Save publication'}</Button></aside></div></form>}
-function Dashboard({stats,days,setDays}){return <><div className="admin-heading"><div><p className="eyebrow">YOUR WEBSITE AT A GLANCE</p><h1>Overview</h1><p>Stories published. People reached. Conversations started.</p></div><select aria-label="Analytics date range" value={days} onChange={e=>setDays(e.target.value)}>{[7,30,90].map(d=><option key={d} value={d}>Last {d} days</option>)}</select></div><div className="stat-grid">{[[Users,'Daily unique visitors',stats.visitors],[Eye,'Page views',stats.page_views],[FileText,'Publications',stats.contents],[Inbox,'New enquiries',stats.enquiries]].map(([Icon,label,val])=><div className="stat" key={label}><Icon/><span>{label}</span><strong>{val??0}</strong></div>)}</div><div className="dashboard-grid"><section className="panel"><p className="eyebrow">AUDIENCE</p><h2>Visits over time</h2><p className="muted">Daily pseudonymous visitors; totals are not deduplicated across days.</p><div className="bar-chart">{stats.daily?.length?stats.daily.map(d=><div className="bar-column" key={d.day} title={`${d.day}: ${d.views} views, ${d.visitors} visitors`}><span>{d.views}</span><div style={{height:Math.max(3,Number(d.views)/Math.max(...stats.daily.map(v=>Number(v.views)))*140)+'px'}}/><small>{d.day.slice(5)}</small></div>):<div className="empty">Visitor activity will appear after the public site is browsed.</div>}</div></section><section className="panel"><p className="eyebrow">CONTENT PERFORMANCE</p><h2>Most viewed pages</h2>{stats.top_pages?.map(p=><div className="data-row" key={p.path}><span>{p.path}</span><strong>{p.views}</strong></div>)}{!stats.top_pages?.length&&<p className="muted">No page views yet.</p>}</section></div><section className="panel"><p className="eyebrow">EDITORIAL ACTIVITY</p><h2>Recent changes</h2>{stats.activity?.map(a=><div className="data-row" key={a.id}><span>{a.action} {a.details?.slug||''}</span><small>{new Date(a.created_at).toLocaleString()}</small></div>)}</section></>}
-function AdminApp(){const[user,setUser]=useState(null);const[ready,setReady]=useState(false);const[tab,setTab]=useState('overview');const[stats,setStats]=useState({});const[contents,setContents]=useState([]);const[enquiries,setEnquiries]=useState([]);const[settings,setSettings]=useState({});const[editing,setEditing]=useState(null);const[error,setError]=useState('');const[days,setDays]=useState(30);const[query,setQuery]=useState('');useEffect(()=>{api('/api/session').then(d=>setUser(d.user)).catch(e=>setError(e.message)).finally(()=>setReady(true))},[]);async function reload(){try{const[d,c,e,s]=await Promise.all([api('/api/admin/dashboard?days='+days),api('/api/admin/contents'),api('/api/admin/enquiries'),api('/api/settings')]);setStats(d);setContents(c.data);setEnquiries(e.data);setSettings(s)}catch(e){setError(e.message)}}useEffect(()=>{if(user)reload()},[user,days]);if(!ready)return <div className="login-page">Loading workspace…</div>;if(!user)return <Login onLogin={setUser}/>;return <div className="admin-layout"><aside className="admin-sidebar"><Brand/><p className="sidebar-label">EDITORIAL WORKSPACE</p><nav>{[[LayoutDashboard,'overview','Overview'],[FileText,'content','Publications'],[Inbox,'enquiries','Enquiries'],[Settings,'settings','Site settings']].filter(([,id])=>id!=='settings'||user.role==='admin').map(([Icon,id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>{setTab(id);setEditing(null);setError('')}}><Icon size={19}/>{label}{id==='enquiries'&&stats.enquiries>0&&<span className="count">{stats.enquiries}</span>}</button>)}</nav><a className="view-site" href="/en" target="_blank" rel="noopener noreferrer"><Globe size={17}/>View website<ArrowUpRight size={15}/></a><div className="admin-user"><span>{user.name?.slice(0,1)}</span><div>{user.name}<small>{user.role}</small></div><button className="icon-button" aria-label="Sign out" onClick={async()=>{try{await api('/api/logout',{method:'POST'});location.reload()}catch(e){setError(e.message)}}}><LogOut size={18}/></button></div></aside><main className="admin-main"><div className="admin-top"><span>KL WEBSITE <ChevronRight size={14}/> {tab}</span><span><Shield size={14}/> Private workspace</span></div>{error&&<p className="notice" role="alert">{error}</p>}{editing?<Editor value={editing} onCancel={()=>setEditing(null)} onSave={()=>{setEditing(null);reload()}}/>:tab==='overview'?<Dashboard stats={stats} days={days} setDays={setDays}/>:tab==='content'?<><div className="admin-heading"><div><p className="eyebrow">CONTENT STUDIO</p><h1>Publications</h1><p>One story. Three languages. Your editorial control.</p></div><Button onClick={()=>setEditing(blankContent())}><Plus size={17}/>New publication</Button></div><label className="search-box"><Search size={18}/><input placeholder="Search publications" value={query} onChange={e=>setQuery(e.target.value)}/></label><section className="panel table-wrap"><table><thead><tr><th>Publication</th><th>Type</th><th>EN / FR / KR</th><th>Featured</th><th>Actions</th></tr></thead><tbody>{contents.filter(c=>JSON.stringify(c.translations).toLowerCase().includes(query.toLowerCase())).map(c=><tr key={c.id}><td><strong>{c.translations.en?.title||c.slug}</strong><small>/{c.slug}</small></td><td>{c.type}</td><td>{['en','fr','km'].map(l=><span key={l} className={'status '+(c.translations[l]?.status||'missing')}>{l.toUpperCase()}: {c.translations[l]?.status||'missing'}</span>)}</td><td>{c.featured?<Check size={18}/>:'—'}</td><td><button className="text-button" onClick={()=>setEditing(c)}>Edit</button>{user.role==='admin'&&<button className="text-button danger" onClick={async()=>{if(!confirm('Permanently delete this publication?'))return;try{await api('/api/admin/contents/'+c.id,{method:'DELETE'});reload()}catch(e){setError(e.message)}}}>Delete</button>}</td></tr>)}</tbody></table>{!contents.length&&<div className="empty">Create your first publication to get started.</div>}</section></>:tab==='enquiries'?<><div className="admin-heading"><div><p className="eyebrow">CONVERSATIONS</p><h1>Enquiries</h1><p>Messages, concerns and appointment requests.</p></div></div>{enquiries.map(e=><section className="panel enquiry" key={e.id}><div className="data-row"><h3>{e.subject}</h3><select aria-label="Enquiry status" value={e.status} onChange={async ev=>{try{await api('/api/admin/enquiries/'+e.id,{method:'PATCH',body:JSON.stringify({status:ev.target.value})});reload()}catch(e){setError(e.message)}}}>{['new','in_progress','closed'].map(s=><option key={s}>{s}</option>)}</select></div><small>{e.name} · {e.email} · {e.kind} · {e.locale}</small><p className="article-body">{e.message}</p></section>)}{!enquiries.length&&<div className="panel empty">No enquiries received yet.</div>}</>:<><div className="admin-heading"><div><p className="eyebrow">CONFIGURATION</p><h1>Site settings</h1></div></div><form className="panel settings-form" onSubmit={async e=>{e.preventDefault();try{await api('/api/admin/settings',{method:'PUT',body:JSON.stringify(settings)});setError('Settings saved.')}catch(e){setError(e.message)}}}>{[['email','Office email'],['phone','Office phone'],['address','Office address'],['whatsapp','WhatsApp HTTPS URL'],['party_url','Party website HTTPS URL']].map(([key,label])=><label key={key}>{label}<input type={key==='email'?'email':key.includes('url')||key==='whatsapp'?'url':'text'} value={settings[key]||''} onChange={e=>setSettings({...settings,[key]:e.target.value})}/></label>)}<Button>Save settings</Button></form></>}</main></div>}
-createRoot(document.getElementById('app')).render(location.pathname.startsWith('/admin')?<AdminApp/>:<PublicApp/>);
+import React, { useState, useEffect } from "react";
+import { createRoot } from "react-dom/client";
+import {
+    ArrowRight,
+    ArrowUpRight,
+    Landmark,
+    MapPin,
+    Lightbulb,
+    Menu,
+    X,
+    Mail,
+    Calendar,
+    MessageSquare,
+    Shield,
+    Search,
+    Plus,
+    LogOut,
+    LayoutDashboard,
+    FileText,
+    Inbox,
+    Settings,
+    Upload,
+    Users,
+    Eye,
+    Check,
+    Globe,
+    ChevronRight,
+} from "lucide-react";
+import { locale, t, copy, paths, href, api, Brand, Button } from "./shared";
+import {
+    PageStudio,
+    StaffStudio,
+    MediaLibrary,
+    History,
+    ContentExtras,
+    StaffActivation,
+    ForgotAccess,
+    Login,
+} from "./workspace";
+import { Website } from "./website";
+const blankTranslation = () => ({
+    title: "",
+    excerpt: "",
+    body: "",
+    meta_description: "",
+    status: "draft",
+    reviewed: false,
+});
+const blankContent = () => ({
+    slug: "",
+    type: "article",
+    category: "",
+    image: "",
+    source_url: "",
+    event_date: "",
+    featured: false,
+    position: 0,
+    published_at: "",
+    translations: {
+        en: blankTranslation(),
+        fr: blankTranslation(),
+        km: blankTranslation(),
+    },
+});
+function Editor({ value, onSave, onCancel }) {
+    const [form, setForm] = useState({
+        ...value,
+        translations: {
+            en: blankTranslation(),
+            fr: blankTranslation(),
+            km: blankTranslation(),
+            ...value.translations,
+        },
+        published_at: value.published_at
+            ? new Date(value.published_at)
+                  .toLocaleString("sv-SE", { timeZone: "Indian/Mauritius" })
+                  .slice(0, 16)
+                  .replace(" ", "T")
+            : "",
+    });
+    const [lang, setLang] = useState("en");
+    const [msg, setMsg] = useState("");
+    const [busy, setBusy] = useState(false);
+    const tr = form.translations[lang];
+    const set = (key, v) => setForm({ ...form, [key]: v });
+    const setT = (key, v) =>
+        setForm({
+            ...form,
+            translations: {
+                ...form.translations,
+                [lang]: {
+                    ...tr,
+                    [key]: v,
+                    ...(["title", "excerpt", "body"].includes(key)
+                        ? {
+                              reviewed: false,
+                              status:
+                                  tr.status === "published"
+                                      ? "draft"
+                                      : tr.status,
+                          }
+                        : {}),
+                },
+            },
+        });
+    async function save(e) {
+        e.preventDefault();
+        setBusy(true);
+        try {
+            const data = {
+                ...form,
+                published_at: form.published_at || null,
+                event_date: form.event_date || null,
+                image: form.image || null,
+                source_url: form.source_url || null,
+                translations: Object.fromEntries(
+                    Object.entries(form.translations).filter(([, v]) =>
+                        v.title.trim(),
+                    ),
+                ),
+            };
+            await api("/api/admin/contents" + (form.id ? "/" + form.id : ""), {
+                method: form.id ? "PUT" : "POST",
+                body: JSON.stringify(data),
+            });
+            onSave();
+        } catch (e) {
+            setMsg(e.message);
+        } finally {
+            setBusy(false);
+        }
+    }
+    return (
+        <form className="editor" onSubmit={save}>
+            <div className="admin-heading">
+                <div>
+                    <p className="eyebrow">CONTENT STUDIO</p>
+                    <h1>{form.id ? "Edit publication" : "New publication"}</h1>
+                </div>
+                <button
+                    type="button"
+                    className="icon-button"
+                    onClick={onCancel}
+                    aria-label="Close editor"
+                >
+                    <X />
+                </button>
+            </div>
+            <div className="editor-grid">
+                <section className="panel">
+                    <div className="tabs">
+                        {["en", "fr", "km"].map((l) => (
+                            <button
+                                type="button"
+                                key={l}
+                                className={lang === l ? "selected" : ""}
+                                onClick={() => setLang(l)}
+                            >
+                                {
+                                    {
+                                        en: "English",
+                                        fr: "Français",
+                                        km: "Kreol Morisien",
+                                    }[l]
+                                }
+                            </button>
+                        ))}
+                    </div>
+                    <label>
+                        Title
+                        <input
+                            value={tr.title}
+                            onChange={(e) => setT("title", e.target.value)}
+                            maxLength={180}
+                        />
+                    </label>
+                    <label>
+                        Summary
+                        <textarea
+                            rows={3}
+                            value={tr.excerpt || ""}
+                            onChange={(e) => setT("excerpt", e.target.value)}
+                            maxLength={500}
+                        />
+                    </label>
+                    <label>
+                        Article text{" "}
+                        <small>Plain text; line breaks are preserved.</small>
+                        <textarea
+                            className="body-editor"
+                            value={tr.body || ""}
+                            onChange={(e) => setT("body", e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        SEO description
+                        <textarea
+                            rows={2}
+                            value={tr.meta_description || ""}
+                            maxLength={170}
+                            onChange={(e) =>
+                                setT("meta_description", e.target.value)
+                            }
+                        />
+                    </label>
+                    <label>
+                        Translation status
+                        <select
+                            value={tr.status}
+                            onChange={(e) => setT("status", e.target.value)}
+                        >
+                            {["draft", "review", "approved", "published"].map(
+                                (s) => (
+                                    <option key={s}>{s}</option>
+                                ),
+                            )}
+                        </select>
+                    </label>
+                    {lang === "km" && (
+                        <label className="check-label">
+                            <input
+                                type="checkbox"
+                                checked={tr.reviewed}
+                                onChange={(e) =>
+                                    setT("reviewed", e.target.checked)
+                                }
+                            />
+                            A human reviewer has checked this Kreol translation.
+                        </label>
+                    )}
+                </section>
+                <aside className="panel">
+                    <ContentExtras form={form} setForm={setForm} lang={lang} />
+                    <label>
+                        URL slug
+                        <input
+                            required
+                            value={form.slug}
+                            onChange={(e) => set("slug", e.target.value)}
+                            pattern="[A-Za-z0-9_-]+"
+                        />
+                    </label>
+                    <label>
+                        Content type
+                        <select
+                            value={form.type}
+                            onChange={(e) => set("type", e.target.value)}
+                        >
+                            {[
+                                "article",
+                                "parliament",
+                                "media",
+                                "community",
+                                "page",
+                                "gallery",
+                            ].map((s) => (
+                                <option key={s}>{s}</option>
+                            ))}
+                        </select>
+                    </label>
+                    <label>
+                        Topic / category
+                        <input
+                            value={form.category || ""}
+                            onChange={(e) => set("category", e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        Publication date/time (Mauritius)
+                        <input
+                            type="datetime-local"
+                            value={form.published_at}
+                            onChange={(e) =>
+                                set("published_at", e.target.value)
+                            }
+                        />
+                    </label>
+                    <small>
+                        Required to publish. A future date schedules
+                        publication.
+                    </small>
+                    <label>
+                        Parliament / event date
+                        <input
+                            type="date"
+                            value={form.event_date?.slice(0, 10) || ""}
+                            onChange={(e) => set("event_date", e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        Official source / video URL
+                        <input
+                            type="url"
+                            value={form.source_url || ""}
+                            onChange={(e) => set("source_url", e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        Cover image
+                        <input
+                            value={form.image || ""}
+                            onChange={(e) => set("image", e.target.value)}
+                            placeholder="/images/portrait.jpg"
+                        />
+                    </label>
+                    <label className="upload-control">
+                        <Upload size={17} /> Upload photo
+                        <input
+                            type="file"
+                            accept="image/jpeg,image/png,image/webp"
+                            onChange={async (e) => {
+                                if (!e.target.files[0]) return;
+                                try {
+                                    const data = new FormData();
+                                    data.append("file", e.target.files[0]);
+                                    const r = await api("/api/admin/media", {
+                                        method: "POST",
+                                        body: data,
+                                    });
+                                    set("image", r.url);
+                                } catch (e) {
+                                    setMsg(e.message);
+                                }
+                            }}
+                        />
+                    </label>
+                    {form.image && (
+                        <img
+                            className="cover-preview"
+                            src={form.image}
+                            alt="Cover preview"
+                        />
+                    )}
+                    <label className="check-label">
+                        <input
+                            type="checkbox"
+                            checked={form.featured}
+                            onChange={(e) => set("featured", e.target.checked)}
+                        />
+                        Featured placement
+                    </label>
+                    <label>
+                        Display order
+                        <input
+                            type="number"
+                            min="0"
+                            max="9999"
+                            value={form.position}
+                            onChange={(e) =>
+                                set("position", Number(e.target.value))
+                            }
+                        />
+                    </label>
+                    {msg && (
+                        <p className="notice" role="alert">
+                            {msg}
+                        </p>
+                    )}
+                    <Button disabled={busy}>
+                        {busy ? "Saving…" : "Save publication"}
+                    </Button>
+                </aside>
+            </div>
+        </form>
+    );
+}
+function Dashboard({ stats, days, setDays }) {
+    return (
+        <>
+            <div className="admin-heading">
+                <div>
+                    <p className="eyebrow">YOUR WEBSITE AT A GLANCE</p>
+                    <h1>Overview</h1>
+                    <p>
+                        Stories published. People reached. Conversations
+                        started.
+                    </p>
+                </div>
+                <select
+                    aria-label="Analytics date range"
+                    value={days}
+                    onChange={(e) => setDays(e.target.value)}
+                >
+                    {[7, 30, 90].map((d) => (
+                        <option key={d} value={d}>
+                            Last {d} days
+                        </option>
+                    ))}
+                </select>
+            </div>
+            <div className="stat-grid">
+                {[
+                    [Users, "Daily unique visitors", stats.visitors],
+                    [Eye, "Page views", stats.page_views],
+                    [FileText, "Publications", stats.contents],
+                    [Inbox, "New enquiries", stats.enquiries],
+                ].map(([Icon, label, val]) => (
+                    <div className="stat" key={label}>
+                        <Icon />
+                        <span>{label}</span>
+                        <strong>{val ?? 0}</strong>
+                    </div>
+                ))}
+            </div>
+            <div className="dashboard-grid">
+                <section className="panel">
+                    <p className="eyebrow">AUDIENCE</p>
+                    <h2>Visits over time</h2>
+                    <p className="muted">
+                        Daily pseudonymous visitors; totals are not deduplicated
+                        across days.
+                    </p>
+                    <div className="bar-chart">
+                        {stats.daily?.length ? (
+                            stats.daily.map((d) => (
+                                <div
+                                    className="bar-column"
+                                    key={d.day}
+                                    title={`${d.day}: ${d.views} views, ${d.visitors} visitors`}
+                                >
+                                    <span>{d.views}</span>
+                                    <div
+                                        style={{
+                                            height:
+                                                Math.max(
+                                                    3,
+                                                    (Number(d.views) /
+                                                        Math.max(
+                                                            ...stats.daily.map(
+                                                                (v) =>
+                                                                    Number(
+                                                                        v.views,
+                                                                    ),
+                                                            ),
+                                                        )) *
+                                                        140,
+                                                ) + "px",
+                                        }}
+                                    />
+                                    <small>{d.day.slice(5)}</small>
+                                </div>
+                            ))
+                        ) : (
+                            <div className="empty">
+                                Visitor activity will appear after the public
+                                site is browsed.
+                            </div>
+                        )}
+                    </div>
+                </section>
+                <section className="panel">
+                    <p className="eyebrow">CONTENT PERFORMANCE</p>
+                    <h2>Most viewed pages</h2>
+                    {stats.top_pages?.map((p) => (
+                        <div className="data-row" key={p.path}>
+                            <span>{p.path}</span>
+                            <strong>{p.views}</strong>
+                        </div>
+                    ))}
+                    {!stats.top_pages?.length && (
+                        <p className="muted">No page views yet.</p>
+                    )}
+                </section>
+            </div>
+            <section className="panel">
+                <p className="eyebrow">EDITORIAL ACTIVITY</p>
+                <h2>Recent changes</h2>
+                {stats.activity?.map((a) => (
+                    <div className="data-row" key={a.id}>
+                        <span>
+                            {a.action} {a.details?.slug || ""}
+                        </span>
+                        <small>{new Date(a.created_at).toLocaleString()}</small>
+                    </div>
+                ))}
+            </section>
+        </>
+    );
+}
+function AdminApp() {
+    const [user, setUser] = useState(null);
+    const [ready, setReady] = useState(false);
+    const [tab, setTab] = useState("overview");
+    const [stats, setStats] = useState({});
+    const [contents, setContents] = useState([]);
+    const [enquiries, setEnquiries] = useState([]);
+    const [settings, setSettings] = useState({});
+    const [editing, setEditing] = useState(null);
+    const [error, setError] = useState("");
+    const [days, setDays] = useState(30);
+    const [query, setQuery] = useState("");
+    const [historyTarget, setHistoryTarget] = useState(null);
+    useEffect(() => {
+        api("/api/session")
+            .then((d) => setUser(d.user))
+            .catch((e) => setError(e.message))
+            .finally(() => setReady(true));
+    }, []);
+    async function reload() {
+        try {
+            const [d, c, e, s] = await Promise.all([
+                api("/api/admin/dashboard?days=" + days),
+                api("/api/admin/contents"),
+                api("/api/admin/enquiries"),
+                api("/api/settings"),
+            ]);
+            setStats(d);
+            setContents(c.data);
+            setEnquiries(e.data);
+            setSettings(s);
+        } catch (e) {
+            setError(e.message);
+        }
+    }
+    useEffect(() => {
+        if (user) reload();
+    }, [user, days]);
+    if (!ready) return <div className="login-page">Loading workspace…</div>;
+    if (!user) return <Login onLogin={setUser} />;
+    return (
+        <div className="admin-layout">
+            <aside className="admin-sidebar">
+                <Brand />
+                <p className="sidebar-label">EDITORIAL WORKSPACE</p>
+                <nav>
+                    {[
+                        [LayoutDashboard, "overview", "Overview"],
+                        [FileText, "content", "Publications"],
+                        [FileText, "pages", "Pages & sections"],
+                        [Upload, "media", "Media library"],
+                        [Users, "staff", "Staff & permissions"],
+                        [Inbox, "enquiries", "Enquiries"],
+                        [Settings, "settings", "Site settings"],
+                    ]
+                        .filter(
+                            ([, id]) =>
+                                !["settings", "staff"].includes(id) ||
+                                user.role === "admin",
+                        )
+                        .map(([Icon, id, label]) => (
+                            <button
+                                key={id}
+                                className={tab === id ? "active" : ""}
+                                onClick={() => {
+                                    setTab(id);
+                                    setEditing(null);
+                                    setError("");
+                                }}
+                            >
+                                <Icon size={19} />
+                                {label}
+                                {id === "enquiries" && stats.enquiries > 0 && (
+                                    <span className="count">
+                                        {stats.enquiries}
+                                    </span>
+                                )}
+                            </button>
+                        ))}
+                </nav>
+                <a
+                    className="view-site"
+                    href="/en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Globe size={17} />
+                    View website
+                    <ArrowUpRight size={15} />
+                </a>
+                <div className="admin-user">
+                    <span>{user.name?.slice(0, 1)}</span>
+                    <div>
+                        {user.name}
+                        <small>{user.role}</small>
+                    </div>
+                    <button
+                        className="icon-button"
+                        aria-label="Sign out"
+                        onClick={async () => {
+                            try {
+                                await api("/api/logout", { method: "POST" });
+                                location.reload();
+                            } catch (e) {
+                                setError(e.message);
+                            }
+                        }}
+                    >
+                        <LogOut size={18} />
+                    </button>
+                </div>
+            </aside>
+            <main className="admin-main">
+                <div className="admin-top">
+                    <span>
+                        KL WEBSITE <ChevronRight size={14} /> {tab}
+                    </span>
+                    <span>
+                        <Shield size={14} /> Private workspace
+                    </span>
+                </div>
+                {error && (
+                    <p className="notice" role="alert">
+                        {error}
+                    </p>
+                )}
+                {historyTarget && (
+                    <History
+                        type="content"
+                        id={historyTarget.id}
+                        version={historyTarget.version}
+                        onClose={() => setHistoryTarget(null)}
+                        onRestored={() => {
+                            setHistoryTarget(null);
+                            reload();
+                        }}
+                    />
+                )}
+                {tab === "pages" ? (
+                    <PageStudio />
+                ) : tab === "media" ? (
+                    <MediaLibrary />
+                ) : tab === "staff" ? (
+                    <StaffStudio />
+                ) : editing ? (
+                    <Editor
+                        value={editing}
+                        onCancel={() => setEditing(null)}
+                        onSave={() => {
+                            setEditing(null);
+                            reload();
+                        }}
+                    />
+                ) : tab === "overview" ? (
+                    <Dashboard stats={stats} days={days} setDays={setDays} />
+                ) : tab === "content" ? (
+                    <>
+                        <div className="admin-heading">
+                            <div>
+                                <p className="eyebrow">CONTENT STUDIO</p>
+                                <h1>Publications</h1>
+                                <p>
+                                    One story. Three languages. Your editorial
+                                    control.
+                                </p>
+                            </div>
+                            <Button onClick={() => setEditing(blankContent())}>
+                                <Plus size={17} />
+                                New publication
+                            </Button>
+                        </div>
+                        <label className="search-box">
+                            <Search size={18} />
+                            <input
+                                placeholder="Search publications"
+                                value={query}
+                                onChange={(e) => setQuery(e.target.value)}
+                            />
+                        </label>
+                        <section className="panel table-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Publication</th>
+                                        <th>Type</th>
+                                        <th>EN / FR / KR</th>
+                                        <th>Featured</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {contents
+                                        .filter((c) =>
+                                            JSON.stringify(c.translations)
+                                                .toLowerCase()
+                                                .includes(query.toLowerCase()),
+                                        )
+                                        .map((c) => (
+                                            <tr key={c.id}>
+                                                <td>
+                                                    <strong>
+                                                        {c.translations.en
+                                                            ?.title || c.slug}
+                                                    </strong>
+                                                    <small>/{c.slug}</small>
+                                                </td>
+                                                <td>{c.type}</td>
+                                                <td>
+                                                    {["en", "fr", "km"].map(
+                                                        (l) => (
+                                                            <span
+                                                                key={l}
+                                                                className={
+                                                                    "status " +
+                                                                    (c
+                                                                        .translations[
+                                                                        l
+                                                                    ]?.status ||
+                                                                        "missing")
+                                                                }
+                                                            >
+                                                                {l.toUpperCase()}
+                                                                :{" "}
+                                                                {c.translations[
+                                                                    l
+                                                                ]?.status ||
+                                                                    "missing"}
+                                                            </span>
+                                                        ),
+                                                    )}
+                                                </td>
+                                                <td>
+                                                    {c.featured ? (
+                                                        <Check size={18} />
+                                                    ) : (
+                                                        "—"
+                                                    )}
+                                                </td>
+                                                <td>
+                                                    <button
+                                                        className="text-button"
+                                                        onClick={() =>
+                                                            setHistoryTarget(c)
+                                                        }
+                                                    >
+                                                        History
+                                                    </button>
+                                                    {!c.deleted_at && (
+                                                        <button
+                                                            className="text-button"
+                                                            onClick={() =>
+                                                                setEditing(c)
+                                                            }
+                                                        >
+                                                            Edit
+                                                        </button>
+                                                    )}
+                                                    {c.deleted_at && (
+                                                        <span className="status">
+                                                            Archived
+                                                        </span>
+                                                    )}
+                                                    {user.role === "admin" &&
+                                                        !c.deleted_at && (
+                                                            <button
+                                                                className="text-button danger"
+                                                                onClick={async () => {
+                                                                    if (
+                                                                        !confirm(
+                                                                            "Archive this publication? Its revisions remain available for restoration.",
+                                                                        )
+                                                                    )
+                                                                        return;
+                                                                    try {
+                                                                        await api(
+                                                                            "/api/admin/contents/" +
+                                                                                c.id,
+                                                                            {
+                                                                                method: "DELETE",
+                                                                            },
+                                                                        );
+                                                                        reload();
+                                                                    } catch (e) {
+                                                                        setError(
+                                                                            e.message,
+                                                                        );
+                                                                    }
+                                                                }}
+                                                            >
+                                                                Delete
+                                                            </button>
+                                                        )}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                </tbody>
+                            </table>
+                            {!contents.length && (
+                                <div className="empty">
+                                    Create your first publication to get
+                                    started.
+                                </div>
+                            )}
+                        </section>
+                    </>
+                ) : tab === "enquiries" ? (
+                    <>
+                        <div className="admin-heading">
+                            <div>
+                                <p className="eyebrow">CONVERSATIONS</p>
+                                <h1>Enquiries</h1>
+                                <p>
+                                    Messages, concerns and appointment requests.
+                                </p>
+                            </div>
+                        </div>
+                        {enquiries.map((e) => (
+                            <section className="panel enquiry" key={e.id}>
+                                <div className="data-row">
+                                    <h3>{e.subject}</h3>
+                                    <select
+                                        aria-label="Enquiry status"
+                                        value={e.status}
+                                        onChange={async (ev) => {
+                                            try {
+                                                await api(
+                                                    "/api/admin/enquiries/" +
+                                                        e.id,
+                                                    {
+                                                        method: "PATCH",
+                                                        body: JSON.stringify({
+                                                            status: ev.target
+                                                                .value,
+                                                        }),
+                                                    },
+                                                );
+                                                reload();
+                                            } catch (e) {
+                                                setError(e.message);
+                                            }
+                                        }}
+                                    >
+                                        {["new", "in_progress", "closed"].map(
+                                            (s) => (
+                                                <option key={s}>{s}</option>
+                                            ),
+                                        )}
+                                    </select>
+                                </div>
+                                <small>
+                                    {e.name} · {e.email} · {e.kind} · {e.locale}
+                                </small>
+                                <p className="article-body">{e.message}</p>
+                            </section>
+                        ))}
+                        {!enquiries.length && (
+                            <div className="panel empty">
+                                No enquiries received yet.
+                            </div>
+                        )}
+                    </>
+                ) : (
+                    <>
+                        <div className="admin-heading">
+                            <div>
+                                <p className="eyebrow">CONFIGURATION</p>
+                                <h1>Site settings</h1>
+                            </div>
+                        </div>
+                        <form
+                            className="panel settings-form"
+                            onSubmit={async (e) => {
+                                e.preventDefault();
+                                try {
+                                    await api("/api/admin/settings", {
+                                        method: "PUT",
+                                        body: JSON.stringify(settings),
+                                    });
+                                    setError("Settings saved.");
+                                } catch (e) {
+                                    setError(e.message);
+                                }
+                            }}
+                        >
+                            {[
+                                ["email", "Office email"],
+                                ["phone", "Office phone"],
+                                ["address", "Office address"],
+                                ["whatsapp", "WhatsApp HTTPS URL"],
+                                ["party_url", "Party website HTTPS URL"],
+                            ].map(([key, label]) => (
+                                <label key={key}>
+                                    {label}
+                                    <input
+                                        type={
+                                            key === "email"
+                                                ? "email"
+                                                : key.includes("url") ||
+                                                    key === "whatsapp"
+                                                  ? "url"
+                                                  : "text"
+                                        }
+                                        value={settings[key] || ""}
+                                        onChange={(e) =>
+                                            setSettings({
+                                                ...settings,
+                                                [key]: e.target.value,
+                                            })
+                                        }
+                                    />
+                                </label>
+                            ))}
+                            <label className="check-label">
+                                <input
+                                    type="checkbox"
+                                    checked={
+                                        !!settings.kreol_interface_approved
+                                    }
+                                    onChange={(e) =>
+                                        setSettings({
+                                            ...settings,
+                                            kreol_interface_approved:
+                                                e.target.checked,
+                                        })
+                                    }
+                                />
+                                A human reviewer has approved the common Kreol
+                                interface, navigation and form wording.
+                            </label>
+                            <Button>Save settings</Button>
+                        </form>
+                    </>
+                )}
+            </main>
+        </div>
+    );
+}
+createRoot(document.getElementById("app")).render(
+    location.pathname === "/admin/activate" ? (
+        <StaffActivation />
+    ) : location.pathname.startsWith("/admin") ? (
+        <AdminApp />
+    ) : (
+        <Website />
+    ),
+);

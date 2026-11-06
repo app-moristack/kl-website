@@ -18,6 +18,8 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+    protected $attributes = ['is_active' => true, 'notify_enquiries' => true];
+
     protected $fillable = [
         'name',
         'email',
@@ -45,6 +47,8 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'is_active' => 'boolean',
+            'totp_bootstrap' => 'boolean', 'notify_enquiries' => 'boolean',
             'two_factor_secret' => 'encrypted',
         ];
     }

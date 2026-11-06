@@ -42,6 +42,18 @@ services:
       retries: 30
     restart: unless-stopped
     networks: [internal]
+  worker:
+    build:
+      context: .
+      target: app
+    command: ["php", "artisan", "queue:work", "--tries=3", "--backoff=30", "--timeout=60"]
+    env_file: .env
+    volumes: ["uploads:/var/www/html/storage"]
+    depends_on:
+      mysql:
+        condition: service_healthy
+    restart: unless-stopped
+    networks: [internal, edge]
   scheduler:
     build:
       context: .

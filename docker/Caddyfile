@@ -4,7 +4,7 @@
  @blocked path /.env /.git/* /storage/*.php /storage/*.phtml
  respond @blocked 404
  request_body {
-  max_size 6MB
+  max_size 16MB
  }
  php_fastcgi app:9000
  file_server

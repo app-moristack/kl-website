@@ -11,8 +11,9 @@ RUN npm run build
 FROM ${PHP_IMAGE} AS php-base
 # Refuse a base image below the fixed runtime version.
 RUN php -r 'if (version_compare(PHP_VERSION, "8.4.27", "<")) { exit(1); }'
-RUN apt-get update && apt-get install -y --no-install-recommends libonig-dev libzip-dev libxml2-dev unzip \
-    && docker-php-ext-install pdo_mysql mbstring bcmath zip dom \
+RUN apt-get update && apt-get install -y --no-install-recommends libonig-dev libzip-dev libxml2-dev libpng-dev libjpeg62-turbo-dev libwebp-dev unzip \
+    && docker-php-ext-configure gd --with-jpeg --with-webp \
+    && docker-php-ext-install pdo_mysql mbstring bcmath zip dom gd \
     && rm -rf /var/lib/apt/lists/*
 COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
 COPY docker/php.ini /usr/local/etc/php/conf.d/kl.ini

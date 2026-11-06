@@ -1,0 +1,2111 @@
+[
+  {
+    "slug": "home",
+    "translations": {
+      "en": {
+        "design": "editorial",
+        "eyebrow": "A life in law and public service",
+        "hero_title": "Khushal",
+        "hero_accent": "Lobine",
+        "hero_body": "Member of Parliament for Constituency No. 15 — La Caverne and Phoenix. Barrister-at-law.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Discover Khushal",
+        "primary_url": "/en/about",
+        "secondary_label": "Parliamentary work",
+        "secondary_url": "/en/parliament",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "In Parliament",
+            "body": "Questions, speeches and interventions.",
+            "icon": "landmark",
+            "url": "/en/parliament",
+            "image": ""
+          },
+          {
+            "title": "Constituency No. 15",
+            "body": "Listening, dialogue and local engagement.",
+            "icon": "map",
+            "url": "/en/constituency",
+            "image": ""
+          },
+          {
+            "title": "Ideas & Perspectives",
+            "body": "Reflections and analysis on national issues.",
+            "icon": "lightbulb",
+            "url": "/en/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working together.",
+        "cta_body": "Your ideas, concerns and suggestions matter. Get in touch with the team.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Get in touch",
+        "cta_url": "/en/contact",
+        "seo_title": "A life in law and public service | Khushal Lobine",
+        "meta_description": "Member of Parliament for Constituency No. 15 — La Caverne and Phoenix. Barrister-at-law.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "fr": {
+        "design": "editorial",
+        "eyebrow": "Une vie au service du droit et du public",
+        "hero_title": "Khushal",
+        "hero_accent": "Lobine",
+        "hero_body": "Député de la circonscription n° 15 — La Caverne et Phoenix. Avocat.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Découvrir Khushal",
+        "primary_url": "/fr/about",
+        "secondary_label": "Travail parlementaire",
+        "secondary_url": "/fr/parliament",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Au Parlement",
+            "body": "Questions, discours et interventions.",
+            "icon": "landmark",
+            "url": "/fr/parliament",
+            "image": ""
+          },
+          {
+            "title": "Circonscription n° 15",
+            "body": "Écoute, dialogue et engagement local.",
+            "icon": "map",
+            "url": "/fr/constituency",
+            "image": ""
+          },
+          {
+            "title": "Idées et perspectives",
+            "body": "Réflexions et analyses sur les enjeux nationaux.",
+            "icon": "lightbulb",
+            "url": "/fr/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Nous contacter",
+        "cta_url": "/fr/contact",
+        "seo_title": "Une vie au service du droit et du public | Khushal Lobine",
+        "meta_description": "Député de la circonscription n° 15 — La Caverne et Phoenix. Avocat.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "km": {
+        "design": "editorial",
+        "eyebrow": "Enn lavi dan servis piblik",
+        "hero_title": "Khushal",
+        "hero_accent": "Lobine",
+        "hero_body": "Depite sirkonskripsion No. 15 — La Caverne ek Phoenix. Avoka.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Lor Khushal",
+        "primary_url": "/km/about",
+        "secondary_label": "Travay dan Parlman",
+        "secondary_url": "/km/parliament",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Dan Parlman",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/parliament"
+          },
+          {
+            "title": "Sirkonskripsion No. 15",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/constituency"
+          },
+          {
+            "title": "Lide ek refleksion",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/perspectives"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Anou travay ansam",
+        "cta_body": "Partaz ou bann lide ek ou bann konsern avek nou lekip.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Kontak nou",
+        "cta_url": "/km/contact",
+        "seo_title": "Enn lavi dan servis piblik | Khushal Lobine",
+        "meta_description": "Depite sirkonskripsion No. 15 — La Caverne ek Phoenix. Avoka.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Draf tradiksion Kreol Morisien baze lor bann referans lortografik piblik. Enn revizion imin bizin fèt avan piblikasion.",
+        "hero_background": ""
+      }
+    }
+  },
+  {
+    "slug": "about",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "About Khushal Lobine",
+        "hero_title": "Law, leadership",
+        "hero_accent": "and public service",
+        "hero_body": "Discover his background in law, parliamentary work and public engagement.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Discover Khushal",
+        "primary_url": "/en/about",
+        "secondary_label": "Parliamentary work",
+        "secondary_url": "/en/parliament",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "Education",
+            "body": "Legal studies in the United Kingdom.",
+            "icon": "book",
+            "image": "",
+            "url": "/en/about"
+          },
+          {
+            "title": "Legal Career",
+            "body": "Barrister-at-law.",
+            "icon": "gavel",
+            "image": "",
+            "url": "/en/about"
+          },
+          {
+            "title": "Public Leadership",
+            "body": "Parliamentary work and public engagement.",
+            "icon": "users",
+            "image": "",
+            "url": "/en/about"
+          },
+          {
+            "title": "Political Journey",
+            "body": "Elected in 2019 and re-elected in 2024.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/en/about"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Member of Parliament",
+            "body": "",
+            "icon": "landmark"
+          },
+          {
+            "title": "Barrister-at-law",
+            "body": "",
+            "icon": "gavel"
+          },
+          {
+            "title": "Constituency No. 15",
+            "body": "",
+            "icon": "map"
+          },
+          {
+            "title": "Public engagement",
+            "body": "",
+            "icon": "users"
+          },
+          {
+            "title": "Parliamentary work",
+            "body": "",
+            "icon": "book"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working together.",
+        "cta_body": "Your ideas, concerns and suggestions matter. Get in touch with the team.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Get in touch",
+        "cta_url": "/en/contact",
+        "seo_title": "About Khushal Lobine | Khushal Lobine",
+        "meta_description": "Discover his background in law, parliamentary work and public engagement.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "À propos de Khushal Lobine",
+        "hero_title": "Droit, leadership",
+        "hero_accent": "et service public",
+        "hero_body": "Découvrez son parcours juridique, son travail parlementaire et son engagement public.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Découvrir Khushal",
+        "primary_url": "/fr/about",
+        "secondary_label": "Travail parlementaire",
+        "secondary_url": "/fr/parliament",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Formation",
+            "body": "Études de droit au Royaume-Uni.",
+            "icon": "book",
+            "image": "",
+            "url": "/fr/about"
+          },
+          {
+            "title": "Carrière juridique",
+            "body": "Avocat.",
+            "icon": "gavel",
+            "image": "",
+            "url": "/fr/about"
+          },
+          {
+            "title": "Leadership public",
+            "body": "Travail parlementaire et engagement public.",
+            "icon": "users",
+            "image": "",
+            "url": "/fr/about"
+          },
+          {
+            "title": "Parcours politique",
+            "body": "Élu en 2019 et réélu en 2024.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/fr/about"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Député",
+            "body": "",
+            "icon": "landmark"
+          },
+          {
+            "title": "Avocat",
+            "body": "",
+            "icon": "gavel"
+          },
+          {
+            "title": "Circonscription n° 15",
+            "body": "",
+            "icon": "map"
+          },
+          {
+            "title": "Engagement public",
+            "body": "",
+            "icon": "users"
+          },
+          {
+            "title": "Travail parlementaire",
+            "body": "",
+            "icon": "book"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Nous contacter",
+        "cta_url": "/fr/contact",
+        "seo_title": "À propos de Khushal Lobine | Khushal Lobine",
+        "meta_description": "Découvrez son parcours juridique, son travail parlementaire et son engagement public.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Lor Khushal Lobine",
+        "hero_title": "Lalwa ek",
+        "hero_accent": "servis piblik",
+        "hero_body": "Dekouver so parkour dan lalwa, so travay dan Parlman ek so langazman piblik.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Lor Khushal",
+        "primary_url": "/km/about",
+        "secondary_label": "Travay dan Parlman",
+        "secondary_url": "/km/parliament",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Ledikasion",
+            "body": "Letid lalwa dan Rwayom Ini.",
+            "icon": "book",
+            "image": "",
+            "url": "/km/about"
+          },
+          {
+            "title": "Parkour dan lalwa",
+            "body": "Avoka.",
+            "icon": "gavel",
+            "image": "",
+            "url": "/km/about"
+          },
+          {
+            "title": "Liderchip piblik",
+            "body": "Travay dan Parlman ek langazman piblik.",
+            "icon": "users",
+            "image": "",
+            "url": "/km/about"
+          },
+          {
+            "title": "Parkour politik",
+            "body": "Eli an 2019 ek reeli an 2024.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/about"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Depite",
+            "body": "",
+            "icon": "landmark"
+          },
+          {
+            "title": "Avoka",
+            "body": "",
+            "icon": "gavel"
+          },
+          {
+            "title": "Sirkonskripsion No. 15",
+            "body": "",
+            "icon": "map"
+          },
+          {
+            "title": "Langazman piblik",
+            "body": "",
+            "icon": "users"
+          },
+          {
+            "title": "Travay dan Parlman",
+            "body": "",
+            "icon": "book"
+          }
+        ],
+        "cta_title": "Anou travay ansam",
+        "cta_body": "Partaz ou bann lide ek ou bann konsern avek nou lekip.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Kontak nou",
+        "cta_url": "/km/contact",
+        "seo_title": "Lor Khushal Lobine | Khushal Lobine",
+        "meta_description": "Dekouver so parkour dan lalwa, so travay dan Parlman ek so langazman piblik.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Draf tradiksion Kreol Morisien baze lor bann referans lortografik piblik. Enn revizion imin bizin fèt avan piblikasion.",
+        "hero_background": ""
+      }
+    }
+  },
+  {
+    "slug": "parliament",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Parliamentary work",
+        "hero_title": "Parliamentary",
+        "hero_accent": "work",
+        "hero_body": "Questions, speeches, debates and legislative contributions.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "Parliamentary Questions",
+            "body": "Explore the parliamentary archive.",
+            "icon": "landmark",
+            "url": "/en/parliament?kind=question",
+            "image": ""
+          },
+          {
+            "title": "Speeches & Debates",
+            "body": "Explore the parliamentary archive.",
+            "icon": "map",
+            "url": "/en/parliament?kind=speech",
+            "image": ""
+          },
+          {
+            "title": "Bills & Interventions",
+            "body": "Explore the parliamentary archive.",
+            "icon": "lightbulb",
+            "url": "/en/parliament?kind=bill",
+            "image": ""
+          },
+          {
+            "title": "Committees",
+            "body": "Explore the parliamentary archive.",
+            "icon": "landmark",
+            "url": "/en/parliament?kind=committee",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working together.",
+        "cta_body": "Your ideas, concerns and suggestions matter. Get in touch with the team.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Get in touch",
+        "cta_url": "/en/contact",
+        "seo_title": "Parliamentary work | Khushal Lobine",
+        "meta_description": "Questions, speeches, debates and legislative contributions.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Travail parlementaire",
+        "hero_title": "Le travail",
+        "hero_accent": "parlementaire",
+        "hero_body": "Questions, discours, débats et contributions législatives.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Questions parlementaires",
+            "body": "Rechercher les contributions parlementaires.",
+            "icon": "landmark",
+            "url": "/fr/parliament?kind=question",
+            "image": ""
+          },
+          {
+            "title": "Discours et débats",
+            "body": "Rechercher les contributions parlementaires.",
+            "icon": "map",
+            "url": "/fr/parliament?kind=speech",
+            "image": ""
+          },
+          {
+            "title": "Projets de loi",
+            "body": "Rechercher les contributions parlementaires.",
+            "icon": "lightbulb",
+            "url": "/fr/parliament?kind=bill",
+            "image": ""
+          },
+          {
+            "title": "Commissions",
+            "body": "Rechercher les contributions parlementaires.",
+            "icon": "landmark",
+            "url": "/fr/parliament?kind=committee",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Nous contacter",
+        "cta_url": "/fr/contact",
+        "seo_title": "Travail parlementaire | Khushal Lobine",
+        "meta_description": "Questions, discours, débats et contributions législatives.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Travay dan Parlman",
+        "hero_title": "Travay dan",
+        "hero_accent": "Parlman",
+        "hero_body": "Kestion, diskour, deba ek kontribision lor bann proze lalwa.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Kestion dan Parlman",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/parliament"
+          },
+          {
+            "title": "Diskour ek deba",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/parliament"
+          },
+          {
+            "title": "Proze lalwa",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/parliament"
+          },
+          {
+            "title": "Bann komite",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/parliament"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Anou travay ansam",
+        "cta_body": "Partaz ou bann lide ek ou bann konsern avek nou lekip.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Kontak nou",
+        "cta_url": "/km/contact",
+        "seo_title": "Travay dan Parlman | Khushal Lobine",
+        "meta_description": "Kestion, diskour, deba ek kontribision lor bann proze lalwa.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Draf tradiksion Kreol Morisien baze lor bann referans lortografik piblik. Enn revizion imin bizin fèt avan piblikasion.",
+        "hero_background": ""
+      }
+    }
+  },
+  {
+    "slug": "constituency",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Constituency No. 15",
+        "hero_title": "La Caverne &",
+        "hero_accent": "Phoenix",
+        "hero_body": "Our community. Our priorities. A stronger Mauritius.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Explore our work",
+        "primary_url": "/en/constituency#archive",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "Your Representation",
+            "body": "Engage with the concerns of La Caverne and Phoenix.",
+            "icon": "landmark",
+            "url": "/en/contact?kind=concern",
+            "image": ""
+          },
+          {
+            "title": "Accessible and Present",
+            "body": "Engage with the concerns of La Caverne and Phoenix.",
+            "icon": "map",
+            "url": "/en/contact?kind=concern",
+            "image": ""
+          },
+          {
+            "title": "Community Engagement",
+            "body": "Engage with the concerns of La Caverne and Phoenix.",
+            "icon": "lightbulb",
+            "url": "/en/contact?kind=concern",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Water supply",
+            "body": "Explore published contributions and share your concerns with the team.",
+            "icon": "water"
+          },
+          {
+            "title": "Community priorities",
+            "body": "Explore published contributions and share your concerns with the team.",
+            "icon": "users"
+          },
+          {
+            "title": "A cleaner, greener No. 15",
+            "body": "Explore published contributions and share your concerns with the team.",
+            "icon": "leaf"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working together.",
+        "cta_body": "Your ideas, concerns and suggestions matter. Get in touch with the team.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Get in touch",
+        "cta_url": "/en/contact",
+        "seo_title": "Constituency No. 15 | Khushal Lobine",
+        "meta_description": "Our community. Our priorities. A stronger Mauritius.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Circonscription n° 15",
+        "hero_title": "La Caverne et",
+        "hero_accent": "Phoenix",
+        "hero_body": "Notre communauté. Nos priorités. Une île Maurice plus forte.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Découvrir notre travail",
+        "primary_url": "/fr/constituency#archive",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Votre représentation",
+            "body": "Échanger sur les préoccupations de La Caverne et Phoenix.",
+            "icon": "landmark",
+            "url": "/fr/contact?kind=concern",
+            "image": ""
+          },
+          {
+            "title": "Accessible et présent",
+            "body": "Échanger sur les préoccupations de La Caverne et Phoenix.",
+            "icon": "map",
+            "url": "/fr/contact?kind=concern",
+            "image": ""
+          },
+          {
+            "title": "Engagement communautaire",
+            "body": "Échanger sur les préoccupations de La Caverne et Phoenix.",
+            "icon": "lightbulb",
+            "url": "/fr/contact?kind=concern",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Approvisionnement en eau",
+            "body": "Découvrez les contributions publiées et partagez vos préoccupations avec l’équipe.",
+            "icon": "water"
+          },
+          {
+            "title": "Priorités de la communauté",
+            "body": "Découvrez les contributions publiées et partagez vos préoccupations avec l’équipe.",
+            "icon": "users"
+          },
+          {
+            "title": "Un n° 15 plus propre et plus vert",
+            "body": "Découvrez les contributions publiées et partagez vos préoccupations avec l’équipe.",
+            "icon": "leaf"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Nous contacter",
+        "cta_url": "/fr/contact",
+        "seo_title": "Circonscription n° 15 | Khushal Lobine",
+        "meta_description": "Notre communauté. Nos priorités. Une île Maurice plus forte.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Sirkonskripsion No. 15",
+        "hero_title": "La Caverne ek",
+        "hero_accent": "Phoenix",
+        "hero_body": "Nou kominote. Nou bann priorite. Enn Moris pli for.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Dekouver nou travay",
+        "primary_url": "/km/constituency#archive",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Ou reprezantasion",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/constituency"
+          },
+          {
+            "title": "Aksesib ek prezan",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/constituency"
+          },
+          {
+            "title": "Langazman dan kominote",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/constituency"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Fournitir delo",
+            "body": "Dekouver bann kontribision piblie ek partaz ou konsern avek lekip.",
+            "icon": "water"
+          },
+          {
+            "title": "Bann priorite kominote",
+            "body": "Dekouver bann kontribision piblie ek partaz ou konsern avek lekip.",
+            "icon": "users"
+          },
+          {
+            "title": "Enn No. 15 pli prop ek pli ver",
+            "body": "Dekouver bann kontribision piblie ek partaz ou konsern avek lekip.",
+            "icon": "leaf"
+          }
+        ],
+        "cta_title": "Anou travay ansam",
+        "cta_body": "Partaz ou bann lide ek ou bann konsern avek nou lekip.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Kontak nou",
+        "cta_url": "/km/contact",
+        "seo_title": "Sirkonskripsion No. 15 | Khushal Lobine",
+        "meta_description": "Nou kominote. Nou bann priorite. Enn Moris pli for.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Draf tradiksion Kreol Morisien baze lor bann referans lortografik piblik. Enn revizion imin bizin fèt avan piblikasion.",
+        "hero_background": ""
+      }
+    }
+  },
+  {
+    "slug": "perspectives",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Ideas & perspectives",
+        "hero_title": "Ideas for a",
+        "hero_accent": "stronger Mauritius",
+        "hero_body": "Reflections on law, governance, democracy and national development.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Explore articles",
+        "primary_url": "/en/perspectives#archive",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Ideas, dialogue and national development",
+        "intro_body": "Explore published essays and commentary on law, governance, democracy, reform and opportunity. Each contribution can be read alongside its sources and supporting documents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "Constitutional Reform",
+            "body": "Explore articles on this topic.",
+            "icon": "landmark",
+            "url": "/en/perspectives?topic=Constitutional%20Reform",
+            "image": ""
+          },
+          {
+            "title": "Democratic Governance",
+            "body": "Explore articles on this topic.",
+            "icon": "map",
+            "url": "/en/perspectives?topic=Democratic%20Governance",
+            "image": ""
+          },
+          {
+            "title": "The Rule of Law",
+            "body": "Explore articles on this topic.",
+            "icon": "lightbulb",
+            "url": "/en/perspectives?topic=The%20Rule%20of%20Law",
+            "image": ""
+          },
+          {
+            "title": "Social Justice",
+            "body": "Explore articles on this topic.",
+            "icon": "landmark",
+            "url": "/en/perspectives?topic=Social%20Justice",
+            "image": ""
+          },
+          {
+            "title": "Economic Opportunity",
+            "body": "Explore articles on this topic.",
+            "icon": "map",
+            "url": "/en/perspectives?topic=Economic%20Opportunity",
+            "image": ""
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore articles on this topic.",
+            "icon": "lightbulb",
+            "url": "/en/perspectives?topic=Public%20Policy",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working together.",
+        "cta_body": "Your ideas, concerns and suggestions matter. Get in touch with the team.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Get in touch",
+        "cta_url": "/en/contact",
+        "seo_title": "Ideas & perspectives | Khushal Lobine",
+        "meta_description": "Reflections on law, governance, democracy and national development.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Idées et perspectives",
+        "hero_title": "Des idées pour une",
+        "hero_accent": "île Maurice plus forte",
+        "hero_body": "Réflexions sur le droit, la gouvernance, la démocratie et le développement national.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Explorer les articles",
+        "primary_url": "/fr/perspectives#archive",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Idées, dialogue et développement national",
+        "intro_body": "Découvrez les essais et commentaires publiés sur le droit, la gouvernance, la démocratie, les réformes et les opportunités. Chaque contribution peut être accompagnée de ses sources et documents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Réforme constitutionnelle",
+            "body": "Explorer les articles sur ce sujet.",
+            "icon": "landmark",
+            "url": "/fr/perspectives?topic=R%C3%A9forme%20constitutionnelle",
+            "image": ""
+          },
+          {
+            "title": "Gouvernance démocratique",
+            "body": "Explorer les articles sur ce sujet.",
+            "icon": "map",
+            "url": "/fr/perspectives?topic=Gouvernance%20d%C3%A9mocratique",
+            "image": ""
+          },
+          {
+            "title": "État de droit",
+            "body": "Explorer les articles sur ce sujet.",
+            "icon": "lightbulb",
+            "url": "/fr/perspectives?topic=%C3%89tat%20de%20droit",
+            "image": ""
+          },
+          {
+            "title": "Justice sociale",
+            "body": "Explorer les articles sur ce sujet.",
+            "icon": "landmark",
+            "url": "/fr/perspectives?topic=Justice%20sociale",
+            "image": ""
+          },
+          {
+            "title": "Opportunités économiques",
+            "body": "Explorer les articles sur ce sujet.",
+            "icon": "map",
+            "url": "/fr/perspectives?topic=Opportunit%C3%A9s%20%C3%A9conomiques",
+            "image": ""
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les articles sur ce sujet.",
+            "icon": "lightbulb",
+            "url": "/fr/perspectives?topic=Politiques%20publiques",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Nous contacter",
+        "cta_url": "/fr/contact",
+        "seo_title": "Idées et perspectives | Khushal Lobine",
+        "meta_description": "Réflexions sur le droit, la gouvernance, la démocratie et le développement national.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Lide ek refleksion",
+        "hero_title": "Bann lide pou",
+        "hero_accent": "enn Moris pli for",
+        "hero_body": "Refleksion lor lalwa, gouvernans, demokrasi ek devlopman nasional.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "Dekouver bann lartik",
+        "primary_url": "/km/perspectives#archive",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Lide, dialog ek devlopman nasional",
+        "intro_body": "Dekouver bann lartik ek refleksion piblie lor lalwa, gouvernans, demokrasi, reform ek loportinite. Sak kontribision kapav akonpagne avek so bann sours ek dokiman.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Reform konstitisionel",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/perspectives"
+          },
+          {
+            "title": "Gouvernans demokratik",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/perspectives"
+          },
+          {
+            "title": "Leta de drwa",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/perspectives"
+          },
+          {
+            "title": "Zistis sosial",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/perspectives"
+          },
+          {
+            "title": "Loportinite ekonomik",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/perspectives"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/perspectives"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Anou travay ansam",
+        "cta_body": "Partaz ou bann lide ek ou bann konsern avek nou lekip.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Kontak nou",
+        "cta_url": "/km/contact",
+        "seo_title": "Lide ek refleksion | Khushal Lobine",
+        "meta_description": "Refleksion lor lalwa, gouvernans, demokrasi ek devlopman nasional.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Draf tradiksion Kreol Morisien baze lor bann referans lortografik piblik. Enn revizion imin bizin fèt avan piblikasion.",
+        "hero_background": ""
+      }
+    }
+  },
+  {
+    "slug": "media",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Media",
+        "hero_title": "Khushal Lobine",
+        "hero_accent": "in the media",
+        "hero_body": "Interviews, press statements and public engagements.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "In Parliament",
+            "body": "Questions, speeches and interventions.",
+            "icon": "landmark",
+            "url": "/en/parliament",
+            "image": ""
+          },
+          {
+            "title": "Constituency No. 15",
+            "body": "Listening, dialogue and local engagement.",
+            "icon": "map",
+            "url": "/en/constituency",
+            "image": ""
+          },
+          {
+            "title": "Ideas & Perspectives",
+            "body": "Reflections and analysis on national issues.",
+            "icon": "lightbulb",
+            "url": "/en/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working together.",
+        "cta_body": "Your ideas, concerns and suggestions matter. Get in touch with the team.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Get in touch",
+        "cta_url": "/en/contact",
+        "seo_title": "Media | Khushal Lobine",
+        "meta_description": "Interviews, press statements and public engagements.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Médias",
+        "hero_title": "Khushal Lobine",
+        "hero_accent": "dans les médias",
+        "hero_body": "Entretiens, communiqués de presse et rencontres publiques.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Au Parlement",
+            "body": "Questions, discours et interventions.",
+            "icon": "landmark",
+            "url": "/fr/parliament",
+            "image": ""
+          },
+          {
+            "title": "Circonscription n° 15",
+            "body": "Écoute, dialogue et engagement local.",
+            "icon": "map",
+            "url": "/fr/constituency",
+            "image": ""
+          },
+          {
+            "title": "Idées et perspectives",
+            "body": "Réflexions et analyses sur les enjeux nationaux.",
+            "icon": "lightbulb",
+            "url": "/fr/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Nous contacter",
+        "cta_url": "/fr/contact",
+        "seo_title": "Médias | Khushal Lobine",
+        "meta_description": "Entretiens, communiqués de presse et rencontres publiques.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Media",
+        "hero_title": "Khushal Lobine",
+        "hero_accent": "dan bann media",
+        "hero_body": "Interview, kominike ek rankont avek piblik.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Interview",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/media"
+          },
+          {
+            "title": "Kominike",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/media"
+          },
+          {
+            "title": "Galri foto",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/media"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Anou travay ansam",
+        "cta_body": "Partaz ou bann lide ek ou bann konsern avek nou lekip.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Kontak nou",
+        "cta_url": "/km/contact",
+        "seo_title": "Media | Khushal Lobine",
+        "meta_description": "Interview, kominike ek rankont avek piblik.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Draf tradiksion Kreol Morisien baze lor bann referans lortografik piblik. Enn revizion imin bizin fèt avan piblikasion.",
+        "hero_background": ""
+      }
+    }
+  },
+  {
+    "slug": "contact",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Get in touch",
+        "hero_title": "Your voice",
+        "hero_accent": "matters",
+        "hero_body": "Share a concern, contact the team or request an appointment.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "In Parliament",
+            "body": "Questions, speeches and interventions.",
+            "icon": "landmark",
+            "url": "/en/parliament",
+            "image": ""
+          },
+          {
+            "title": "Constituency No. 15",
+            "body": "Listening, dialogue and local engagement.",
+            "icon": "map",
+            "url": "/en/constituency",
+            "image": ""
+          },
+          {
+            "title": "Ideas & Perspectives",
+            "body": "Reflections and analysis on national issues.",
+            "icon": "lightbulb",
+            "url": "/en/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working together.",
+        "cta_body": "Your ideas, concerns and suggestions matter. Get in touch with the team.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Get in touch",
+        "cta_url": "/en/contact",
+        "seo_title": "Get in touch | Khushal Lobine",
+        "meta_description": "Share a concern, contact the team or request an appointment.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Contact",
+        "hero_title": "Votre voix",
+        "hero_accent": "compte",
+        "hero_body": "Partagez une préoccupation, contactez l’équipe ou demandez un rendez-vous.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Au Parlement",
+            "body": "Questions, discours et interventions.",
+            "icon": "landmark",
+            "url": "/fr/parliament",
+            "image": ""
+          },
+          {
+            "title": "Circonscription n° 15",
+            "body": "Écoute, dialogue et engagement local.",
+            "icon": "map",
+            "url": "/fr/constituency",
+            "image": ""
+          },
+          {
+            "title": "Idées et perspectives",
+            "body": "Réflexions et analyses sur les enjeux nationaux.",
+            "icon": "lightbulb",
+            "url": "/fr/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Vos idées, préoccupations et suggestions comptent. Contactez notre équipe.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Nous contacter",
+        "cta_url": "/fr/contact",
+        "seo_title": "Contact | Khushal Lobine",
+        "meta_description": "Partagez une préoccupation, contactez l’équipe ou demandez un rendez-vous.",
+        "status": "published",
+        "reviewed": true,
+        "review_notes": "Automated editorial review; biographical facts checked against National Assembly profile and 2024 election listing. Owner approval of voice and wording remains recommended.",
+        "hero_background": ""
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Kontak nou",
+        "hero_title": "Ou lavwa",
+        "hero_accent": "konte",
+        "hero_body": "Partaz enn konsern, kontak lekip ouswa demann enn randevou.",
+        "hero_image": "/images/hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Partaz enn konsern",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/contact"
+          },
+          {
+            "title": "Demann enn randevou",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/contact"
+          },
+          {
+            "title": "Kontak lekip",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/contact"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Anou travay ansam",
+        "cta_body": "Partaz ou bann lide ek ou bann konsern avek nou lekip.",
+        "cta_image": "/images/standing.jpg",
+        "cta_label": "Kontak nou",
+        "cta_url": "/km/contact",
+        "seo_title": "Kontak nou | Khushal Lobine",
+        "meta_description": "Partaz enn konsern, kontak lekip ouswa demann enn randevou.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Draf tradiksion Kreol Morisien baze lor bann referans lortografik piblik. Enn revizion imin bizin fèt avan piblikasion.",
+        "hero_background": ""
+      }
+    }
+  },
+  {
+    "slug": "privacy",
+    "translations": {
+      "en": {
+        "eyebrow": "KL WEBSITE",
+        "hero_title": "Privacy notice",
+        "hero_accent": "",
+        "hero_body": "",
+        "intro_title": "Privacy notice",
+        "intro_body": "Who operates this website\nThe identity and contact details of the data controller must be confirmed by the website owner before public launch. Contact the office using the details published on the Contact page.\n\nInformation you provide\nContact forms collect your name, email address, enquiry type, subject and message so authorised staff can respond. Avoid including confidential legal, medical or other sensitive details in the initial message. The owner must confirm the lawful basis and enquiry retention period before publication.\n\nBrowsing and security\nBasic analytics store a daily pseudonymous visitor identifier, path, referring domain and broad device category. These records are retained for 90 days. Do Not Track requests, obvious bots and signed-in staff are excluded. Session cookies support security; database sessions can retain IP and user-agent information. Security logs may also process technical information.\n\nAccess and sharing\nAccess to enquiries is restricted to authorised staff. Email alerts omit message contents. Hosting, email and other service providers may process information on behalf of the operator; the owner must identify the actual providers, locations and safeguards before approval. Videos contact YouTube or Vimeo only when you choose to load a player.\n\nYour rights\nYou may contact the controller about access, correction, deletion, objection or restriction, subject to applicable requirements. You may also contact the Mauritius Data Protection Office. This draft describes the current application; it does not constitute legal approval.\n\nReview required\nConfirm controller identity, privacy contact, lawful basis, enquiry/security-log retention, service providers, international transfers and the handling of rights requests before publishing.",
+        "seo_title": "Privacy notice",
+        "status": "review",
+        "reviewed": true,
+        "legal_approved": false,
+        "review_notes": "Draft reviewed against actual application behaviour and Mauritius Data Protection Office principles. Owner/legal approval and operational details are outstanding."
+      },
+      "fr": {
+        "eyebrow": "KL WEBSITE",
+        "hero_title": "Politique de confidentialité",
+        "hero_accent": "",
+        "hero_body": "",
+        "intro_title": "Politique de confidentialité",
+        "intro_body": "Responsable du site\nLe propriétaire doit confirmer l’identité et les coordonnées du responsable du traitement avant la mise en ligne. Les coordonnées de l’équipe figurent sur la page Contact.\n\nInformations transmises\nLe formulaire recueille votre nom, adresse e-mail, type de demande, objet et message afin que le personnel autorisé puisse vous répondre. Évitez de communiquer des informations juridiques, médicales ou autres données sensibles dans un premier message. La base légale et la durée de conservation des demandes restent à confirmer.\n\nNavigation et sécurité\nLes statistiques utilisent un identifiant pseudonyme renouvelé chaque jour, le chemin de la page, le domaine référent et le type général d’appareil. Elles sont conservées pendant 90 jours. Les demandes Do Not Track, les robots identifiés et le personnel connecté sont exclus. Des cookies de session assurent la sécurité ; les sessions peuvent conserver l’adresse IP et l’agent utilisateur. Les journaux de sécurité peuvent également contenir des informations techniques.\n\nAccès et prestataires\nSeul le personnel autorisé peut consulter les demandes. Les alertes e-mail ne contiennent pas le texte des messages. Les prestataires d’hébergement et de messagerie, leurs lieux de traitement et les garanties applicables doivent être précisés avant approbation. Les lecteurs YouTube et Vimeo ne sont chargés qu’à votre demande.\n\nVos droits\nVous pouvez contacter le responsable pour demander l’accès, la rectification, l’effacement, la limitation ou l’opposition, selon les conditions applicables. Vous pouvez également vous adresser au Data Protection Office de Maurice.\n\nValidation requise\nCe projet doit être complété et approuvé : identité du responsable, contact, base légale, conservation, prestataires, transferts internationaux et procédure de traitement des demandes de droits.",
+        "seo_title": "Politique de confidentialité",
+        "status": "review",
+        "reviewed": true,
+        "legal_approved": false,
+        "review_notes": "Draft reviewed against actual application behaviour and Mauritius Data Protection Office principles. Owner/legal approval and operational details are outstanding."
+      },
+      "km": {
+        "eyebrow": "KL WEBSITE",
+        "hero_title": "Konfidansialite",
+        "hero_accent": "",
+        "hero_body": "",
+        "intro_title": "Konfidansialite",
+        "intro_body": "Ki sann-la responsab sa sit-la\nAvan lansman piblik, proprieter bizin konfirm lidantite ek bann detay kontak responsab tretman bann done. Bann detay kontak lekip pou lor paz Kontak.\n\nBann linformasion ki ou avoye\nFormiler kontak demann ou nom, adres email, tip demann, sizet ek mesaz pou ki lekip otorize kapav reponn ou. Pa avoy bann linformasion legal, medikal ouswa lezot linformasion sansib dan ou premie mesaz. Baze legal tretman ek dire konservasion bann demann ankor bizin konfirme.\n\nNavigasion ek sekirite\nBann statistik servi enn idantifian pseudonim ki sanze sak zour, sime paz-la, domenn referan ek enn kategori zeneral laparey. Sa bann done-la reste pandan 90 zour. Bann demann Do Not Track, bann robo ki idantifie ek bann manb lekip konekte pa rant dan sa bann statistik-la. Bann cookie sesion servi pou sekirite. Bann sesion ek zournal teknik kapav gard adres IP ek linformasion lor navigater.\n\nAksè ek partaz\nZis bann manb lekip otorize kapav lir bann demann. Bann alert email pa inklir konteni mesaz-la. Proprieter bizin presiz bann prestater, kot zot tret bann done ek bann garanti ki aplike. Bann video konekte avek YouTube ouswa Vimeo zis kan ou swazir pou sarz zot.\n\nOu bann drwa\nOu kapav kontak responsab-la pou demann aksè, koreksion, efasman, limitasion ouswa opozision dapre bann kondision ki aplike. Ou kapav ousi kontak Data Protection Office Moris.\n\nLaprobasion neseser\nSa enn draf. Proprietèr ek enn dimounn konpetan bizin reviz bann detay operasionel ek legal avan piblikasion.",
+        "seo_title": "Konfidansialite",
+        "status": "review",
+        "reviewed": false,
+        "legal_approved": false,
+        "review_notes": "Draf Kreol ek legal: bizin enn revizion imin ek laprobasion proprieter avan piblikasion."
+      }
+    }
+  },
+  {
+    "slug": "terms",
+    "translations": {
+      "en": {
+        "eyebrow": "KL WEBSITE",
+        "hero_title": "Terms of use",
+        "hero_accent": "",
+        "hero_body": "",
+        "intro_title": "Terms of use",
+        "intro_body": "Purpose\nThis website provides information about public work and engagement. Material is general information, not individual legal advice.\n\nEnquiries\nSending a message does not create a lawyer-client relationship or confirm an appointment. Avoid sending confidential case information until the office confirms the appropriate channel.\n\nEditorial accuracy\nOfficial parliamentary sources should be consulted for authoritative records. Dates, extracts and translations may be corrected. External links and embedded videos are operated by third parties.\n\nImages and copyright\nThe operator must confirm rights and credits for all supplied photographs, logos and documents. Linking to a document does not transfer copyright.\n\nResponsible use\nDo not misuse forms, attempt unauthorised access or upload malicious files.\n\nOwner review\nConfirm the operator identity, contact details, applicable terms and any required jurisdiction provisions before approving this draft.",
+        "seo_title": "Terms of use",
+        "status": "review",
+        "reviewed": true,
+        "legal_approved": false,
+        "review_notes": "Draft reviewed against actual application behaviour and Mauritius Data Protection Office principles. Owner/legal approval and operational details are outstanding."
+      },
+      "fr": {
+        "eyebrow": "KL WEBSITE",
+        "hero_title": "Conditions d’utilisation",
+        "hero_accent": "",
+        "hero_body": "",
+        "intro_title": "Conditions d’utilisation",
+        "intro_body": "Objet\nCe site présente des informations sur le travail et l’engagement publics. Son contenu général ne constitue pas un conseil juridique individuel.\n\nDemandes\nL’envoi d’un message ne crée pas de relation avocat-client et ne confirme pas un rendez-vous. Ne transmettez pas d’informations confidentielles avant que l’équipe confirme le canal approprié.\n\nExactitude\nLes sources parlementaires officielles font référence. Les dates, extraits et traductions peuvent être corrigés. Les liens et vidéos externes relèvent de tiers.\n\nDroits\nLe propriétaire doit confirmer les droits et crédits relatifs aux photographies, logos et documents. Un lien vers un document ne transfère pas de droits d’auteur.\n\nUtilisation responsable\nN’utilisez pas abusivement les formulaires et ne tentez pas d’accès non autorisé.\n\nApprobation\nL’identité de l’opérateur, ses coordonnées et les dispositions applicables doivent être validées avant publication.",
+        "seo_title": "Conditions d’utilisation",
+        "status": "review",
+        "reviewed": true,
+        "legal_approved": false,
+        "review_notes": "Draft reviewed against actual application behaviour and Mauritius Data Protection Office principles. Owner/legal approval and operational details are outstanding."
+      },
+      "km": {
+        "eyebrow": "KL WEBSITE",
+        "hero_title": "Kondision itilizasion",
+        "hero_accent": "",
+        "hero_body": "",
+        "intro_title": "Kondision itilizasion",
+        "intro_body": "Lobzektif\nSa sit-la prezant bann linformasion lor travay ek langazman piblik. So konteni zeneral pa enn konsey legal individiel.\n\nBann demann\nAvoy enn mesaz pa kree enn relasion avoka-klian ek pa konfirm enn randevou. Pa avoy bann linformasion konfidansiel avan ki lekip konfirm kanal apropriye.\n\nPresizion bann linformasion\nBann dokiman ofisiel Parlman res bann referans prensipal. Bann dat, extrè ek tradiksion kapav korize. Bann lien ek video exteryer depann lor bann tiers.\n\nBann drwa\nProprieter bizin konfirm bann drwa ek bann kredi pou bann foto, logo ek dokiman. Enn lien ver enn dokiman pa transfer drwa loter.\n\nItilizasion responsab\nPa fer enn move itilizasion bann formiler ek pa esey gagn enn aksè san lotorizasion.\n\nLaprobasion\nLidantite operater, so bann detay kontak ek bann dispozision ki aplike bizin valide avan piblikasion.",
+        "seo_title": "Kondision itilizasion",
+        "status": "review",
+        "reviewed": false,
+        "legal_approved": false,
+        "review_notes": "Draf Kreol ek legal: bizin enn revizion imin ek laprobasion proprieter avan piblikasion."
+      }
+    }
+  }
+]
