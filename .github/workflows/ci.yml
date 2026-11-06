@@ -51,3 +51,12 @@ jobs:
         run: |
           docker build --target web -t kl-web:test .
           docker run --rm -e APP_DOMAIN=:80 kl-web:test caddy validate --config /etc/caddy/Caddyfile
+      - name: Smoke test complete Docker Compose stack
+        run: |
+          bash scripts/setup.sh
+          curl --fail --retry 12 --retry-delay 3 --retry-connrefused http://localhost:8080/up
+          curl --fail --retry 12 --retry-delay 3 --retry-connrefused http://localhost:8080/en
+          curl --fail http://localhost:8080/api/content/en
+      - name: Remove disposable Docker test data
+        if: always()
+        run: if [ -f .env ]; then docker compose down --volumes; fi
