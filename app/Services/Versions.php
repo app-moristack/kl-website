@@ -19,6 +19,7 @@ class Versions
                 if (isset($data['version'])) {
                     abort_if((int) $data['version'] !== (int) $model->version, 409, 'This record changed. Reload before saving.');
                 }
+                $data = self::invalidateChangedTranslations($model, $data);
                 if (! Revision::where('subject_type', $type)->where('subject_id', $model->id)->exists()) {
                     self::record($model, $type, $userId, 'baseline');
                 }
@@ -32,6 +33,31 @@ class Versions
 
             return $model;
         });
+    }
+
+    private static function invalidateChangedTranslations(Model $model, array $data): array
+    {
+        $reviewFields = ['status', 'reviewed', 'review_notes', 'legal_approved'];
+        $legal = $model instanceof Page && in_array($model->slug, ['privacy', 'terms'], true);
+        foreach ($data['translations'] ?? [] as $locale => $translation) {
+            $previous = $model->translations[$locale] ?? null;
+            $galleryChanged = array_key_exists('gallery', $data) &&
+                array_map(fn ($photo) => $photo['translations'][$locale] ?? [], $model->gallery ?? []) !=
+                array_map(fn ($photo) => $photo['translations'][$locale] ?? [], $data['gallery'] ?? []);
+            if (! $previous || (! $galleryChanged && collect($previous)->except($reviewFields)->all() == collect($translation)->except($reviewFields)->all())) {
+                continue;
+            }
+            $translation['reviewed'] = false;
+            if ($model instanceof Page) {
+                $translation['legal_approved'] = false;
+            }
+            if (($previous['status'] ?? '') === 'published' || (($locale === 'km' || $legal) && ($translation['status'] ?? '') === 'published')) {
+                $translation['status'] = 'draft';
+            }
+            $data['translations'][$locale] = $translation;
+        }
+
+        return $data;
     }
 
     public static function record(Model $model, string $type, int $userId, string $action): void

@@ -91,7 +91,7 @@ class AdminController extends Controller
     public function settings(Request $request)
     {
         abort_unless($request->user()->role === 'admin', 403);
-        $data = $request->validate(['kreol_interface_approved' => 'boolean', 'email' => 'nullable|email|max:254', 'phone' => 'nullable|string|max:50', 'address' => 'nullable|string|max:250', 'whatsapp' => 'nullable|url:https|max:500', 'party_url' => 'nullable|url:https|max:500']);
+        $data = $request->validate(['kreol_interface_approved' => 'boolean', 'email' => 'nullable|email|max:254', 'phone' => 'nullable|string|max:50', 'address' => 'nullable|string|max:250', 'whatsapp' => 'nullable|url:https|max:500', 'party_url' => 'nullable|url:https|max:500', 'facebook' => 'nullable|url:https|max:500', 'instagram' => 'nullable|url:https|max:500', 'youtube' => 'nullable|url:https|max:500', 'linkedin' => 'nullable|url:https|max:500']);
         foreach ($data as $key => $value) {
             DB::table('site_settings')->updateOrInsert(['key' => $key], ['value' => json_encode($value), 'updated_at' => now(), 'created_at' => now()]);
         }

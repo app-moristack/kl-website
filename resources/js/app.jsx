@@ -203,6 +203,10 @@ function Editor({ value, onSave, onCancel }) {
                             }
                         />
                     </label>
+                    <p className="muted">
+                        Changes to published text are saved as drafts. Save
+                        changed wording before recording a new review approval.
+                    </p>
                     <label>
                         Translation status
                         <select
@@ -606,6 +610,7 @@ function AdminApp() {
                 {historyTarget && (
                     <History
                         type="content"
+                        canRestore={user.role === "admin"}
                         id={historyTarget.id}
                         version={historyTarget.version}
                         onClose={() => setHistoryTarget(null)}
@@ -616,7 +621,10 @@ function AdminApp() {
                     />
                 )}
                 {tab === "pages" ? (
-                    <PageStudio />
+                    <PageStudio
+                        canRestore={user.role === "admin"}
+                        canEditLegal={user.role === "admin"}
+                    />
                 ) : tab === "media" ? (
                     <MediaLibrary />
                 ) : tab === "staff" ? (
@@ -766,7 +774,7 @@ function AdminApp() {
                                                                     }
                                                                 }}
                                                             >
-                                                                Delete
+                                                                Archive
                                                             </button>
                                                         )}
                                                 </td>
@@ -867,6 +875,10 @@ function AdminApp() {
                                 ["address", "Office address"],
                                 ["whatsapp", "WhatsApp HTTPS URL"],
                                 ["party_url", "Party website HTTPS URL"],
+                                ["facebook", "Facebook HTTPS URL"],
+                                ["instagram", "Instagram HTTPS URL"],
+                                ["youtube", "YouTube HTTPS URL"],
+                                ["linkedin", "LinkedIn HTTPS URL"],
                             ].map(([key, label]) => (
                                 <label key={key}>
                                     {label}
@@ -875,7 +887,13 @@ function AdminApp() {
                                             key === "email"
                                                 ? "email"
                                                 : key.includes("url") ||
-                                                    key === "whatsapp"
+                                                    [
+                                                        "whatsapp",
+                                                        "facebook",
+                                                        "instagram",
+                                                        "youtube",
+                                                        "linkedin",
+                                                    ].includes(key)
                                                   ? "url"
                                                   : "text"
                                         }

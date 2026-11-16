@@ -1,0 +1,2233 @@
+[
+  {
+    "slug": "home",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "",
+        "hero_title": "Khushal",
+        "hero_accent": "LOBINE",
+        "hero_body": "Member of Parliament | Barrister-at-Law | Leader of Nouveaux Démocrates\n\nFirst Elected Member for Constituency No. 15 — La Caverne & Phoenix.\n\nA lifelong commitment to a fairer, more inclusive Mauritius, shaped by a background in law, governance and public leadership.",
+        "hero_image": "/images/template-home-hero.jpg",
+        "primary_label": "Discover Khushal",
+        "primary_url": "/en/about",
+        "secondary_label": "Explore parliamentary work",
+        "secondary_url": "/en/parliament",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law, Member of Parliament and Leader of Nouveaux Démocrates. His work is guided by a deep belief in the rule of law, integrity, equal opportunity and a stronger, more inclusive Mauritius.\n\nWith a background in law and years of public service, he continues to champion the interests of the people, particularly in Constituency No. 15 — La Caverne & Phoenix, and to advocate for a fairer, more modern Mauritius.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "My commitment has always been to serve with integrity, to work hard for the people of Mauritius, and to give every citizen a fair chance to build a better future.\n\nTogether, we can build a more inclusive, more prosperous and more united Mauritius — one where every voice matters.",
+        "signature": "KHUSHAL LOBINE",
+        "section_title": "News, Parliamentary Work and Community Engagement",
+        "cards": [
+          {
+            "title": "In Parliament",
+            "body": "Standing up for transparency, accountability and policies that improve the lives of all Mauritians.",
+            "icon": "landmark",
+            "image": "/images/template-about-education.jpg",
+            "url": "/en/parliament"
+          },
+          {
+            "title": "Constituency No. 15",
+            "body": "Listening, engaging and working with the people of La Caverne & Phoenix.",
+            "icon": "map",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/en/constituency"
+          },
+          {
+            "title": "Ideas & Perspectives",
+            "body": "Sharing thoughts on the issues that matter — good governance, economic opportunity, social justice and a stronger Mauritius.",
+            "icon": "lightbulb",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/en/perspectives"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Parliamentary Intervention on Cost of Living",
+            "body": "Raising key issues affecting Mauritian families in Parliament.",
+            "icon": "landmark",
+            "image": "/images/template-home-parliament.jpg",
+            "url": "/en/parliament",
+            "year": "2024-05-14"
+          },
+          {
+            "title": "Engaging with Our Community in No. 15",
+            "body": "Meeting with young people in La Caverne & Phoenix.",
+            "icon": "users",
+            "image": "/images/template-home-community.jpg",
+            "url": "/en/constituency",
+            "year": "2024-05-02"
+          },
+          {
+            "title": "Press Conference: Our Plan for a Better Mauritius",
+            "body": "Sharing our vision for a fairer, more inclusive Mauritius.",
+            "icon": "users",
+            "image": "/images/template-home-press.jpg",
+            "url": "/en/media",
+            "year": "2024-05-06"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Working Together for a Stronger Mauritius",
+        "cta_body": "A conversation on the issues that matter — our people, our communities and our shared future.",
+        "cta_image": "/images/template-home-focus.jpg",
+        "cta_label": "Watch Now",
+        "cta_url": "/en/media#media-archive",
+        "seo_title": "Khushal LOBINE | Khushal Lobine",
+        "meta_description": "Member of Parliament | Barrister-at-Law | Leader of Nouveaux Démocrates  First Elected Member for Constituency No. 15 — La Caverne & Phoenix.  A lifelong commitment to a fairer, more inclusive Mauritius, shaped by a background in law, governance and public leadership.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "",
+        "hero_title": "Khushal",
+        "hero_accent": "LOBINE",
+        "hero_body": "Député | Avocat | Leader des Nouveaux Démocrates\n\nPremier élu de la circonscription n° 15 — La Caverne et Phoenix.\n\nUn engagement de toujours pour une île Maurice plus juste et inclusive, nourri par le droit, la gouvernance et le service public.",
+        "hero_image": "/images/template-home-hero.jpg",
+        "primary_label": "Découvrir Khushal",
+        "primary_url": "/fr/about",
+        "secondary_label": "Travail parlementaire",
+        "secondary_url": "/fr/parliament",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat, député et leader des Nouveaux Démocrates. Son travail repose sur l’État de droit, l’intégrité, l’égalité des chances et une île Maurice plus forte et inclusive.\n\nFort de son expérience juridique et de ses années de service public, il défend les intérêts des citoyens, notamment dans la circonscription n° 15 — La Caverne et Phoenix, et une île Maurice plus juste et moderne.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "Mon engagement a toujours été de servir avec intégrité, de travailler pour les Mauriciens et de donner à chacun une chance équitable de bâtir un avenir meilleur.\n\nEnsemble, construisons une île Maurice plus inclusive, prospère et unie, où chaque voix compte.",
+        "signature": "",
+        "section_title": "Actualités, travail parlementaire et engagement local",
+        "cards": [
+          {
+            "title": "Au Parlement",
+            "body": "Défendre la transparence, la responsabilité et les politiques qui améliorent la vie des Mauriciens.",
+            "icon": "landmark",
+            "image": "/images/template-about-education.jpg",
+            "url": "/fr/parliament"
+          },
+          {
+            "title": "Circonscription n° 15",
+            "body": "Écouter, échanger et travailler avec les habitants de La Caverne et Phoenix.",
+            "icon": "map",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/fr/constituency"
+          },
+          {
+            "title": "Idées et perspectives",
+            "body": "Réflexions sur la bonne gouvernance, les opportunités économiques, la justice sociale et une île Maurice plus forte.",
+            "icon": "lightbulb",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/fr/perspectives"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Intervention sur le coût de la vie",
+            "body": "Porter au Parlement les enjeux qui touchent les familles mauriciennes.",
+            "icon": "landmark",
+            "image": "/images/template-home-parliament.jpg",
+            "url": "/fr/parliament",
+            "year": "2024-05-14"
+          },
+          {
+            "title": "À la rencontre de notre communauté du n° 15",
+            "body": "Rencontrer les jeunes de La Caverne et Phoenix.",
+            "icon": "users",
+            "image": "/images/template-home-community.jpg",
+            "url": "/fr/constituency",
+            "year": "2024-05-02"
+          },
+          {
+            "title": "Conférence de presse : notre projet pour Maurice",
+            "body": "Partager notre vision d’une île Maurice plus juste et inclusive.",
+            "icon": "users",
+            "image": "/images/template-home-press.jpg",
+            "url": "/fr/media",
+            "year": "2024-05-06"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Agir ensemble pour une île Maurice plus forte",
+        "cta_body": "Une conversation sur l’essentiel : nos citoyens, nos communautés et notre avenir commun.",
+        "cta_image": "/images/template-home-focus.jpg",
+        "cta_label": "Voir maintenant",
+        "cta_url": "/fr/media#media-archive",
+        "seo_title": "Khushal LOBINE | Khushal Lobine",
+        "meta_description": "Député | Avocat | Leader des Nouveaux Démocrates  Premier élu de la circonscription n° 15 — La Caverne et Phoenix.  Un engagement de toujours pour une île Maurice plus juste et inclusive, nourri par le droit, la gouvernance et le service public.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "",
+        "hero_title": "Khushal",
+        "hero_accent": "LOBINE",
+        "hero_body": "Depite | Avoka | Lider Nouveaux Démocrates\n\nPremie eli dan sirkonskripsion No. 15 — La Caverne ek Phoenix.\n\nEnn langazman pou enn Moris pli zis ek inklizif, baze lor lexperyans dan lalwa, gouvernans ek lidership piblik.",
+        "hero_image": "/images/template-home-hero.jpg",
+        "primary_label": "Lor Khushal",
+        "primary_url": "/km/about",
+        "secondary_label": "Travay dan Parlman",
+        "secondary_url": "/km/parliament",
+        "intro_title": "Lalwa, lidership ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka, depite ek lider Nouveaux Démocrates. So travay baze lor respe lalwa, lintegrite, egalite bann sans ek enn Moris pli for ek inklizif.\n\nAvek so lexperyans dan lalwa ek servis piblik, li kontign defann lintere bann dimoun, sirtou dan No. 15 — La Caverne ek Phoenix, pou enn Moris pli zis ek modern.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "Mo finn touletan angaz mwa pou servi avek lintegrite, travay dir pou bann Morisien ek donn sak sitwayen enn sans zis pou enn meyer lavenir.\n\nAnsam, nou kapav konstrir enn Moris pli inklizif, prosper ek ini, kot sak lavwa konte.",
+        "signature": "",
+        "section_title": "Nouvel, travay dan Parlman ek langazman dan kominote",
+        "cards": [
+          {
+            "title": "Dan Parlman",
+            "body": "Defann transparans, responsabilite ek bann politik ki amelior lavi tou Morisien.",
+            "icon": "landmark",
+            "image": "/images/template-about-education.jpg",
+            "url": "/km/parliament"
+          },
+          {
+            "title": "Sirkonskripsion No. 15",
+            "body": "Ekoute, partaze ek travay avek bann dimoun La Caverne ek Phoenix.",
+            "icon": "map",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/km/constituency"
+          },
+          {
+            "title": "Lide ek perspektiv",
+            "body": "Bann lide lor bon gouvernans, loportinite ekonomik, lazistis sosial ek enn Moris pli for.",
+            "icon": "lightbulb",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/km/perspectives"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Intervansion lor kou lavi",
+            "body": "Lev bann kestyon ki konsern bann fami morisien dan Parlman.",
+            "icon": "landmark",
+            "image": "/images/template-home-parliament.jpg",
+            "url": "/km/parliament",
+            "year": "2024-05-14"
+          },
+          {
+            "title": "Ansam avek nou kominote dan No. 15",
+            "body": "Rankont bann zenn dan La Caverne ek Phoenix.",
+            "icon": "users",
+            "image": "/images/template-home-community.jpg",
+            "url": "/km/constituency",
+            "year": "2024-05-02"
+          },
+          {
+            "title": "Konferans lapres: nou plan pou enn meyer Moris",
+            "body": "Partaz nou vizion pou enn Moris pli zis ek inklizif.",
+            "icon": "users",
+            "image": "/images/template-home-press.jpg",
+            "url": "/km/media",
+            "year": "2024-05-06"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Travay ansam pou enn Moris pli for",
+        "cta_body": "Enn konversasion lor seki konte — nou dimoun, nou kominote ek nou lavenir ansam.",
+        "cta_image": "/images/template-home-focus.jpg",
+        "cta_label": "Get aster",
+        "cta_url": "/km/media#media-archive",
+        "seo_title": "Khushal LOBINE | Khushal Lobine",
+        "meta_description": "Depite | Avoka | Lider Nouveaux Démocrates  Premie eli dan sirkonskripsion No. 15 — La Caverne ek Phoenix.  Enn langazman pou enn Moris pli zis ek inklizif, baze lor lexperyans dan lalwa, gouvernans ek lidership piblik.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      }
+    }
+  },
+  {
+    "slug": "about",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "About Khushal Lobine",
+        "hero_title": "About",
+        "hero_accent": "Khushal Lobine",
+        "hero_body": "A commitment to a fairer, more inclusive and prosperous Mauritius.\n\nKhushal Lobine is a barrister-at-law, Member of Parliament and Leader of Nouveaux Démocrates. He has dedicated his career to the rule of law, good governance and opportunity for all Mauritians.",
+        "hero_image": "/images/template-about-hero.jpg",
+        "primary_label": "Read my story",
+        "primary_url": "/en/about#biography",
+        "secondary_label": "Watch message",
+        "secondary_url": "/en/media#media-archive",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law, Member of Parliament and Leader of Nouveaux Démocrates. His work is guided by a deep belief in the rule of law, integrity, equal opportunity and a stronger, more inclusive Mauritius.\n\nWith a background in law and years of public service, he continues to champion the interests of the people, particularly in Constituency No. 15 — La Caverne & Phoenix, and to advocate for a fairer, more modern Mauritius.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "My commitment is simple: serve with integrity, act with courage, and put people first.\n\nI believe in a Mauritius where everyone has the opportunity to thrive — a fairer, more inclusive and prosperous nation.",
+        "signature": "KHUSHAL LOBINE",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "Education",
+            "body": "Completed legal studies in the United Kingdom, building the foundation for a career in law and public service.",
+            "icon": "book",
+            "image": "/images/template-about-education.jpg",
+            "url": "/en/about#biography"
+          },
+          {
+            "title": "Legal Career",
+            "body": "Called to the Bar and practised as a barrister-at-law, with a commitment to justice, fairness and the protection of rights.",
+            "icon": "gavel",
+            "image": "/images/template-about-law.jpg",
+            "url": "/en/about#biography"
+          },
+          {
+            "title": "Public Leadership",
+            "body": "Chaired the board of the State Investment Corporation of Mauritius (SICOM Group) and the Wastewater Management Authority, contributing to stronger institutions and sustainable development.",
+            "icon": "users",
+            "image": "/images/template-about-leadership.jpg",
+            "url": "/en/about#biography"
+          },
+          {
+            "title": "Political Journey",
+            "body": "Elected as Member of Parliament in 2019, founded and now leads Nouveaux Démocrates in 2024, and re-elected in 2024. Continuing to work for a fairer, more inclusive and prosperous Mauritius.",
+            "icon": "landmark",
+            "image": "/images/template-about-flag.jpg",
+            "url": "/en/about#biography"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Legal Studies in the UK",
+            "body": "Completed legal studies in the United Kingdom.",
+            "icon": "book"
+          },
+          {
+            "title": "Called to the Bar",
+            "body": "Called to the Bar as a barrister-at-law.",
+            "icon": "gavel"
+          },
+          {
+            "title": "Legal Career",
+            "body": "Practised as a barrister, building a strong legal career.",
+            "icon": "book"
+          },
+          {
+            "title": "Chairman, SICOM Group",
+            "body": "Chaired the board of the State Investment Corporation of Mauritius (SICOM Group).",
+            "icon": "users"
+          },
+          {
+            "title": "Chairman, Wastewater Management Authority",
+            "body": "Chaired the board of the Wastewater Management Authority.",
+            "icon": "shield"
+          },
+          {
+            "title": "Elected as MP in 2019",
+            "body": "Elected Member of Parliament in 2019.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Founded Nouveaux Démocrates in 2024",
+            "body": "Founded and now leads Nouveaux Démocrates.",
+            "icon": "leaf"
+          },
+          {
+            "title": "Re-elected in 2024",
+            "body": "Re-elected as Member of Parliament in 2024.",
+            "icon": "users"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Member of Parliament",
+            "body": "Serving the people of Mauritius.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Barrister-at-Law",
+            "body": "A commitment to justice and the rule of law.",
+            "icon": "gavel"
+          },
+          {
+            "title": "Leader of Nouveaux Démocrates",
+            "body": "Building a fairer, more inclusive Mauritius.",
+            "icon": "users"
+          },
+          {
+            "title": "Experienced Public Leader",
+            "body": "Former Chairman of SICOM Group and the Wastewater Management Authority.",
+            "icon": "book"
+          },
+          {
+            "title": "Focused on a Stronger Mauritius",
+            "body": "Working for opportunity, good governance and a better future for all.",
+            "icon": "leaf"
+          }
+        ],
+        "cta_title": "People First",
+        "cta_body": "I am committed to listening, working with our communities and building a Mauritius where everyone has the opportunity to thrive. Through teamwork, dialogue and practical solutions, we can create a fairer, more inclusive and prosperous future for our country.",
+        "cta_image": "/images/template-about-community.jpg",
+        "cta_label": "Our vision for Mauritius",
+        "cta_url": "/en/perspectives",
+        "seo_title": "About Khushal Lobine | Khushal Lobine",
+        "meta_description": "A commitment to a fairer, more inclusive and prosperous Mauritius.  Khushal Lobine is a barrister-at-law, Member of Parliament and Leader of Nouveaux Démocrates. He has dedicated his career to the rule of law, good governance and opportunity for all Mauritians.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "À propos de Khushal Lobine",
+        "hero_title": "À propos de",
+        "hero_accent": "Khushal Lobine",
+        "hero_body": "Un engagement pour une île Maurice plus juste, inclusive et prospère.\n\nAvocat, député et leader des Nouveaux Démocrates, Khushal Lobine consacre sa carrière à l’État de droit, à la bonne gouvernance et aux chances de réussite pour tous.",
+        "hero_image": "/images/template-about-hero.jpg",
+        "primary_label": "Lire mon parcours",
+        "primary_url": "/fr/about#biography",
+        "secondary_label": "Voir le message",
+        "secondary_url": "/fr/media#media-archive",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat, député et leader des Nouveaux Démocrates. Son travail repose sur l’État de droit, l’intégrité, l’égalité des chances et une île Maurice plus forte et inclusive.\n\nFort de son expérience juridique et de ses années de service public, il défend les intérêts des citoyens, notamment dans la circonscription n° 15 — La Caverne et Phoenix, et une île Maurice plus juste et moderne.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "Mon engagement est simple : servir avec intégrité, agir avec courage et placer les citoyens au premier plan.\n\nJe crois en une île Maurice où chacun peut s’épanouir — une nation plus juste, inclusive et prospère.",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Formation",
+            "body": "Des études de droit au Royaume-Uni, fondement d’une carrière juridique et de service public.",
+            "icon": "book",
+            "image": "/images/template-about-education.jpg",
+            "url": "/fr/about#biography"
+          },
+          {
+            "title": "Carrière juridique",
+            "body": "Avocat inscrit au barreau, engagé pour la justice, l’équité et la protection des droits.",
+            "icon": "gavel",
+            "image": "/images/template-about-law.jpg",
+            "url": "/fr/about#biography"
+          },
+          {
+            "title": "Responsabilités publiques",
+            "body": "Présidence de la State Investment Corporation of Mauritius (SICOM Group) et de la Wastewater Management Authority, pour des institutions fortes et le développement durable.",
+            "icon": "users",
+            "image": "/images/template-about-leadership.jpg",
+            "url": "/fr/about#biography"
+          },
+          {
+            "title": "Parcours politique",
+            "body": "Élu député en 2019, fondateur et leader des Nouveaux Démocrates en 2024, puis réélu en 2024. Pour une île Maurice plus juste, inclusive et prospère.",
+            "icon": "landmark",
+            "image": "/images/template-about-flag.jpg",
+            "url": "/fr/about#biography"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Études de droit au Royaume-Uni",
+            "body": "Études de droit au Royaume-Uni.",
+            "icon": "book"
+          },
+          {
+            "title": "Admission au barreau",
+            "body": "Admis au barreau comme avocat.",
+            "icon": "gavel"
+          },
+          {
+            "title": "Carrière juridique",
+            "body": "Exercice du métier d’avocat et solide carrière juridique.",
+            "icon": "book"
+          },
+          {
+            "title": "Président, SICOM Group",
+            "body": "Présidence de la State Investment Corporation of Mauritius (SICOM Group).",
+            "icon": "users"
+          },
+          {
+            "title": "Président, Wastewater Management Authority",
+            "body": "Présidence de la Wastewater Management Authority.",
+            "icon": "shield"
+          },
+          {
+            "title": "Élu député en 2019",
+            "body": "Élu député en 2019.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Fondation des Nouveaux Démocrates en 2024",
+            "body": "Fondateur et leader des Nouveaux Démocrates.",
+            "icon": "leaf"
+          },
+          {
+            "title": "Réélu en 2024",
+            "body": "Réélu député en 2024.",
+            "icon": "users"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Député",
+            "body": "Au service des Mauriciens.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Avocat",
+            "body": "Un engagement pour la justice et l’État de droit.",
+            "icon": "gavel"
+          },
+          {
+            "title": "Leader des Nouveaux Démocrates",
+            "body": "Construire une île Maurice plus juste et inclusive.",
+            "icon": "users"
+          },
+          {
+            "title": "Expérience du service public",
+            "body": "Ancien président de SICOM Group et de la Wastewater Management Authority.",
+            "icon": "book"
+          },
+          {
+            "title": "Pour une île Maurice plus forte",
+            "body": "Pour les opportunités, la bonne gouvernance et un avenir meilleur pour tous.",
+            "icon": "leaf"
+          }
+        ],
+        "cta_title": "Les citoyens d’abord",
+        "cta_body": "Je m’engage à écouter, à travailler avec nos communautés et à construire une île Maurice où chacun peut s’épanouir. Ensemble, par le dialogue et des solutions concrètes, bâtissons un avenir plus juste, inclusif et prospère.",
+        "cta_image": "/images/template-about-community.jpg",
+        "cta_label": "Notre vision pour Maurice",
+        "cta_url": "/fr/perspectives",
+        "seo_title": "À propos de Khushal Lobine | Khushal Lobine",
+        "meta_description": "Un engagement pour une île Maurice plus juste, inclusive et prospère.  Avocat, député et leader des Nouveaux Démocrates, Khushal Lobine consacre sa carrière à l’État de droit, à la bonne gouvernance et aux chances de réussite pour tous.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Lor Khushal Lobine",
+        "hero_title": "Lor",
+        "hero_accent": "Khushal Lobine",
+        "hero_body": "Enn langazman pou enn Moris pli zis, inklizif ek prosper.\n\nKhushal Lobine enn avoka, depite ek lider Nouveaux Démocrates. Li finn dedie so karyer a respe lalwa, bon gouvernans ek loportinite pou tou Morisien.",
+        "hero_image": "/images/template-about-hero.jpg",
+        "primary_label": "Lir mo parkour",
+        "primary_url": "/km/about#biography",
+        "secondary_label": "Get mesaz",
+        "secondary_url": "/km/media#media-archive",
+        "intro_title": "Lalwa, lidership ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka, depite ek lider Nouveaux Démocrates. So travay baze lor respe lalwa, lintegrite, egalite bann sans ek enn Moris pli for ek inklizif.\n\nAvek so lexperyans dan lalwa ek servis piblik, li kontign defann lintere bann dimoun, sirtou dan No. 15 — La Caverne ek Phoenix, pou enn Moris pli zis ek modern.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "Mo langazman sinp: servi avek lintegrite, azir avek kouraz ek met dimoun an premie.\n\nMo krwar dan enn Moris kot sak dimoun gagn lokazion progrese — enn pei pli zis, inklizif ek prosper.",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Ledikasion",
+            "body": "Letid lalwa dan Royaume-Uni, enn baz pou enn karyer dan lalwa ek servis piblik.",
+            "icon": "book",
+            "image": "/images/template-about-education.jpg",
+            "url": "/km/about#biography"
+          },
+          {
+            "title": "Karyer dan lalwa",
+            "body": "Avoka admis dan Baro, angaze pou lazistis, lekite ek proteksion bann drwa.",
+            "icon": "gavel",
+            "image": "/images/template-about-law.jpg",
+            "url": "/km/about#biography"
+          },
+          {
+            "title": "Lidership piblik",
+            "body": "Prezidans dan State Investment Corporation of Mauritius (SICOM Group) ek Wastewater Management Authority, pou bann linstitision for ek devlopman dirab.",
+            "icon": "users",
+            "image": "/images/template-about-leadership.jpg",
+            "url": "/km/about#biography"
+          },
+          {
+            "title": "Parkour politik",
+            "body": "Eli depite an 2019, fondater ek lider Nouveaux Démocrates an 2024, ek reeli an 2024. Pou enn Moris pli zis, inklizif ek prosper.",
+            "icon": "landmark",
+            "image": "/images/template-about-flag.jpg",
+            "url": "/km/about#biography"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Letid lalwa dan Royaume-Uni",
+            "body": "Fini letid lalwa dan Royaume-Uni.",
+            "icon": "book"
+          },
+          {
+            "title": "Admis dan Baro",
+            "body": "Admis dan Baro kouma avoka.",
+            "icon": "gavel"
+          },
+          {
+            "title": "Karyer dan lalwa",
+            "body": "Pratik kouma avoka ek konstrir enn karyer solid.",
+            "icon": "book"
+          },
+          {
+            "title": "Prezidan, SICOM Group",
+            "body": "Prezidans dan State Investment Corporation of Mauritius (SICOM Group).",
+            "icon": "users"
+          },
+          {
+            "title": "Prezidan, Wastewater Management Authority",
+            "body": "Prezidans dan Wastewater Management Authority.",
+            "icon": "shield"
+          },
+          {
+            "title": "Eli depite an 2019",
+            "body": "Eli depite an 2019.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Fond Nouveaux Démocrates an 2024",
+            "body": "Fondater ek lider Nouveaux Démocrates.",
+            "icon": "leaf"
+          },
+          {
+            "title": "Reeli an 2024",
+            "body": "Reeli depite an 2024.",
+            "icon": "users"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Depite",
+            "body": "Dan servis bann Morisien.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Avoka",
+            "body": "Enn langazman pou lazistis ek respe lalwa.",
+            "icon": "gavel"
+          },
+          {
+            "title": "Lider Nouveaux Démocrates",
+            "body": "Konstrir enn Moris pli zis ek inklizif.",
+            "icon": "users"
+          },
+          {
+            "title": "Lexperyans dan servis piblik",
+            "body": "Ansyen prezidan SICOM Group ek Wastewater Management Authority.",
+            "icon": "book"
+          },
+          {
+            "title": "Pou enn Moris pli for",
+            "body": "Pou loportinite, bon gouvernans ek enn meyer lavenir pou tou dimoun.",
+            "icon": "leaf"
+          }
+        ],
+        "cta_title": "Dimoun an premie",
+        "cta_body": "Mo angaz mwa pou ekoute, travay avek nou kominote ek konstrir enn Moris kot sak dimoun kapav progrese. Avek travay ansam, dialog ek bann solision pratik, nou kapav konstrir enn lavenir pli zis, inklizif ek prosper.",
+        "cta_image": "/images/template-about-community.jpg",
+        "cta_label": "Nou vizion pou Moris",
+        "cta_url": "/km/perspectives",
+        "seo_title": "Lor Khushal Lobine | Khushal Lobine",
+        "meta_description": "Enn langazman pou enn Moris pli zis, inklizif ek prosper.  Khushal Lobine enn avoka, depite ek lider Nouveaux Démocrates. Li finn dedie so karyer a respe lalwa, bon gouvernans ek loportinite pou tou Morisien.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      }
+    }
+  },
+  {
+    "slug": "parliament",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Parliamentary work",
+        "hero_title": "PARLIAMENTARY",
+        "hero_accent": "WORK",
+        "hero_body": "Legislative scrutiny. Public accountability. A stronger Mauritius.\n\nAs a Member of Parliament, I contribute to national debate, scrutinise government action, and advocate for legislation that delivers a fairer, more inclusive and prosperous Mauritius.",
+        "hero_image": "/images/template-parliament-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Advancing a Fairer and Stronger Mauritius",
+        "cards": [
+          {
+            "title": "Parliamentary Questions",
+            "body": "Seek answers, promote transparency and hold government to account.",
+            "icon": "book",
+            "url": "/en/parliament?kind=question#archive"
+          },
+          {
+            "title": "Speeches & Debates",
+            "body": "Contribute to national discussions on key issues affecting Mauritius.",
+            "icon": "landmark",
+            "url": "/en/parliament?kind=speech#archive"
+          },
+          {
+            "title": "Bills & Interventions",
+            "body": "Table and support legislation to address the needs of our people.",
+            "icon": "book",
+            "url": "/en/parliament?kind=bill#archive"
+          },
+          {
+            "title": "Committees",
+            "body": "Participate in parliamentary committees to examine issues in depth.",
+            "icon": "users",
+            "url": "/en/parliament?kind=committee#archive"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Budget Speech 2026",
+            "body": "Contributed to the national debate on the Budget 2026, with a focus on inclusive growth, opportunity and a fairer Mauritius.",
+            "icon": "chart",
+            "url": "/en/parliament?search=Budget#archive"
+          },
+          {
+            "title": "Legal Aid and Legal Assistance Bill",
+            "body": "Supporting greater access to justice and legal assistance for all, enabling a fairer and more inclusive society.",
+            "icon": "gavel",
+            "url": "/en/parliament?search=Legal#archive"
+          },
+          {
+            "title": "Constitutional Review Commission Bill",
+            "body": "Contributing to the strengthening of our democracy through a comprehensive and inclusive constitutional review process.",
+            "icon": "book",
+            "url": "/en/parliament?search=Constitutional#archive"
+          },
+          {
+            "title": "Criminal Justice: Offenders Assisting Investigations",
+            "body": "Supporting measures that encourage cooperation in investigations, strengthen the justice system and enhance public safety.",
+            "icon": "shield",
+            "url": "/en/parliament?search=Criminal#archive"
+          },
+          {
+            "title": "Law Reform Commission",
+            "body": "Supporting the work of the Law Reform Commission to modernise our laws and ensure they remain relevant, fair and fit for the future.",
+            "icon": "gavel",
+            "url": "/en/parliament?search=Reform#archive"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Promoting transparency, integrity and effective institutions.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Supporting laws that deliver opportunity and social justice.",
+            "icon": "book"
+          },
+          {
+            "title": "Accountability",
+            "body": "Holding government to account and ensuring responsible use of public resources.",
+            "icon": "shield"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Contributing to evidence-based solutions for a fairer and more inclusive Mauritius.",
+            "icon": "users"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Raising the concerns of the people of Constituency No. 15 in Parliament.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "From Parliament to the People",
+        "cta_body": "My parliamentary work is guided by the real concerns and aspirations of the people of Mauritius, especially the residents of Constituency No. 15. I remain committed to listening, engaging and working for practical solutions.",
+        "cta_image": "/images/template-parliament-community.jpg",
+        "cta_label": "Contact us today",
+        "cta_url": "/en/contact",
+        "seo_title": "PARLIAMENTARY WORK | Khushal Lobine",
+        "meta_description": "Legislative scrutiny. Public accountability. A stronger Mauritius.  As a Member of Parliament, I contribute to national debate, scrutinise government action, and advocate for legislation that delivers a fairer, more inclusive and prosperous Mauritius.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Travail parlementaire",
+        "hero_title": "Le travail",
+        "hero_accent": "parlementaire",
+        "hero_body": "Examen des lois. Responsabilité publique. Une île Maurice plus forte.\n\nEn tant que député, je contribue au débat national, examine l’action du gouvernement et défends des lois pour une île Maurice plus juste, inclusive et prospère.",
+        "hero_image": "/images/template-parliament-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Questions parlementaires",
+            "body": "Obtenir des réponses, promouvoir la transparence et demander des comptes au gouvernement.",
+            "icon": "book",
+            "url": "/fr/parliament?kind=question#archive"
+          },
+          {
+            "title": "Discours et débats",
+            "body": "Contribuer aux débats nationaux sur les enjeux majeurs de Maurice.",
+            "icon": "landmark",
+            "url": "/fr/parliament?kind=speech#archive"
+          },
+          {
+            "title": "Projets de loi et interventions",
+            "body": "Proposer et soutenir des lois répondant aux besoins des citoyens.",
+            "icon": "book",
+            "url": "/fr/parliament?kind=bill#archive"
+          },
+          {
+            "title": "Commissions",
+            "body": "Participer aux commissions parlementaires pour examiner les dossiers en profondeur.",
+            "icon": "users",
+            "url": "/fr/parliament?kind=committee#archive"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Discours du budget 2026",
+            "body": "Contribution au débat sur le budget 2026, pour une croissance inclusive, les opportunités et une île Maurice plus juste.",
+            "icon": "chart",
+            "url": "/fr/parliament?search=Budget#archive"
+          },
+          {
+            "title": "Projet de loi sur l’aide juridique",
+            "body": "Favoriser l’accès de tous à la justice et à l’assistance juridique, pour une société plus juste et inclusive.",
+            "icon": "gavel",
+            "url": "/fr/parliament?search=Legal#archive"
+          },
+          {
+            "title": "Projet de loi sur la révision constitutionnelle",
+            "body": "Renforcer notre démocratie par une révision constitutionnelle complète et inclusive.",
+            "icon": "book",
+            "url": "/fr/parliament?search=Constitutional#archive"
+          },
+          {
+            "title": "Justice pénale : coopération aux enquêtes",
+            "body": "Soutenir la coopération aux enquêtes, renforcer la justice et améliorer la sécurité publique.",
+            "icon": "shield",
+            "url": "/fr/parliament?search=Criminal#archive"
+          },
+          {
+            "title": "Commission de réforme du droit",
+            "body": "Soutenir la modernisation de nos lois pour qu’elles restent pertinentes, justes et adaptées à l’avenir.",
+            "icon": "gavel",
+            "url": "/fr/parliament?search=Reform#archive"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Promouvoir la transparence, l’intégrité et des institutions efficaces.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Soutenir des lois porteuses d’opportunités et de justice sociale.",
+            "icon": "book"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Demander des comptes au gouvernement et une gestion responsable des ressources publiques.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Contribuer à des solutions fondées sur les faits pour une île Maurice plus juste et inclusive.",
+            "icon": "users"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Porter au Parlement les préoccupations des habitants du n° 15.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Du Parlement aux citoyens",
+        "cta_body": "Mon travail parlementaire est guidé par les préoccupations et les aspirations des Mauriciens, en particulier des habitants du n° 15. Je reste engagé dans l’écoute, le dialogue et les solutions concrètes.",
+        "cta_image": "/images/template-parliament-community.jpg",
+        "cta_label": "Contactez-nous",
+        "cta_url": "/fr/contact",
+        "seo_title": "Le travail parlementaire | Khushal Lobine",
+        "meta_description": "Examen des lois. Responsabilité publique. Une île Maurice plus forte.  En tant que député, je contribue au débat national, examine l’action du gouvernement et défends des lois pour une île Maurice plus juste, inclusive et prospère.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Travay dan Parlman",
+        "hero_title": "Travay dan",
+        "hero_accent": "Parlman",
+        "hero_body": "Examin bann lalwa. Responsabilite piblik. Enn Moris pli for.\n\nKouma depite, mo kontribie dan deba nasional, examin aksion gouvernman ek defann bann lalwa pou enn Moris pli zis, inklizif ek prosper.",
+        "hero_image": "/images/template-parliament-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Kestion dan Parlman",
+            "body": "Rod bann repons, promouvwar transparans ek demann gouvernman rann kont.",
+            "icon": "book",
+            "url": "/km/parliament?kind=question#archive"
+          },
+          {
+            "title": "Diskour ek deba",
+            "body": "Kontribie dan bann deba nasional lor bann kestyon inportan pou Moris.",
+            "icon": "landmark",
+            "url": "/km/parliament?kind=speech#archive"
+          },
+          {
+            "title": "Proze lalwa ek intervansion",
+            "body": "Propoz ek soutenir bann lalwa pou reponn bann bezwen nou dimoun.",
+            "icon": "book",
+            "url": "/km/parliament?kind=bill#archive"
+          },
+          {
+            "title": "Komite",
+            "body": "Partisip dan bann komite Parlman pou examin bann kestyon an detay.",
+            "icon": "users",
+            "url": "/km/parliament?kind=committee#archive"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Diskour Bidze 2026",
+            "body": "Kontribision dan deba lor Bidze 2026, pou enn krwasans inklizif, loportinite ek enn Moris pli zis.",
+            "icon": "chart",
+            "url": "/km/parliament?search=Budget#archive"
+          },
+          {
+            "title": "Proze lalwa lor led legal",
+            "body": "Soutenir enn meyer akse a lazistis ek lasistans legal pou tou dimoun, pou enn sosiete pli zis ek inklizif.",
+            "icon": "gavel",
+            "url": "/km/parliament?search=Legal#archive"
+          },
+          {
+            "title": "Proze lalwa lor revizion konstitisionel",
+            "body": "Ranforsi nou demokrasi atraver enn revizion konstitisionel konple ek inklizif.",
+            "icon": "book",
+            "url": "/km/parliament?search=Constitutional#archive"
+          },
+          {
+            "title": "Lazistis penal: koperasion dan lanket",
+            "body": "Soutenir koperasion dan bann lanket, ranforsi lazistis ek sekirite piblik.",
+            "icon": "shield",
+            "url": "/km/parliament?search=Criminal#archive"
+          },
+          {
+            "title": "Komision reform lalwa",
+            "body": "Soutenir modernizasion nou bann lalwa pou zot res relevan, zis ek adapte pou lavenir.",
+            "icon": "gavel",
+            "url": "/km/parliament?search=Reform#archive"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Promouvwar transparans, lintegrite ek bann linstitision efikas.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lezislasion",
+            "body": "Soutenir bann lalwa pou loportinite ek lazistis sosial.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Demann gouvernman rann kont ek servi bann resours piblik avek responsabilite.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Kontribie bann solision baze lor bann fe pou enn Moris pli zis ek inklizif.",
+            "icon": "users"
+          },
+          {
+            "title": "Reprezant nou sirkonskripsion",
+            "body": "Lev bann konsern bann dimoun No. 15 dan Parlman.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Depi Parlman ziska dimoun",
+        "cta_body": "Mo travay dan Parlman gide par bann vre konsern ek laspirasion bann Morisien, sirtou bann abitan No. 15. Mo res angaze pou ekoute, partaze ek travay pou bann solision pratik.",
+        "cta_image": "/images/template-parliament-community.jpg",
+        "cta_label": "Kontak nou zordi",
+        "cta_url": "/km/contact",
+        "seo_title": "Travay dan Parlman | Khushal Lobine",
+        "meta_description": "Examin bann lalwa. Responsabilite piblik. Enn Moris pli for.  Kouma depite, mo kontribie dan deba nasional, examin aksion gouvernman ek defann bann lalwa pou enn Moris pli zis, inklizif ek prosper.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      }
+    }
+  },
+  {
+    "slug": "constituency",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Constituency No. 15",
+        "hero_title": "La Caverne &",
+        "hero_accent": "Phoenix",
+        "hero_body": "Our Community. Our Priorities. A Stronger Mauritius.\n\nI am privileged to represent the people of Constituency No. 15 — La Caverne and Phoenix. Together, we can build a fairer, more inclusive and prosperous community, where every voice matters.",
+        "hero_image": "/images/template-constituency-hero.jpg",
+        "primary_label": "Explore our work",
+        "primary_url": "/en/constituency#community",
+        "secondary_label": "Watch message",
+        "secondary_url": "/en/media#media-archive",
+        "intro_title": "Representing La Caverne & Phoenix",
+        "intro_body": "Constituency No. 15 is a vibrant and diverse community. My role is to listen, represent your concerns in Parliament, and work towards practical solutions for a better quality of life for all residents of La Caverne and Phoenix.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "I remain committed to being accessible, listening to your concerns, and working together for a stronger, safer and more inclusive La Caverne and Phoenix.\n\nYour voice matters, and I will continue to be present, on the ground and in Parliament, to champion the issues that matter to our community.",
+        "signature": "KHUSHAL LOBINE",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "Your Representation",
+            "body": "Standing up for the people of La Caverne and Phoenix in Parliament.",
+            "icon": "users",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/en/parliament"
+          },
+          {
+            "title": "Accessible and Present",
+            "body": "Listening to residents, understanding your concerns and working towards solutions.",
+            "icon": "map",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/en/contact?kind=appointment"
+          },
+          {
+            "title": "Community Engagement",
+            "body": "Working with residents, youth groups and local stakeholders for a stronger community.",
+            "icon": "users",
+            "image": "/images/template-about-leadership.jpg",
+            "url": "/en/constituency#community"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Water Supply Advocacy",
+            "body": "Raising concerns on water supply issues and working for more reliable and sustainable access for households in La Caverne and Phoenix.",
+            "icon": "water",
+            "image": "/images/template-constituency-water.jpg",
+            "url": "/en/contact?kind=concern"
+          },
+          {
+            "title": "Community Priorities",
+            "body": "Supporting better infrastructure, safer neighbourhoods, improved public services and opportunities for our residents.",
+            "icon": "users",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/en/contact?kind=concern"
+          },
+          {
+            "title": "A Cleaner, Greener No. 15",
+            "body": "Advocating for a cleaner environment, better waste management and greener public spaces for a healthier community.",
+            "icon": "leaf",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/en/contact?kind=concern"
+          }
+        ],
+        "cta_title": "Listening. Engaging. Working Together.",
+        "cta_body": "I regularly meet with residents, youth, local groups and community stakeholders in La Caverne and Phoenix to listen, understand your concerns and work towards practical solutions.",
+        "cta_image": "/images/template-constituency-community.jpg",
+        "cta_label": "Contact us today",
+        "cta_url": "/en/contact",
+        "seo_title": "La Caverne & Phoenix | Khushal Lobine",
+        "meta_description": "Our Community. Our Priorities. A Stronger Mauritius.  I am privileged to represent the people of Constituency No. 15 — La Caverne and Phoenix. Together, we can build a fairer, more inclusive and prosperous community, where every voice matters.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Circonscription n° 15",
+        "hero_title": "La Caverne et",
+        "hero_accent": "Phoenix",
+        "hero_body": "Notre communauté. Nos priorités. Une île Maurice plus forte.\n\nJ’ai le privilège de représenter les habitants du n° 15 — La Caverne et Phoenix. Ensemble, construisons une communauté plus juste, inclusive et prospère, où chaque voix compte.",
+        "hero_image": "/images/template-constituency-hero.jpg",
+        "primary_label": "Découvrir notre travail",
+        "primary_url": "/fr/constituency#community",
+        "secondary_label": "Voir le message",
+        "secondary_url": "/fr/media#media-archive",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "La circonscription n° 15 est une communauté vivante et diverse. Mon rôle est d’écouter, de porter vos préoccupations au Parlement et de rechercher des solutions concrètes pour améliorer la qualité de vie des habitants.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "Je reste engagé à être accessible, à écouter vos préoccupations et à travailler ensemble pour une communauté plus forte, sûre et inclusive.\n\nVotre voix compte. Je continuerai d’être présent, sur le terrain et au Parlement, pour défendre les enjeux de notre communauté.",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Votre représentation",
+            "body": "Défendre les habitants de La Caverne et Phoenix au Parlement.",
+            "icon": "users",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/fr/parliament"
+          },
+          {
+            "title": "Accessible et présent",
+            "body": "Écouter les habitants, comprendre vos préoccupations et rechercher des solutions.",
+            "icon": "map",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/fr/contact?kind=appointment"
+          },
+          {
+            "title": "Engagement local",
+            "body": "Travailler avec les habitants, les jeunes et les acteurs locaux pour une communauté plus forte.",
+            "icon": "users",
+            "image": "/images/template-about-leadership.jpg",
+            "url": "/fr/constituency#community"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Accès à l’eau",
+            "body": "Porter les problèmes d’approvisionnement en eau et rechercher un accès plus fiable et durable pour les ménages.",
+            "icon": "water",
+            "image": "/images/template-constituency-water.jpg",
+            "url": "/fr/contact?kind=concern"
+          },
+          {
+            "title": "Priorités locales",
+            "body": "Soutenir de meilleures infrastructures, des quartiers sûrs, des services publics et des opportunités pour les habitants.",
+            "icon": "users",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/fr/contact?kind=concern"
+          },
+          {
+            "title": "Un n° 15 plus propre et plus vert",
+            "body": "Défendre un environnement propre, une meilleure gestion des déchets et des espaces publics plus verts.",
+            "icon": "leaf",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/fr/contact?kind=concern"
+          }
+        ],
+        "cta_title": "Écouter. Échanger. Agir ensemble.",
+        "cta_body": "Je rencontre régulièrement les habitants, les jeunes et les acteurs locaux de La Caverne et Phoenix pour écouter, comprendre vos préoccupations et rechercher des solutions concrètes.",
+        "cta_image": "/images/template-constituency-community.jpg",
+        "cta_label": "Contactez-nous",
+        "cta_url": "/fr/contact",
+        "seo_title": "La Caverne et Phoenix | Khushal Lobine",
+        "meta_description": "Notre communauté. Nos priorités. Une île Maurice plus forte.  J’ai le privilège de représenter les habitants du n° 15 — La Caverne et Phoenix. Ensemble, construisons une communauté plus juste, inclusive et prospère, où chaque voix compte.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Sirkonskripsion No. 15",
+        "hero_title": "La Caverne ek",
+        "hero_accent": "Phoenix",
+        "hero_body": "Nou kominote. Nou bann priorite. Enn Moris pli for.\n\nMo ena privilez reprezant bann dimoun No. 15 — La Caverne ek Phoenix. Ansam, nou kapav konstrir enn kominote pli zis, inklizif ek prosper, kot sak lavwa konte.",
+        "hero_image": "/images/template-constituency-hero.jpg",
+        "primary_label": "Dekouver nou travay",
+        "primary_url": "/km/constituency#community",
+        "secondary_label": "Get mesaz",
+        "secondary_url": "/km/media#media-archive",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "No. 15 enn kominote vivan ek divers. Mo rol se ekoute, reprezant ou bann konsern dan Parlman ek travay pou bann solision pratik ki amelior lavi bann abitan La Caverne ek Phoenix.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "Mo res angaze pou res aksesib, ekout ou bann konsern ek travay ansam pou enn La Caverne ek Phoenix pli for, sir ek inklizif.\n\nOu lavwa konte. Mo pou kontign prezan lor teren ek dan Parlman pou defann bann kestyon nou kominote.",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Ou reprezantasion",
+            "body": "Defann bann dimoun La Caverne ek Phoenix dan Parlman.",
+            "icon": "users",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/km/parliament"
+          },
+          {
+            "title": "Aksesib ek prezan",
+            "body": "Ekout bann abitan, konpran ou bann konsern ek travay pou bann solision.",
+            "icon": "map",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/km/contact?kind=appointment"
+          },
+          {
+            "title": "Langazman dan kominote",
+            "body": "Travay avek bann abitan, bann zenn ek bann akter lokal pou enn kominote pli for.",
+            "icon": "users",
+            "image": "/images/template-about-leadership.jpg",
+            "url": "/km/constituency#community"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Akse a delo",
+            "body": "Lev bann konsern lor delo ek travay pou enn akse pli stab ek dirab pou bann fami.",
+            "icon": "water",
+            "image": "/images/template-constituency-water.jpg",
+            "url": "/km/contact?kind=concern"
+          },
+          {
+            "title": "Bann priorite kominote",
+            "body": "Soutenir bann meyer infrastriktir, kartie pli sir, servis piblik ek loportinite pou bann abitan.",
+            "icon": "users",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/km/contact?kind=concern"
+          },
+          {
+            "title": "Enn No. 15 pli prop ek pli ver",
+            "body": "Defann enn lanvironnman pli prop, enn meyer zesion bann dese ek bann lespas piblik pli ver.",
+            "icon": "leaf",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/km/contact?kind=concern"
+          }
+        ],
+        "cta_title": "Ekoute. Partaze. Travay ansam.",
+        "cta_body": "Mo rankont regilierman bann abitan, bann zenn ek bann group lokal dan La Caverne ek Phoenix pou ekoute, konpran ou bann konsern ek travay pou bann solision pratik.",
+        "cta_image": "/images/template-constituency-community.jpg",
+        "cta_label": "Kontak nou zordi",
+        "cta_url": "/km/contact",
+        "seo_title": "La Caverne ek Phoenix | Khushal Lobine",
+        "meta_description": "Nou kominote. Nou bann priorite. Enn Moris pli for.  Mo ena privilez reprezant bann dimoun No. 15 — La Caverne ek Phoenix. Ansam, nou kapav konstrir enn kominote pli zis, inklizif ek prosper, kot sak lavwa konte.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      }
+    }
+  },
+  {
+    "slug": "perspectives",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Ideas & perspectives",
+        "hero_title": "Ideas for a",
+        "hero_accent": "Stronger Mauritius",
+        "hero_body": "Reflections on law, governance, democracy, reform and national development — towards a fairer, more inclusive and prosperous Mauritius.",
+        "hero_image": "/images/template-perspectives-hero.jpg",
+        "primary_label": "Explore articles",
+        "primary_url": "/en/perspectives#archive",
+        "secondary_label": "Watch message",
+        "secondary_url": "/en/media#media-archive",
+        "intro_title": "Towards a More Inclusive and Prosperous Mauritius",
+        "intro_body": "Mauritius has always shown that unity, diversity and opportunity can go hand in hand. Building on our democratic tradition, we must strengthen our institutions, invest in our people and pursue reforms that leave no one behind.",
+        "intro_image": "/images/template-perspectives-essay.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Building a better Mauritius through ideas and dialogue.",
+        "cards": [
+          {
+            "title": "Constitutional Reform",
+            "body": "Modern institutions for a stronger, more resilient democracy.",
+            "icon": "landmark",
+            "image": "/images/template-perspectives-topic1.jpg",
+            "url": "/en/perspectives?topic=Constitutional%20Reform#archive"
+          },
+          {
+            "title": "Democratic Governance",
+            "body": "Transparency, accountability and people-centred decision-making.",
+            "icon": "users",
+            "image": "/images/template-perspectives-topic2.jpg",
+            "url": "/en/perspectives?topic=Democratic%20Governance#archive"
+          },
+          {
+            "title": "The Rule of Law",
+            "body": "A fairer society built on rights, justice and equal opportunity.",
+            "icon": "gavel",
+            "image": "/images/template-perspectives-topic3.jpg",
+            "url": "/en/perspectives?topic=The%20Rule%20of%20Law#archive"
+          },
+          {
+            "title": "Social Justice",
+            "body": "Inclusion, dignity and opportunity for every Mauritian.",
+            "icon": "users",
+            "image": "/images/template-perspectives-topic4.jpg",
+            "url": "/en/perspectives?topic=Social%20Justice#archive"
+          },
+          {
+            "title": "Economic Opportunity",
+            "body": "Jobs, innovation and shared prosperity for present and future generations.",
+            "icon": "chart",
+            "image": "/images/template-perspectives-topic5.jpg",
+            "url": "/en/perspectives?topic=Economic%20Opportunity#archive"
+          },
+          {
+            "title": "Public Policy and Reform",
+            "body": "Practical solutions for a more efficient, fair and sustainable Mauritius.",
+            "icon": "leaf",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/en/perspectives?topic=Public%20Policy#archive"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Strengthening Our Democratic Institutions",
+            "body": "A fairer and more transparent governance framework is essential for a more inclusive and prosperous Mauritius.",
+            "icon": "landmark",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/en/perspectives?topic=Democratic%20Governance#archive"
+          },
+          {
+            "title": "The Rule of Law as a Foundation for Opportunity",
+            "body": "Justice, equality and the consistent application of the law are crucial to building a society where everyone can thrive.",
+            "icon": "gavel",
+            "image": "/images/template-perspectives-writing.jpg",
+            "url": "/en/perspectives?topic=The%20Rule%20of%20Law#archive"
+          },
+          {
+            "title": "Investing in Our People",
+            "body": "Mauritius’ greatest strength is its people. Empowering our youth with education, skills and opportunity will shape a brighter future for all.",
+            "icon": "users",
+            "image": "/images/template-perspectives-community.jpg",
+            "url": "/en/perspectives?topic=Social%20Justice#archive"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Thoughtful ideas. Constructive dialogue. A stronger Mauritius.",
+        "cta_body": "I believe in the power of open discussion, evidence-based ideas and practical solutions to address the challenges we face and create opportunities for every Mauritian.",
+        "cta_image": "/images/template-perspectives-hero.jpg",
+        "cta_label": "Join the conversation",
+        "cta_url": "/en/contact",
+        "seo_title": "Ideas for a Stronger Mauritius | Khushal Lobine",
+        "meta_description": "Reflections on law, governance, democracy, reform and national development — towards a fairer, more inclusive and prosperous Mauritius.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Idées et perspectives",
+        "hero_title": "Des idées pour une",
+        "hero_accent": "île Maurice plus forte",
+        "hero_body": "Réflexions sur le droit, la gouvernance, la démocratie, les réformes et le développement national — pour une île Maurice plus juste, inclusive et prospère.",
+        "hero_image": "/images/template-perspectives-hero.jpg",
+        "primary_label": "Explorer les articles",
+        "primary_url": "/fr/perspectives#archive",
+        "secondary_label": "Voir le message",
+        "secondary_url": "/fr/media#media-archive",
+        "intro_title": "Vers une île Maurice plus inclusive et prospère",
+        "intro_body": "Maurice a toujours montré que l’unité, la diversité et les opportunités peuvent aller de pair. Fidèles à notre tradition démocratique, renforçons nos institutions, investissons dans nos citoyens et menons des réformes qui n’excluent personne.",
+        "intro_image": "/images/template-perspectives-essay.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Construire une île Maurice meilleure par les idées et le dialogue.",
+        "cards": [
+          {
+            "title": "Réforme constitutionnelle",
+            "body": "Des institutions modernes pour une démocratie plus forte et résiliente.",
+            "icon": "landmark",
+            "image": "/images/template-perspectives-topic1.jpg",
+            "url": "/fr/perspectives?topic=Constitutional%20Reform#archive"
+          },
+          {
+            "title": "Gouvernance démocratique",
+            "body": "Transparence, responsabilité et décisions centrées sur les citoyens.",
+            "icon": "users",
+            "image": "/images/template-perspectives-topic2.jpg",
+            "url": "/fr/perspectives?topic=Democratic%20Governance#archive"
+          },
+          {
+            "title": "L’État de droit",
+            "body": "Une société plus juste fondée sur les droits, la justice et l’égalité des chances.",
+            "icon": "gavel",
+            "image": "/images/template-perspectives-topic3.jpg",
+            "url": "/fr/perspectives?topic=The%20Rule%20of%20Law#archive"
+          },
+          {
+            "title": "Justice sociale",
+            "body": "Inclusion, dignité et opportunités pour chaque Mauricien.",
+            "icon": "users",
+            "image": "/images/template-perspectives-topic4.jpg",
+            "url": "/fr/perspectives?topic=Social%20Justice#archive"
+          },
+          {
+            "title": "Opportunités économiques",
+            "body": "Emplois, innovation et prospérité partagée pour les générations présentes et futures.",
+            "icon": "chart",
+            "image": "/images/template-perspectives-topic5.jpg",
+            "url": "/fr/perspectives?topic=Economic%20Opportunity#archive"
+          },
+          {
+            "title": "Politiques publiques et réformes",
+            "body": "Des solutions concrètes pour une île Maurice plus efficace, juste et durable.",
+            "icon": "leaf",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/fr/perspectives?topic=Public%20Policy#archive"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Renforcer nos institutions démocratiques",
+            "body": "Une gouvernance plus juste et transparente est essentielle pour une île Maurice plus inclusive et prospère.",
+            "icon": "landmark",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/fr/perspectives?topic=Democratic%20Governance#archive"
+          },
+          {
+            "title": "L’État de droit, fondement des opportunités",
+            "body": "La justice, l’égalité et une application cohérente du droit sont essentielles à une société où chacun peut s’épanouir.",
+            "icon": "gavel",
+            "image": "/images/template-perspectives-writing.jpg",
+            "url": "/fr/perspectives?topic=The%20Rule%20of%20Law#archive"
+          },
+          {
+            "title": "Investir dans nos citoyens",
+            "body": "La force de Maurice, ce sont ses citoyens. Former les jeunes et leur offrir des opportunités prépare un avenir meilleur pour tous.",
+            "icon": "users",
+            "image": "/images/template-perspectives-community.jpg",
+            "url": "/fr/perspectives?topic=Social%20Justice#archive"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Des idées réfléchies. Un dialogue constructif. Une île Maurice plus forte.",
+        "cta_body": "Je crois au débat ouvert, aux idées fondées sur les faits et aux solutions concrètes pour relever nos défis et créer des opportunités pour chaque Mauricien.",
+        "cta_image": "/images/template-perspectives-hero.jpg",
+        "cta_label": "Participer à la conversation",
+        "cta_url": "/fr/contact",
+        "seo_title": "Des idées pour une île Maurice plus forte | Khushal Lobine",
+        "meta_description": "Réflexions sur le droit, la gouvernance, la démocratie, les réformes et le développement national — pour une île Maurice plus juste, inclusive et prospère.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Lide ek refleksion",
+        "hero_title": "Bann lide pou",
+        "hero_accent": "enn Moris pli for",
+        "hero_body": "Bann refleksion lor lalwa, gouvernans, demokrasi, reform ek devlopman nasional — pou enn Moris pli zis, inklizif ek prosper.",
+        "hero_image": "/images/template-perspectives-hero.jpg",
+        "primary_label": "Dekouver bann lartik",
+        "primary_url": "/km/perspectives#archive",
+        "secondary_label": "Get mesaz",
+        "secondary_url": "/km/media#media-archive",
+        "intro_title": "Ver enn Moris pli inklizif ek prosper",
+        "intro_body": "Moris finn touletan montre ki linite, diversite ek loportinite kapav mars ansam. Nou bizin ranforsi nou bann linstitision, investi dan nou dimoun ek fer bann reform ki pa les personn deryer.",
+        "intro_image": "/images/template-perspectives-essay.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Konstrir enn meyer Moris atraver bann lide ek dialog.",
+        "cards": [
+          {
+            "title": "Reform konstitisionel",
+            "body": "Bann linstitision modern pou enn demokrasi pli for ek rezilian.",
+            "icon": "landmark",
+            "image": "/images/template-perspectives-topic1.jpg",
+            "url": "/km/perspectives?topic=Constitutional%20Reform#archive"
+          },
+          {
+            "title": "Gouvernans demokratik",
+            "body": "Transparans, responsabilite ek bann desizion santre lor dimoun.",
+            "icon": "users",
+            "image": "/images/template-perspectives-topic2.jpg",
+            "url": "/km/perspectives?topic=Democratic%20Governance#archive"
+          },
+          {
+            "title": "Respe lalwa",
+            "body": "Enn sosiete pli zis baze lor bann drwa, lazistis ek egalite bann sans.",
+            "icon": "gavel",
+            "image": "/images/template-perspectives-topic3.jpg",
+            "url": "/km/perspectives?topic=The%20Rule%20of%20Law#archive"
+          },
+          {
+            "title": "Lazistis sosial",
+            "body": "Linklizion, dinite ek loportinite pou sak Morisien.",
+            "icon": "users",
+            "image": "/images/template-perspectives-topic4.jpg",
+            "url": "/km/perspectives?topic=Social%20Justice#archive"
+          },
+          {
+            "title": "Loportinite ekonomik",
+            "body": "Lanplwa, inovasion ek prosperite partaze pou bann zenerasion zordi ek dime.",
+            "icon": "chart",
+            "image": "/images/template-perspectives-topic5.jpg",
+            "url": "/km/perspectives?topic=Economic%20Opportunity#archive"
+          },
+          {
+            "title": "Politik piblik ek reform",
+            "body": "Bann solision pratik pou enn Moris pli efikas, zis ek dirab.",
+            "icon": "leaf",
+            "image": "/images/template-perspectives-topic6.jpg",
+            "url": "/km/perspectives?topic=Public%20Policy#archive"
+          }
+        ],
+        "milestones": [
+          {
+            "title": "Ranforsi nou bann linstitision demokratik",
+            "body": "Enn gouvernans pli zis ek transparan esansiel pou enn Moris pli inklizif ek prosper.",
+            "icon": "landmark",
+            "image": "/images/template-perspectives-landscape.jpg",
+            "url": "/km/perspectives?topic=Democratic%20Governance#archive"
+          },
+          {
+            "title": "Respe lalwa kouma enn baz pou loportinite",
+            "body": "Lazistis, legalite ek laplikasion lalwa esansiel pou enn sosiete kot tou dimoun kapav progrese.",
+            "icon": "gavel",
+            "image": "/images/template-perspectives-writing.jpg",
+            "url": "/km/perspectives?topic=The%20Rule%20of%20Law#archive"
+          },
+          {
+            "title": "Investi dan nou dimoun",
+            "body": "Pli gran lafors Moris se so dimoun. Donn bann zenn ledikasion, konpetans ek loportinite pou enn meyer lavenir pou tou dimoun.",
+            "icon": "users",
+            "image": "/images/template-perspectives-community.jpg",
+            "url": "/km/perspectives?topic=Social%20Justice#archive"
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Bann lide reflesi. Enn dialog konstriktif. Enn Moris pli for.",
+        "cta_body": "Mo krwar dan enn diskision ouver, bann lide baze lor bann fe ek bann solision pratik pou fer fas nou bann defi ek kree loportinite pou sak Morisien.",
+        "cta_image": "/images/template-perspectives-hero.jpg",
+        "cta_label": "Partisip dan konversasion",
+        "cta_url": "/km/contact",
+        "seo_title": "Bann lide pou enn Moris pli for | Khushal Lobine",
+        "meta_description": "Bann refleksion lor lalwa, gouvernans, demokrasi, reform ek devlopman nasional — pou enn Moris pli zis, inklizif ek prosper.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      }
+    }
+  },
+  {
+    "slug": "media",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Media",
+        "hero_title": "Khushal Lobine",
+        "hero_accent": "in the Media",
+        "hero_body": "Interviews, press coverage and public engagements on the issues that matter for a fairer, more inclusive Mauritius.",
+        "hero_image": "/images/template-media-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Latest Interview",
+        "intro_body": "Catch Khushal Lobine in conversation on leadership, governance and a stronger Mauritius.",
+        "intro_image": "/images/template-media-feature.jpg",
+        "quote": "A fairer, more inclusive Mauritius is possible when we listen, work together and put people first.",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "On Leadership and a Stronger Mauritius",
+            "body": "Watch Now",
+            "icon": "users",
+            "image": "/images/template-media-interview1.jpg",
+            "url": "/en/media#media-archive"
+          },
+          {
+            "title": "Governance, Transparency and Opportunity",
+            "body": "Watch Now",
+            "icon": "landmark",
+            "image": "/images/template-media-interview2.jpg",
+            "url": "/en/media#media-archive"
+          },
+          {
+            "title": "Responding to Today’s Challenges",
+            "body": "Watch Now",
+            "icon": "users",
+            "image": "/images/template-media-interview3.jpg",
+            "url": "/en/media#media-archive"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Statement on Key National Issues",
+            "body": "Read Khushal Lobine’s latest statements on matters affecting Mauritius.",
+            "icon": "book",
+            "url": "/en/media#media-archive"
+          },
+          {
+            "title": "Commentary on Public Policy",
+            "body": "Insights and perspectives on governance, development and social justice.",
+            "icon": "book",
+            "url": "/en/media#media-archive"
+          },
+          {
+            "title": "Media Reactions",
+            "body": "Responses to recent developments and ongoing national conversations.",
+            "icon": "users",
+            "url": "/en/media#media-archive"
+          }
+        ],
+        "cta_title": "Listening. Supporting. Working Together.",
+        "cta_body": "From community concerns to new ideas, Khushal believes in open dialogue and meaningful action. Get in touch and be part of the change.",
+        "cta_image": "/images/template-contact-community.jpg",
+        "cta_label": "Contact us today",
+        "cta_url": "/en/contact",
+        "seo_title": "Khushal Lobine in the Media | Khushal Lobine",
+        "meta_description": "Interviews, press coverage and public engagements on the issues that matter for a fairer, more inclusive Mauritius.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Médias",
+        "hero_title": "Khushal Lobine",
+        "hero_accent": "dans les médias",
+        "hero_body": "Entretiens, couverture médiatique et rencontres publiques sur les enjeux d’une île Maurice plus juste et inclusive.",
+        "hero_image": "/images/template-media-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Dernier entretien",
+        "intro_body": "Retrouvez Khushal Lobine dans un entretien sur le leadership, la gouvernance et une île Maurice plus forte.",
+        "intro_image": "/images/template-media-feature.jpg",
+        "quote": "Une île Maurice plus juste et inclusive est possible lorsque nous écoutons, travaillons ensemble et plaçons les citoyens au premier plan.",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Leadership et île Maurice plus forte",
+            "body": "Voir maintenant",
+            "icon": "users",
+            "image": "/images/template-media-interview1.jpg",
+            "url": "/fr/media#media-archive"
+          },
+          {
+            "title": "Gouvernance, transparence et opportunités",
+            "body": "Voir maintenant",
+            "icon": "landmark",
+            "image": "/images/template-media-interview2.jpg",
+            "url": "/fr/media#media-archive"
+          },
+          {
+            "title": "Répondre aux défis d’aujourd’hui",
+            "body": "Voir maintenant",
+            "icon": "users",
+            "image": "/images/template-media-interview3.jpg",
+            "url": "/fr/media#media-archive"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Déclaration sur les enjeux nationaux",
+            "body": "Les dernières déclarations sur les enjeux de Maurice.",
+            "icon": "book",
+            "url": "/fr/media#media-archive"
+          },
+          {
+            "title": "Analyse des politiques publiques",
+            "body": "Analyses sur la gouvernance, le développement et la justice sociale.",
+            "icon": "book",
+            "url": "/fr/media#media-archive"
+          },
+          {
+            "title": "Réactions médiatiques",
+            "body": "Réactions aux évolutions récentes et aux débats nationaux.",
+            "icon": "users",
+            "url": "/fr/media#media-archive"
+          }
+        ],
+        "cta_title": "Écouter. Soutenir. Agir ensemble.",
+        "cta_body": "Des préoccupations locales aux idées nouvelles, Khushal croit au dialogue ouvert et à l’action concrète. Contactez-nous et participez au changement.",
+        "cta_image": "/images/template-contact-community.jpg",
+        "cta_label": "Contactez-nous",
+        "cta_url": "/fr/contact",
+        "seo_title": "Khushal Lobine dans les médias | Khushal Lobine",
+        "meta_description": "Entretiens, couverture médiatique et rencontres publiques sur les enjeux d’une île Maurice plus juste et inclusive.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Media",
+        "hero_title": "Khushal Lobine",
+        "hero_accent": "dan bann media",
+        "hero_body": "Interview, lapres ek bann rankont piblik lor bann kestyon ki konte pou enn Moris pli zis ek inklizif.",
+        "hero_image": "/images/template-media-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Dernie interview",
+        "intro_body": "Get Khushal Lobine dan enn konversasion lor lidership, gouvernans ek enn Moris pli for.",
+        "intro_image": "/images/template-media-feature.jpg",
+        "quote": "Enn Moris pli zis ek inklizif posib kan nou ekoute, travay ansam ek met dimoun an premie.",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Lor lidership ek enn Moris pli for",
+            "body": "Get aster",
+            "icon": "users",
+            "image": "/images/template-media-interview1.jpg",
+            "url": "/km/media#media-archive"
+          },
+          {
+            "title": "Gouvernans, transparans ek loportinite",
+            "body": "Get aster",
+            "icon": "landmark",
+            "image": "/images/template-media-interview2.jpg",
+            "url": "/km/media#media-archive"
+          },
+          {
+            "title": "Reponn bann defi zordi",
+            "body": "Get aster",
+            "icon": "users",
+            "image": "/images/template-media-interview3.jpg",
+            "url": "/km/media#media-archive"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Deklarasion lor bann kestyon nasional",
+            "body": "Bann dernie deklarasion lor bann kestyon ki konsern Moris.",
+            "icon": "book",
+            "url": "/km/media#media-archive"
+          },
+          {
+            "title": "Komanter lor politik piblik",
+            "body": "Bann lide lor gouvernans, devlopman ek lazistis sosial.",
+            "icon": "book",
+            "url": "/km/media#media-archive"
+          },
+          {
+            "title": "Bann reaksion dan media",
+            "body": "Bann repons lor bann devlopman resan ek bann deba nasional.",
+            "icon": "users",
+            "url": "/km/media#media-archive"
+          }
+        ],
+        "cta_title": "Ekoute. Soutenir. Travay ansam.",
+        "cta_body": "Depi bann konsern dan kominote ziska bann nouvo lide, Khushal krwar dan enn dialog ouver ek bann aksion konkre. Kontak nou ek partisip dan sanzman.",
+        "cta_image": "/images/template-contact-community.jpg",
+        "cta_label": "Kontak nou zordi",
+        "cta_url": "/km/contact",
+        "seo_title": "Khushal Lobine dan bann media | Khushal Lobine",
+        "meta_description": "Interview, lapres ek bann rankont piblik lor bann kestyon ki konte pou enn Moris pli zis ek inklizif.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      }
+    }
+  },
+  {
+    "slug": "contact",
+    "translations": {
+      "en": {
+        "design": "classic",
+        "eyebrow": "Get in touch",
+        "hero_title": "GET IN TOUCH",
+        "hero_accent": "WITH KHUSHAL",
+        "hero_body": "Your voice matters.\nLet’s build a stronger Mauritius together.",
+        "hero_image": "/images/template-contact-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Law, Leadership and Public Service",
+        "intro_body": "Khushal Lobine is a barrister-at-law and Member of Parliament for La Caverne and Phoenix, Constituency No. 15. His work brings together law, parliamentary contributions and engagement with residents.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Working with people",
+        "cards": [
+          {
+            "title": "In Parliament",
+            "body": "Questions, speeches and interventions.",
+            "icon": "landmark",
+            "url": "/en/parliament",
+            "image": ""
+          },
+          {
+            "title": "Constituency No. 15",
+            "body": "Listening, dialogue and local engagement.",
+            "icon": "map",
+            "url": "/en/constituency",
+            "image": ""
+          },
+          {
+            "title": "Ideas & Perspectives",
+            "body": "Reflections and analysis on national issues.",
+            "icon": "lightbulb",
+            "url": "/en/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Elected to Parliament",
+            "body": "Elected for La Caverne and Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Re-elected to Parliament",
+            "body": "Re-elected in Constituency No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Good Governance",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Legislation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          },
+          {
+            "title": "Accountability",
+            "body": "Explore published contributions on this area.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Public Policy",
+            "body": "Explore published contributions on this area.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Constituency Representation",
+            "body": "Explore published contributions on this area.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Listening. Supporting. Working Together.",
+        "cta_body": "From community concerns to new ideas, Khushal believes in open dialogue and meaningful action. Get in touch and be part of the change.",
+        "cta_image": "/images/template-contact-community.jpg",
+        "cta_label": "Contact us today",
+        "cta_url": "/en/contact",
+        "seo_title": "GET IN TOUCH WITH KHUSHAL | Khushal Lobine",
+        "meta_description": "Your voice matters. Let’s build a stronger Mauritius together.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "fr": {
+        "design": "classic",
+        "eyebrow": "Contact",
+        "hero_title": "PRENEZ CONTACT",
+        "hero_accent": "AVEC KHUSHAL",
+        "hero_body": "Votre voix compte.\nConstruisons ensemble une île Maurice plus forte.",
+        "hero_image": "/images/template-contact-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Droit, leadership et service public",
+        "intro_body": "Khushal Lobine est avocat et député de La Caverne et Phoenix, la circonscription n° 15. Son parcours associe le droit, le travail parlementaire et l’engagement auprès des citoyens.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Au service des citoyens",
+        "cards": [
+          {
+            "title": "Au Parlement",
+            "body": "Questions, discours et interventions.",
+            "icon": "landmark",
+            "url": "/fr/parliament",
+            "image": ""
+          },
+          {
+            "title": "Circonscription n° 15",
+            "body": "Écoute, dialogue et engagement local.",
+            "icon": "map",
+            "url": "/fr/constituency",
+            "image": ""
+          },
+          {
+            "title": "Idées et perspectives",
+            "body": "Réflexions et analyses sur les enjeux nationaux.",
+            "icon": "lightbulb",
+            "url": "/fr/perspectives",
+            "image": ""
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Élu député",
+            "body": "Élu pour La Caverne et Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Réélu député",
+            "body": "Réélu dans la circonscription n° 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bonne gouvernance",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Législation",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          },
+          {
+            "title": "Responsabilité",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Politiques publiques",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Représentation locale",
+            "body": "Explorer les contributions publiées sur ce thème.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Écouter. Soutenir. Agir ensemble.",
+        "cta_body": "Des préoccupations locales aux idées nouvelles, Khushal croit au dialogue ouvert et à l’action concrète. Contactez-nous et participez au changement.",
+        "cta_image": "/images/template-contact-community.jpg",
+        "cta_label": "Contactez-nous",
+        "cta_url": "/fr/contact",
+        "seo_title": "Votre voix compte | Khushal Lobine",
+        "meta_description": "Votre voix compte. Construisons ensemble une île Maurice plus forte.",
+        "status": "published",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      },
+      "km": {
+        "design": "classic",
+        "eyebrow": "Kontak nou",
+        "hero_title": "KONTAK",
+        "hero_accent": "KHUSHAL",
+        "hero_body": "Ou lavwa konte.\nAnou konstrir enn Moris pli for ansam.",
+        "hero_image": "/images/template-contact-hero.jpg",
+        "primary_label": "",
+        "primary_url": "",
+        "secondary_label": "",
+        "secondary_url": "",
+        "intro_title": "Lalwa, liderchip ek servis piblik",
+        "intro_body": "Khushal Lobine enn avoka ek enn depite pou La Caverne ek Phoenix, sirkonskripsion No. 15. So travay rasanble lalwa, bann kontribision dan Parlman ek langazman avek bann abitan.",
+        "intro_image": "/images/template-about-portrait.jpg",
+        "quote": "",
+        "signature": "",
+        "section_title": "Travay avek dimounn",
+        "cards": [
+          {
+            "title": "Partaz enn konsern",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "landmark",
+            "image": "",
+            "url": "/km/contact"
+          },
+          {
+            "title": "Demann enn randevou",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "map",
+            "image": "",
+            "url": "/km/contact"
+          },
+          {
+            "title": "Kontak lekip",
+            "body": "Dekouver nou bann piblikasion ek kontak lekip pou plis linformasion.",
+            "icon": "lightbulb",
+            "image": "",
+            "url": "/km/contact"
+          }
+        ],
+        "milestones": [
+          {
+            "year": "2019",
+            "title": "Eli dan Parlman",
+            "body": "Eli pou La Caverne ek Phoenix."
+          },
+          {
+            "year": "2024",
+            "title": "Reeli dan Parlman",
+            "body": "Reeli dan sirkonskripsion No. 15."
+          }
+        ],
+        "focus": [
+          {
+            "title": "Bon gouvernans",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "landmark"
+          },
+          {
+            "title": "Lalwa",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "book"
+          },
+          {
+            "title": "Rann kont",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "shield"
+          },
+          {
+            "title": "Politik piblik",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Reprezantasion lokal",
+            "body": "Dekouver bann kontribision piblie lor sa domenn-la.",
+            "icon": "map"
+          }
+        ],
+        "cta_title": "Ekoute. Soutenir. Travay ansam.",
+        "cta_body": "Depi bann konsern dan kominote ziska bann nouvo lide, Khushal krwar dan enn dialog ouver ek bann aksion konkre. Kontak nou ek partisip dan sanzman.",
+        "cta_image": "/images/template-contact-community.jpg",
+        "cta_label": "Kontak nou zordi",
+        "cta_url": "/km/contact",
+        "seo_title": "Ou lavwa konte | Khushal Lobine",
+        "meta_description": "Ou lavwa konte. Anou konstrir enn Moris pli for ansam.",
+        "status": "review",
+        "reviewed": false,
+        "review_notes": "Supplied template copy; translations require owner review. No human review implied.",
+        "hero_background": "/images/template-perspectives-landscape.jpg"
+      }
+    }
+  }
+]

@@ -172,7 +172,8 @@ class EditorialTest extends TestCase
         $this->actingAs($this->user())->postJson('/api/admin/contents', $this->payload())->assertOk();
         $c = Content::first();
         $this->putJson('/api/admin/contents/'.$c->id, $this->payload(['translations' => ['en' => ['title' => 'Updated story']]]))->assertOk();
-        $this->getJson('/api/content/en')->assertJsonPath('data.0.title', 'Updated story');
+        $this->assertSame('Updated story', $c->fresh()->translations['en']['title']);
+        $this->getJson('/api/content/en')->assertJsonCount(0, 'data');
         $e = Enquiry::create(['name' => 'Test', 'email' => 'test@example.com', 'kind' => 'concern', 'subject' => 'Local issue', 'message' => 'A local test issue', 'locale' => 'en']);
         $this->patchJson('/api/admin/enquiries/'.$e->id, ['status' => 'closed'])->assertOk();
         $this->assertDatabaseHas('enquiries', ['id' => $e->id, 'status' => 'closed']);

@@ -10,9 +10,15 @@ import {
     Landmark,
     Calendar,
     MessageCircle,
+    Facebook,
+    Instagram,
+    Youtube,
+    Linkedin,
+    Phone,
 } from "lucide-react";
 import { locale, t, paths, href, api, Brand, Button } from "./shared";
 import { ReferenceImage } from "./reference-layout";
+const tr = (en, fr, km) => ({ en, fr, km })[locale] || en;
 function Header({ settings = {} }) {
     const [open, setOpen] = useState(false);
     const current = location.pathname.split("/")[2] || "";
@@ -23,7 +29,11 @@ function Header({ settings = {} }) {
                 <button
                     className="menu-toggle"
                     onClick={() => setOpen(!open)}
-                    aria-label="Toggle menu"
+                    aria-label={tr(
+                        "Toggle menu",
+                        "Ouvrir le menu",
+                        "Ouver meni",
+                    )}
                     aria-expanded={open}
                 >
                     {open ? <X /> : <Menu />}
@@ -35,6 +45,7 @@ function Header({ settings = {} }) {
                     {paths.map((p, i) => (
                         <a
                             key={p}
+                            aria-current={current === p ? "page" : undefined}
                             className={current === p ? "active" : ""}
                             href={href(p)}
                         >
@@ -71,65 +82,103 @@ function Header({ settings = {} }) {
         </header>
     );
 }
-function Footer({ settings }) {
+function Footer({ settings = {} }) {
+    const socials = [
+        [Facebook, "Facebook", settings.facebook],
+        [Instagram, "Instagram", settings.instagram],
+        [Youtube, "YouTube", settings.youtube],
+        [Linkedin, "LinkedIn", settings.linkedin],
+    ].filter(([, , url]) => url);
     return (
-        <>
-            <section className="connect">
-                <div className="container connect-inner">
-                    <div>
-                        <p className="eyebrow light">{t.contact}</p>
-                        <h2>{t.message}</h2>
-                        <p>{t.contactSub}</p>
-                    </div>
-                    <Button to={href("contact")} secondary>
-                        {t.contact}
-                    </Button>
+        <footer className="shared-footer">
+            <div className="tpl-wrap">
+                <div>
+                    <Brand />
+                    <p>
+                        {tr(
+                            "Member of Parliament · Barrister-at-Law · Leader of Nouveaux Démocrates",
+                            "Député · Avocat · Leader des Nouveaux Démocrates",
+                            "Depite · Avoka · Lider Nouveaux Démocrates",
+                        )}
+                    </p>
                 </div>
-            </section>
-            <footer>
-                <div className="container footer-grid">
-                    <div>
-                        <Brand />
-                        <p>{t.footer}</p>
-                    </div>
-                    <div>
-                        <h4>
-                            {locale === "fr"
-                                ? "EXPLORER"
-                                : locale === "km"
-                                  ? "DEKOUVER"
-                                  : "EXPLORE"}
-                        </h4>
-                        {paths.slice(1).map((p, i) => (
-                            <a key={p} href={href(p)}>
-                                {t.nav[i + 1]}
+                <div>
+                    <h4>
+                        {tr("Quick Links", "Liens utiles", "Bann lien itil")}
+                    </h4>
+                    {paths.map((p, i) => (
+                        <a key={p} href={href(p)}>
+                            {t.nav[i]}
+                        </a>
+                    ))}
+                </div>
+                <div>
+                    <h4>{tr("Follow", "Suivez-nous", "Swiv nou")}</h4>
+                    <div className="social-links">
+                        {socials.map(([I, label, url]) => (
+                            <a
+                                key={label}
+                                href={url}
+                                aria-label={label}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <I size={16} />
                             </a>
                         ))}
                     </div>
-                    <div>
-                        <h4>CONTACT</h4>
-                        <a href={href("contact")}>{t.contact}</a>
-                        {settings.email && (
-                            <a href={`mailto:${settings.email}`}>
-                                {settings.email}
-                            </a>
+                    {!socials.length && <a href={href("media")}>{t.nav[5]}</a>}
+                </div>
+                <div>
+                    <h4>{t.nav[6]}</h4>
+                    {settings.phone && (
+                        <a
+                            href={
+                                "tel:" + settings.phone.replace(/[^+0-9]/g, "")
+                            }
+                        >
+                            <Phone size={13} /> {settings.phone}
+                        </a>
+                    )}
+                    {settings.email && (
+                        <a href={"mailto:" + settings.email}>
+                            <Mail size={13} /> {settings.email}
+                        </a>
+                    )}
+                    {settings.address && (
+                        <p>
+                            <MapPin size={13} /> {settings.address}
+                        </p>
+                    )}
+                    <a href={href("contact")}>{t.contact}</a>
+                </div>
+                <div className="flag-block">
+                    <span
+                        className="flag"
+                        aria-label={tr(
+                            "Mauritius flag",
+                            "Drapeau mauricien",
+                            "Paviyon Moris",
                         )}
-                        {settings.address && <p>{settings.address}</p>}
-                    </div>
-                    <div className="flag-block">
-                        <span className="flag" aria-label="Mauritius flag" />
-                        <p>{t.footer}</p>
-                    </div>
+                    />
+                    <p>{t.footer}</p>
                 </div>
-                <div className="container footer-bottom">
-                    <span>© {new Date().getFullYear()} Khushal Lobine</span>
-                    <div>
-                        <a href={href("privacy")}>{t.privacy}</a>
-                        <a href={href("terms")}>{t.terms}</a>
-                    </div>
+            </div>
+            <div className="footer-bottom">
+                <span>
+                    © {new Date().getFullYear()} Khushal Lobine.{" "}
+                    {tr(
+                        "All rights reserved.",
+                        "Tous droits réservés.",
+                        "Tou drwa rezerve.",
+                    )}
+                </span>
+                <div>
+                    <a href={href("privacy")}>{t.privacy}</a>
+                    <a href={href("terms")}>{t.terms}</a>
                 </div>
-            </footer>
-        </>
+            </div>
+        </footer>
     );
 }
 function Contact({ settings, hideHero = false }) {
@@ -168,8 +217,27 @@ function Contact({ settings, hideHero = false }) {
             )}
             <section className="container contact-grid section">
                 <form className="contact-form" onSubmit={submit}>
-                    <p className="eyebrow">CONTACT</p>
-                    <h2>{t.formTitle}</h2>
+                    <p className="eyebrow">
+                        {tr(
+                            "Send us a message",
+                            "Envoyez-nous un message",
+                            "Avoy nou enn mesaz",
+                        )}
+                    </p>
+                    <h2>
+                        {tr(
+                            "General Enquiries",
+                            "Demandes générales",
+                            "Bann demann zeneral",
+                        )}
+                    </h2>
+                    <p>
+                        {tr(
+                            "Have a question, suggestion or comment? Fill in the form below and our team will get back to you.",
+                            "Une question, une suggestion ou un commentaire ? Remplissez le formulaire et notre équipe vous répondra.",
+                            "Enn kestyon, sigzesion ouswa komanter? Ranpli sa form-la ek nou lekip pou reponn ou.",
+                        )}
+                    </p>
                     <div className="form-two">
                         <label>
                             {t.name}
@@ -195,7 +263,7 @@ function Contact({ settings, hideHero = false }) {
                         <input name="subject" required maxLength={180} />
                     </label>
                     <label>
-                        {locale === "fr" ? "Type de demande" : "Enquiry type"}
+                        {tr("Enquiry type", "Type de demande", "Tip demann")}
                         <select
                             name="kind"
                             defaultValue={
@@ -206,14 +274,18 @@ function Contact({ settings, hideHero = false }) {
                         >
                             <option value="general">{t.subject}</option>
                             <option value="concern">
-                                {locale === "fr"
-                                    ? "Signaler une préoccupation"
-                                    : "Submit a concern"}
+                                {tr(
+                                    "Submit a concern",
+                                    "Signaler une préoccupation",
+                                    "Partaz enn konsern",
+                                )}
                             </option>
                             <option value="appointment">
-                                {locale === "fr"
-                                    ? "Rendez-vous"
-                                    : "Appointment request"}
+                                {tr(
+                                    "Appointment request",
+                                    "Demande de rendez-vous",
+                                    "Demann enn randevou",
+                                )}
                             </option>
                             <option value="media">{t.nav[5]}</option>
                         </select>
@@ -248,52 +320,76 @@ function Contact({ settings, hideHero = false }) {
                 </form>
                 <aside className="contact-options">
                     <p className="eyebrow">
-                        {locale === "en"
-                            ? "OTHER WAYS TO REACH OUT"
-                            : t.contact}
+                        {tr(
+                            "Other ways to reach out",
+                            "Autres moyens de nous contacter",
+                            "Bann lezot fason pou kontak nou",
+                        )}
                     </p>
                     <h2>
-                        {locale === "en" ? "How can we help?" : t.contactSub}
+                        {tr(
+                            "How can we help?",
+                            "Comment pouvons-nous vous aider ?",
+                            "Kouma nou kapav ed ou?",
+                        )}
                     </h2>
                     <div className="contact-options-grid">
                         {[
                             [
                                 FileText,
-                                locale === "fr"
-                                    ? "Signaler une préoccupation"
-                                    : "Submit a Concern",
+                                tr(
+                                    "Submit a Concern",
+                                    "Signaler une préoccupation",
+                                    "Partaz enn konsern",
+                                ),
                                 "concern",
-                                locale === "fr"
-                                    ? "Partagez un problème ou une suggestion."
-                                    : "Share an issue, suggestion or concern about your community.",
+                                tr(
+                                    "Share an issue, suggestion or concern about your community.",
+                                    "Partagez un problème, une suggestion ou une préoccupation locale.",
+                                    "Partaz enn problem, sigzesion ouswa konsern lor ou kominote.",
+                                ),
                             ],
                             [
                                 Calendar,
-                                locale === "fr"
-                                    ? "Demander un rendez-vous"
-                                    : "Request an Appointment",
+                                tr(
+                                    "Request an Appointment",
+                                    "Demander un rendez-vous",
+                                    "Demann enn randevou",
+                                ),
                                 "appointment",
-                                locale === "fr"
-                                    ? "Rencontrez Khushal Lobine ou son équipe."
-                                    : "Request a meeting with Khushal Lobine or his team.",
+                                tr(
+                                    "Request a meeting with Khushal Lobine or his team at the constituency office.",
+                                    "Demandez une rencontre avec Khushal Lobine ou son équipe au bureau de circonscription.",
+                                    "Demann enn rankont avek Khushal Lobine ouswa so lekip dan biro sirkonskripsion.",
+                                ),
                             ],
                             [
                                 MessageCircle,
-                                "No. 15 Connect",
+                                tr(
+                                    "No. 15 Connect on WhatsApp",
+                                    "No. 15 Connect sur WhatsApp",
+                                    "No. 15 Connect lor WhatsApp",
+                                ),
                                 "general",
-                                locale === "fr"
-                                    ? "Restez en contact avec votre communauté."
-                                    : "Stay connected for community news and updates.",
+                                tr(
+                                    "Stay connected for updates, community news and important announcements.",
+                                    "Restez en contact pour les actualités locales et les annonces importantes.",
+                                    "Res an kontak pou bann nouvel kominote ek bann lanons inportan.",
+                                ),
                             ],
                             [
                                 Mail,
-                                locale === "fr"
-                                    ? "Demandes des médias"
-                                    : "Media Enquiries",
+                                tr(
+                                    "Media Enquiries",
+                                    "Demandes des médias",
+                                    "Bann demann media",
+                                ),
                                 "media",
-                                locale === "fr"
-                                    ? "Interviews et demandes de presse."
-                                    : "For media requests, interviews or press-related enquiries.",
+                                tr(
+                                    "For media requests, interviews or press-related enquiries.",
+                                    "Pour les demandes de presse et les entretiens.",
+                                    "Pou bann demann lapres ek interview.",
+                                ),
                             ],
                         ].map(([Icon, title, kind, body], i) => (
                             <a
@@ -320,14 +416,18 @@ function Contact({ settings, hideHero = false }) {
                 <div className="container">
                     <div>
                         <p className="eyebrow">
-                            {locale === "en"
-                                ? "CONSTITUENCY OFFICE"
-                                : t.contact}
+                            {tr(
+                                "Constituency office",
+                                "Bureau de circonscription",
+                                "Biro sirkonskripsion",
+                            )}
                         </p>
                         <h2>
-                            {locale === "fr"
-                                ? "Bureau de circonscription"
-                                : "Constituency Office"}{" "}
+                            {tr(
+                                "Constituency Office",
+                                "Bureau de circonscription",
+                                "Biro sirkonskripsion",
+                            )}{" "}
                             — No. 15
                         </h2>
                         <p>{t.contactSub}</p>
@@ -354,23 +454,34 @@ function Contact({ settings, hideHero = false }) {
                         ))}
                     </div>
                     <div>
-                        <ReferenceImage
-                            source="contact"
-                            rect={[448, 875, 413, 165]}
-                            alt="Illustrative constituency office map"
+                        <img
+                            src="/images/template-contact-map.jpg"
+                            alt={tr(
+                                "Illustrative map; contact the office for the exact location",
+                                "Carte illustrative ; contactez le bureau pour le lieu exact",
+                                "Kart ilistratif; kontak biro pou ladres exak",
+                            )}
                         />
                         <div className="office-map-caption">
                             <MapPin />
                             <div>
-                                <strong>Constituency Office No. 15</strong>
+                                <strong>
+                                    {tr(
+                                        "Constituency Office No. 15",
+                                        "Bureau de circonscription n° 15",
+                                        "Biro sirkonskripsion No. 15",
+                                    )}
+                                </strong>
                                 <p>
                                     {settings.address ||
                                         "La Caverne & Phoenix, Mauritius"}
                                 </p>
                                 <small>
-                                    {locale === "fr"
-                                        ? "Contactez le bureau pour obtenir les détails du lieu."
-                                        : "Contact the office for exact location details."}
+                                    {tr(
+                                        "Contact the office for exact location details.",
+                                        "Contactez le bureau pour obtenir les détails du lieu.",
+                                        "Kontak biro pou gagn ladres exak.",
+                                    )}
                                 </small>
                             </div>
                         </div>

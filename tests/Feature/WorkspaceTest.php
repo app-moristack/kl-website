@@ -65,7 +65,8 @@ class WorkspaceTest extends TestCase
         $tr = $p->translations;
         $tr['en']['hero_title'] = 'New heading';
         $this->putJson('/api/admin/pages/'.$p->id, ['version' => 0, 'translations' => $tr])->assertOk()->assertJsonPath('version', 1);
-        $this->getJson('/api/pages/en')->assertJsonPath('data.home.hero_title', 'New heading');
+        $this->assertSame('New heading', $p->fresh()->translations['en']['hero_title']);
+        $this->getJson('/api/pages/en')->assertJsonMissingPath('data.home');
         $this->assertDatabaseCount('revisions', 2);
         $this->putJson('/api/admin/pages/'.$p->id, ['version' => 0, 'translations' => $tr])->assertStatus(409);
     }
@@ -196,12 +197,20 @@ class WorkspaceTest extends TestCase
         $this->postJson('/api/staff/prepare', $identity)->assertJsonPath('enrolled', true)->assertJsonMissingPath('secret');
         $this->postJson('/api/staff/activate', [...$identity, 'password' => 'another-secure-password', 'password_confirmation' => 'another-secure-password', 'code' => '000000'])->assertUnprocessable();
     }
-    public function test_kreol_indexing_requires_both_page_and_interface_review():void {
-        $this->seed();$this->actingAs($this->user());$p=Page::where('slug','home')->first();$tr=$p->translations;$tr['km']['status']='published';$tr['km']['reviewed']=true;
-        $this->putJson('/api/admin/pages/'.$p->id,['version'=>0,'translations'=>$tr])->assertOk();
-        $this->get('/km')->assertOk()->assertHeader('X-Robots-Tag','noindex, nofollow');
+
+    public function test_kreol_indexing_requires_both_page_and_interface_review(): void
+    {
+        $this->seed();
+        $this->actingAs($this->user());
+        $p = Page::where('slug', 'home')->first();
+        $tr = $p->translations;
+        $tr['km']['status'] = 'published';
+        $tr['km']['reviewed'] = true;
+        $this->putJson('/api/admin/pages/'.$p->id, ['version' => 0, 'translations' => $tr])->assertOk();
+        $this->get('/km')->assertOk()->assertHeader('X-Robots-Tag', 'noindex, nofollow');
         $this->getJson('/api/pages/en')->assertJsonMissingPath('data.home.review_notes');
-        $this->putJson('/api/admin/settings',['kreol_interface_approved'=>true])->assertOk();
-        $this->get('/km')->assertOk()->assertHeaderMissing('X-Robots-Tag');$this->get('/sitemap.xml')->assertSee('/km');
+        $this->putJson('/api/admin/settings', ['kreol_interface_approved' => true])->assertOk();
+        $this->get('/km')->assertOk()->assertHeaderMissing('X-Robots-Tag');
+        $this->get('/sitemap.xml')->assertSee('/km');
     }
 }

@@ -15,7 +15,14 @@ import {
 } from "lucide-react";
 import { api, Button, Brand } from "./shared";
 const languages = { en: "English", fr: "Français", km: "Kreol Morisien" };
-export function History({ type, id, version, onRestored, onClose }) {
+export function History({
+    type,
+    id,
+    version,
+    onRestored,
+    onClose,
+    canRestore = true,
+}) {
     const [rows, setRows] = useState([]),
         [msg, setMsg] = useState(""),
         [selected, setSelected] = useState(null);
@@ -53,31 +60,33 @@ export function History({ type, id, version, onRestored, onClose }) {
                         {r.user?.name || "Former staff"} ·{" "}
                         {new Date(r.created_at).toLocaleString()}
                     </button>
-                    <button
-                        className="text-button"
-                        onClick={async () => {
-                            if (
-                                !confirm(
-                                    "Restore this revision as an unpublished draft?",
+                    {canRestore && (
+                        <button
+                            className="text-button"
+                            onClick={async () => {
+                                if (
+                                    !confirm(
+                                        "Restore this revision as an unpublished draft?",
+                                    )
                                 )
-                            )
-                                return;
-                            try {
-                                await api(
-                                    `/api/admin/revisions/${r.id}/restore`,
-                                    {
-                                        method: "POST",
-                                        body: JSON.stringify({ version }),
-                                    },
-                                );
-                                onRestored();
-                            } catch (e) {
-                                setMsg(e.message);
-                            }
-                        }}
-                    >
-                        Restore as draft
-                    </button>
+                                    return;
+                                try {
+                                    await api(
+                                        `/api/admin/revisions/${r.id}/restore`,
+                                        {
+                                            method: "POST",
+                                            body: JSON.stringify({ version }),
+                                        },
+                                    );
+                                    onRestored();
+                                } catch (e) {
+                                    setMsg(e.message);
+                                }
+                            }}
+                        >
+                            Restore as draft
+                        </button>
+                    )}
                 </div>
             ))}
             {!rows.length && <p>No saved revisions yet.</p>}
@@ -174,7 +183,7 @@ const fields = [
     ["meta_description", "SEO description", "area"],
     ["review_notes", "Review notes", "area"],
 ];
-function Repeater({ name, rows, onChange }) {
+function Repeater({ name, rows, onChange, showDate = false }) {
     return (
         <section className="repeater">
             <div className="data-row">
@@ -232,9 +241,9 @@ function Repeater({ name, rows, onChange }) {
                     {[
                         "title",
                         "body",
-                        ...(name === "Milestones"
-                            ? ["year"]
-                            : ["icon", "image", "url"]),
+                        ...(showDate ? ["year"] : []),
+                        "icon",
+                        ...(name === "Milestones" ? [] : ["image", "url"]),
                     ].map((f) => (
                         <label key={f}>
                             {f}
@@ -310,7 +319,7 @@ function Repeater({ name, rows, onChange }) {
         </section>
     );
 }
-export function PageStudio() {
+export function PageStudio({ canRestore = true, canEditLegal = true }) {
     const [pages, setPages] = useState([]),
         [id, setId] = useState(null),
         [lang, setLang] = useState("en"),
@@ -321,8 +330,17 @@ export function PageStudio() {
     async function load(selected = id) {
         try {
             const d = await api("/api/admin/pages");
-            setPages(d.data);
-            const page = d.data.find((p) => p.id === selected) || d.data[0];
+            setPages(
+                d.data.filter(
+                    (p) =>
+                        canEditLegal || !["privacy", "terms"].includes(p.slug),
+                ),
+            );
+            const available = d.data.filter(
+                (p) => canEditLegal || !["privacy", "terms"].includes(p.slug),
+            );
+            const page =
+                available.find((p) => p.id === selected) || available[0];
             setId(page?.id);
             setForm(page ? structuredClone(page) : null);
         } catch (e) {
@@ -433,24 +451,6 @@ export function PageStudio() {
             >
                 <div className="editor-grid">
                     <section className="panel">
-                        {form.slug === "home" && (
-                            <label>
-                                Homepage design
-                                <select
-                                    value={tr.design || "editorial"}
-                                    onChange={(e) =>
-                                        set("design", e.target.value)
-                                    }
-                                >
-                                    <option value="editorial">
-                                        Editorial — final reference
-                                    </option>
-                                    <option value="classic">
-                                        Classic — image-led reference
-                                    </option>
-                                </select>
-                            </label>
-                        )}
                         {fields.map(([key, label, kind]) => (
                             <label key={key}>
                                 {label}
@@ -473,16 +473,38 @@ export function PageStudio() {
                             </label>
                         ))}
                         {!legal &&
-                            ["cards", "milestones", "focus"].map((key) => (
+                            (
+                                {
+                                    home: ["cards", "milestones"],
+                                    about: ["cards", "milestones", "focus"],
+                                    parliament: [
+                                        "cards",
+                                        "milestones",
+                                        "focus",
+                                    ],
+                                    constituency: ["cards", "focus"],
+                                    perspectives: ["cards", "milestones"],
+                                    media: ["cards", "focus"],
+                                }[form.slug] || []
+                            ).map((key) => (
                                 <Repeater
                                     key={key}
                                     name={
                                         {
                                             cards: "Cards",
-                                            milestones: "Milestones",
+                                            milestones:
+                                                form.slug === "about"
+                                                    ? "Milestones"
+                                                    : form.slug === "parliament"
+                                                      ? "Featured legislative work"
+                                                      : form.slug ===
+                                                          "perspectives"
+                                                        ? "Article cards"
+                                                        : "Latest updates",
                                             focus: "Focus areas",
                                         }[key]
                                     }
+                                    showDate={key === "milestones"}
                                     rows={tr[key] || []}
                                     onChange={(rows) => set(key, rows)}
                                 />
@@ -491,6 +513,11 @@ export function PageStudio() {
                     <aside className="panel sticky-panel">
                         <p className="eyebrow">PUBLISHING</p>
                         <h3>{form.slug}</h3>
+                        <p className="muted">
+                            Changes to published text are saved as drafts. Save
+                            changed wording before recording a new review
+                            approval.
+                        </p>
                         <label>
                             Translation status
                             <select
@@ -576,6 +603,7 @@ export function PageStudio() {
             {history && (
                 <History
                     type="page"
+                    canRestore={canRestore}
                     id={id}
                     version={form.version}
                     onClose={() => setHistory(false)}

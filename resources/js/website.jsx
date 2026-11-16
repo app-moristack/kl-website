@@ -26,6 +26,7 @@ import {
 import { locale, t, href, api, Button } from "./shared";
 import { Header, Footer, Contact, Cards, PageHero } from "./public-components";
 import { NavyHome, NavyFooter, ReferenceImage } from "./reference-layout";
+import { TemplatePage } from "./template-pages";
 const icons = {
     landmark: Landmark,
     map: MapPin,
@@ -1469,6 +1470,30 @@ export function Website() {
                 <CTA page={page} />
             </>
         );
+    if (
+        page &&
+        [
+            "home",
+            "about",
+            "parliament",
+            "constituency",
+            "perspectives",
+            "media",
+            "contact",
+        ].includes(section)
+    ) {
+        body = (
+            <TemplatePage
+                section={section}
+                page={page}
+                items={items}
+                settings={settings}
+                Archive={Archive}
+                VideoPlayer={VideoPlayer}
+                Gallery={Gallery}
+            />
+        );
+    }
     return (
         <>
             <Header settings={settings} />
@@ -1484,11 +1509,7 @@ export function Website() {
                 </p>
             )}
             <main className={`public-page page-${section}`}>{body}</main>
-            {section === "home" ? (
-                <NavyFooter settings={settings} />
-            ) : (
-                <Footer settings={settings} />
-            )}
+            <Footer settings={settings} />
         </>
     );
 }

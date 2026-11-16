@@ -296,23 +296,21 @@ async function api(path, options = {}) {
 }
 function Brand() {
     return (
-        <a className="brand" href={href()} aria-label="Khushal Lobine home">
-            {location.pathname.split("/")[2] &&
-            !location.pathname.startsWith("/admin") ? (
-                <span className="reference-wordmark classic-wordmark">
-                    <img
-                        src="/reference-assets/about.jpg"
-                        alt="Khushal Lobine"
-                    />
+        <a className="brand" href={href()} aria-label="Khushal Lobine">
+            <span className="site-wordmark">
+                <span>KHUSHAL</span>
+                <span>
+                    LOBINE
+                    <i />
                 </span>
-            ) : (
-                <span className="reference-wordmark">
-                    <img
-                        src="/reference-assets/home.jpg"
-                        alt="Khushal Lobine"
-                    />
-                </span>
-            )}
+                <small>
+                    {locale === "fr"
+                        ? "LEADER. AVOCAT. UNE VOIX POUR LE CHANGEMENT."
+                        : locale === "km"
+                          ? "LIDER. AVOKA. ENN LAVWA POU SANZMAN."
+                          : "LEADER. BARRISTER. VOICE FOR CHANGE."}
+                </small>
+            </span>
         </a>
     );
 }
