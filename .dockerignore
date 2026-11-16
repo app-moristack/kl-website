@@ -15,3 +15,4 @@ tests
 bootstrap/cache/*.php
 
 resources/js/__tests__
+.secrets

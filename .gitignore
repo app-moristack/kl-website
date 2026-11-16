@@ -26,3 +26,5 @@ Thumbs.db
 /database/*.sqlite*
 /storage/app/public/*
 !/storage/app/public/.gitignore
+/.secrets
+.last-deployed-sha

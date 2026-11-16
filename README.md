@@ -90,30 +90,21 @@ References: https://www.php.net/archive/2026.php and https://www.php.net/release
 - Enquiries are restricted to staff but not yet encrypted at the application field level. Configure encrypted disks/backups and a retention policy before launch.
 - Staff should never put private constituent details in public content.
 
-## Production preparation (not deployed)
+## Production
 
-Before exposing the app:
+Live at https://kl-website.duckdns.org on the shared server `62.83.10.197`, behind the server's edge Caddy (`/opt/edge`, which terminates HTTPS and proxies to `kl-website-web:8080`).
 
-1. Provide the server/domain details; review the host firewall and existing websites. Install Docker Engine and Compose >= 2.24.4.
-2. Configure an unprivileged SSH deployment account and repository read access. Place pinned SSH host keys in GitHub secrets; do not disable host-key verification.
-3. Use a production `.env`: `APP_ENV=production`, `APP_DEBUG=false`, `APP_URL=https://your-domain`, `APP_DOMAIN=your-domain`, `SESSION_SECURE_COOKIE=true`, unique DB secrets and a stable `APP_KEY`.
-4. Point DNS at the server and allow inbound 80/443 for Caddy certificate issuance/renewal. Keep MySQL/PHP-FPM private. Account for Docker's firewall behavior when reviewing the host rules.
-5. Run `docker compose -f compose.yaml -f compose.production.yaml up -d --build`, migrations and administrator setup. Check `https://your-domain/up`, login, uploads, enquiries and certificate renewal.
-6. Configure off-server encrypted backups; test a restore of both MySQL and uploads. Retain the application key securely for encrypted data recovery.
-7. Configure real outgoing email when ready. Queued enquiry alerts, staff invitations and secure access recovery are implemented. Mail currently uses the log transport; it does not deliver external emails without provider settings.
-8. Finalise the legal text, privacy/retention policy, reviewed copy, official logo and verified contact details. The current brand wordmark is typographic, not a supplied vector logo.
+- Every push to `main` runs `ci.yml`; when it succeeds, `deploy.yml` builds the `production` image target, streams it over SSH to the restricted `github-kl-website` account and runs `/usr/local/sbin/github-deploy kl-website`. That script backs up the database, storage and configuration to `/var/backups/kl-website` (14-day retention), loads the image, migrates, starts `app web worker scheduler`, checks `/up`, and restores the previous image if anything fails. Migrations are not reversed automatically.
+- `deploy.yml` can also be started manually from GitHub Actions on `main`.
+- GitHub secrets: `PRODUCTION_SSH_KEY` (dedicated deploy key, only accepts `deploy <sha>`) and `PRODUCTION_SSH_HOST_KEY` (the server's pinned ed25519 host key).
+- Server files live in `/srv/apps/kl-website`: `.env.production` and `.secrets/` are server-only and never replaced by a deploy.
+- One image serves every role: `app` (PHP-FPM), `web` (Caddy on :8080), `worker`, `scheduler`. Laravel trusts `X-Forwarded-*` only from `TRUSTED_PROXIES`.
 
-### GitHub workflows
+Still to do before launch:
 
-`ci.yml` builds React, runs PHP tests, audits dependencies and attempts the PHP application Docker build. It runs on pushes to `main`/`dev` and pull requests. Runtime minimums intentionally fail if the available PHP build is below the security floor.
-
-`deploy.yml` is inactive unless repository variable `PRODUCTION_ENABLED=true` is set. It targets the protected GitHub environment `production`, deploys only after successful main-branch CI (or an explicit manual run), and expects these secrets:
-
-- `PROD_HOST`, `PROD_USER`, optional `PROD_PORT`
-- `PROD_SSH_KEY` (dedicated deployment key)
-- `PROD_KNOWN_HOSTS` (host keys verified out of band)
-
-The server-side entry point `/opt/kl-website-ops/deploy <verified-commit-sha>` must still be implemented with the real server paths, backup destination, migration strategy, health checks and rollback policy. Do not enable production automation until that preparation is complete. No SSH credentials or production service have been configured in this repository.
+1. Configure off-server encrypted backups and test a restore of MySQL and storage. Keep the `APP_KEY` safe for encrypted data recovery.
+2. Configure real outgoing email. Mail currently uses the log transport.
+3. Finalise the legal text, privacy/retention policy, reviewed copy, official logo and verified contact details.
 
 ### Backups
 
@@ -129,7 +120,7 @@ This creates a consistent SQL dump and uploaded-files archive; it does not yet e
 - Owner/legal approval of privacy and terms after confirming operator details and retention/provider decisions.
 - Actual source material for news, parliamentary contributions and community/event galleries.
 - External mail-provider delivery configuration, when provided.
-- Item 6 is excluded: no production server, domain, HTTPS, deployment, backup or rollback configuration has been performed in this phase.
+- Off-server encrypted backups and alerting are not configured yet (see Production).
 
 ## Verification of initial development
 

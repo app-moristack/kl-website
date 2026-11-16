@@ -32,6 +32,11 @@ USER www-data
 EXPOSE 9000
 CMD ["php-fpm"]
 
+FROM app AS production
+COPY --from=caddy:2-alpine /usr/bin/caddy /usr/local/bin/caddy
+COPY docker/Caddyfile /etc/caddy/Caddyfile
+ENV XDG_CONFIG_HOME=/tmp/caddy-config XDG_DATA_HOME=/tmp/caddy-data
+
 FROM caddy:2-alpine AS web
 WORKDIR /var/www/html
 COPY docker/Caddyfile /etc/caddy/Caddyfile
